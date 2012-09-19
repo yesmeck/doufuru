@@ -12,4 +12,7 @@ Gem::Specification.new do |s|
   s.summary = s.description
   s.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.version = Doufuru::VERSION
+  s.add_dependency "faraday"
+  s.add_dependency "faraday_middleware"
+  s.add_development_dependency "rspec"
 end
