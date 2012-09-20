@@ -10,6 +10,7 @@ describe Doufuru::Client::User do
   describe ".user" do
     context "with a uid passed" do
       it "should return the user" do
+        stub_get("/user/coolzi").to_return(:body => fixture("user.json"))
         user = @client.user("coolzi")
         user.uid.should == "coolzi"
       end
