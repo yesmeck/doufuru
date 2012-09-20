@@ -14,6 +14,10 @@ module Doufuru
       def search_books(params)
         get("book/search", params).books
       end
+
+      def book_tags(id)
+        get("book/#{id}/tags").tags
+      end
     end
   end
 end
