@@ -10,7 +10,7 @@ Simple Ruby wrapper for the Douban v2 API
 * 音乐
 * 同城
 * 广播
-* [用户](#user)
+* [用户](#doufuru-user)
 * 豆邮
 * 日记
 * 相册
@@ -18,7 +18,7 @@ Simple Ruby wrapper for the Douban v2 API
 * 论坛
 * 回复
 
-### <a name="user">用户</a>
+### <a name="doufuru-user">用户</a>
 
 #### 获取用户信息
 
