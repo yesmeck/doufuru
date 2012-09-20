@@ -5,7 +5,18 @@ Simple Ruby wrapper for the Douban v2 API
 
 ## 使用
 
+* 图书
+* 电影
+* 音乐
+* 同城
+* 广播
 * [用户](#user)
+* 豆邮
+* 日记
+* 相册
+* 线上活动
+* 论坛
+* 回复
 
 ### <a name="user">用户</a>
 
