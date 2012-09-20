@@ -5,6 +5,7 @@ require "doufuru/connection"
 require "doufuru/request"
 
 require "doufuru/client/user"
+require "doufuru/client/book"
 
 module Doufuru
   class Client
@@ -22,5 +23,6 @@ module Doufuru
     include Doufuru::Request
 
     include Doufuru::Client::User
+    include Doufuru::Client::Book
   end
 end
