@@ -5,7 +5,9 @@ Simple Ruby wrapper for the Douban v2 API
 
 ## 使用
 
-### 用户
+* [用户](#user)
+
+### <a name="user">用户</a>
 
 #### 获取用户信息
 
