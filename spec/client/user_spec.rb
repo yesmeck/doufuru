@@ -15,5 +15,13 @@ describe Doufuru::Client::User do
         user.uid.should == "coolzi"
       end
     end
+
+    context "without a uid passed" do
+      it "should return the oauthed user" do
+        stub_get("/user/~me").to_return(:body => fixture("user.json"))
+        user = @client.user
+        user.uid.should == "coolzi"
+      end
+    end
   end
 end

@@ -6,7 +6,7 @@ module Doufuru
   module Connection
     private
 
-    def connection(raw = false)
+    def connection(authenticate = true, raw = false)
       options = {
         :ssl => { :verify => false },
         :url => Doufuru.api_url,

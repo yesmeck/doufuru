@@ -3,7 +3,7 @@
 module Doufuru
   class Client
     module User
-      def user(user)
+      def user(user = '~me')
         get("user/#{user}")
       end
     end
