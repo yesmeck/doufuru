@@ -1,0 +1,24 @@
+{
+    "count": 10,
+    "start": 0,
+    "total": 3,
+    "users": [{
+        "avatar": "http:\/\/img3.douban.com\/icon\/u1407404-33.jpg",
+        "alt": "http:\/\/www.douban.com\/people\/coolzi\/",
+        "id": "1407404",
+        "name": "彼得潘",
+        "uid": "coolzi"
+    }, {
+        "avatar": "http:\/\/img3.douban.com\/icon\/u63371703-2.jpg",
+        "alt": "http:\/\/www.douban.com\/people\/63371703\/",
+        "id": "63371703",
+        "name": "Coolzi",
+        "uid": "63371703"
+    }, {
+        "avatar": "http:\/\/img3.douban.com\/icon\/u36451250-2.jpg",
+        "alt": "http:\/\/www.douban.com\/people\/36451250\/",
+        "id": "36451250",
+        "name": "Coolzi",
+        "uid": "36451250"
+    }]
+}

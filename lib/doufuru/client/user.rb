@@ -6,6 +6,10 @@ module Doufuru
       def user(user = '~me')
         get("user/#{user}")
       end
+
+      def search_users(options={})
+        get("user", options)['users']
+      end
     end
   end
 end

@@ -11,7 +11,7 @@ module Doufuru
         case method
         when :get
           request.headers["Authorization"] = "Bearer #{access_token}" if oauthed?
-          request.url(path)
+          request.url(path, options)
         end
       end
 

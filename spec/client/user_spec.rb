@@ -24,4 +24,16 @@ describe Doufuru::Client::User do
       end
     end
   end
+
+  describe ".search_users" do
+    context "with a keyword passed" do
+      it "should return matching users" do
+        stub_get("/user").
+          with(:query => { :q => "coolzi", :start => 0, :count => 10 }).
+          to_return(:body => fixture("users.json"))
+        user = @client.search_users({ :q => "coolzi", :start => 0, :count => 10 })
+        user.first.uid.should == "coolzi"
+      end
+    end
+  end
 end
