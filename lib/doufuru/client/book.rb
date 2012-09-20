@@ -10,6 +10,10 @@ module Doufuru
       def book_by_isbn(isbn)
         get("book/isbn/#{isbn}")
       end
+
+      def search_books(params)
+        get("book/search", params).books
+      end
     end
   end
 end
