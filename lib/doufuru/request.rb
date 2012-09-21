@@ -10,13 +10,17 @@ module Doufuru
       request(:post, path, params, raw)
     end
 
+    def put(path, params = {}, raw = false)
+      request(:put, path, params, raw)
+    end
+
     def request(method, path, options, raw)
       response = connection(raw).send(method) do |request|
         request.headers["Authorization"] = "Bearer #{access_token}" if oauthed?
         case method
         when :get
           request.url(path, options)
-        when :post
+        when :post, :put
           request.path = path
           request.body = options
         end

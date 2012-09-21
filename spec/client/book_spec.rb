@@ -11,6 +11,7 @@ describe Doufuru::Client do
     @review_content = "测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
     @rating = 5
     @client = Doufuru::Client.new(:access_token => @access_token)
+    @review_id = 5591773
   end
 
   describe ".book" do
@@ -89,6 +90,33 @@ describe Doufuru::Client do
       review.book.title.should == @book_title
       review.title.should == @review_title
       review.content.should == @review_content
+      review.rating.value = @rating
+    end
+  end
+
+  describe ".update_book_review" do
+    it "it should update a book review" do
+      review_content = "因为，绳命，是剁么的回晃；绳命，是入刺的井猜。壤窝们，巩痛嘱咐碰优。田下冯广宰饿妹，饿妹冯广宰呲处。壤窝们，嘱咐这缩优类缩优。开心的一小，火大的一小，壤绳命，梗楤容，壤绳命，梗秤巩，壤绳命，梗回晃。"
+
+      stub_put("/book/review/#{@review_id}").with(
+        :content => {
+          :title => @review_title,
+          :content => @review_content,
+          :rating => @rating
+        },
+        :headers => {
+          "Authorization" => "Bearer #{@access_token}"
+        }
+      ).to_return(:body => fixture("book_review_update.json"))
+
+      review = @client.update_book_review(@review_id, {
+        :title => @review_title,
+        :content => @review_content,
+        :rating => @rating
+      })
+      review.book.title.should == @book_title
+      review.title.should == @review_title
+      review.content.should == review_content
       review.rating.value = @rating
     end
   end

@@ -22,6 +22,10 @@ module Doufuru
       def create_book_review(params)
         post("book/reviews", params)
       end
+
+      def update_book_review(review_id, params)
+        put("book/review/#{review_id}", params)
+      end
     end
   end
 end
