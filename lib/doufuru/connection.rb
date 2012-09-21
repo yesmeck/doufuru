@@ -13,7 +13,7 @@ module Doufuru
       }
 
       connection = Faraday.new(options) do |builder|
-        builder.request :json
+        builder.request :url_encoded
         unless raw
           builder.use FaradayMiddleware::Mashify
           builder.use FaradayMiddleware::ParseJson

@@ -4,9 +4,13 @@ require "helper"
 
 describe Doufuru::Client do
   before do
-    @client = Doufuru::Client.new
+    @access_token = "myfaketoken"
     @book_id = 1084336
     @book_title = "小王子"
+    @review_title = "测试"
+    @review_content = "测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+    @rating = 5
+    @client = Doufuru::Client.new(:access_token => @access_token)
   end
 
   describe ".book" do
@@ -60,6 +64,34 @@ describe Doufuru::Client do
         book_tags = @client.book_tags(@book_id)
         book_tags.first.title = @book_title
       end
+    end
+  end
+
+  describe ".create_book_review" do
+    it "it should create a book review" do
+      title = "hello"
+      content = "world"
+      stub_post("/book/reviews").with(
+        :content => {
+          :book => @book_id,
+          :title => @review_title,
+          :content => @review_content,
+          :rating => @rating
+        },
+        :headers => {
+          "Authorization" => "Bearer #{@access_token}"
+        }
+      ).to_return(:body => fixture("book_review_create.json"))
+      review = @client.create_book_review({
+        :book => @book_id,
+        :title => @review_title,
+        :content => @review_content,
+        :rating => @rating
+      })
+      review.book.title.should == @book_title
+      review.title.should == @review_title
+      review.content.should == @review_content
+      review.rating.value = @rating
     end
   end
 end

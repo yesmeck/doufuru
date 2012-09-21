@@ -18,6 +18,10 @@ module Doufuru
       def book_tags(id)
         get("book/#{id}/tags").tags
       end
+
+      def create_book_review(params)
+        post("book/reviews", params)
+      end
     end
   end
 end
