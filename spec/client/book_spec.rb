@@ -69,8 +69,6 @@ describe Doufuru::Client do
 
   describe ".create_book_review" do
     it "it should create a book review" do
-      title = "hello"
-      content = "world"
       stub_post("/book/reviews").with(
         :content => {
           :book => @book_id,
