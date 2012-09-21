@@ -4,7 +4,8 @@ require "helper"
 
 describe Doufuru::Client::User do
   before do
-    @client = Doufuru::Client.new
+    @access_token = "myfaketoken"
+    @client = Doufuru::Client.new(:access_token => @access_token)
   end
 
   describe ".user" do
@@ -18,7 +19,10 @@ describe Doufuru::Client::User do
 
     context "without a uid passed" do
       it "should return the oauthed user" do
-        stub_get("/user/~me").to_return(:body => fixture("user.json"))
+        stub_get("/user/~me").to_return(
+          :body => fixture("user.json"),
+          :headers => { "Authorization" => "Bearer #{@access_token}" }
+        )
         user = @client.user
         user.uid.should == "coolzi"
       end
