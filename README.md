@@ -69,7 +69,6 @@ client.update_book_review(5591773, {
   :content => "正文必须150个字符以上",
   :rating => 5
 })
-
 ```
 
 #### 删除评论
