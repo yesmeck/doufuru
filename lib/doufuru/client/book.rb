@@ -28,7 +28,11 @@ module Doufuru
       end
 
       def delete_book_review(review_id, params = {})
-        delete("book/review/#{review_id}", params, true)
+        response = delete("book/review/#{review_id}", params, true)
+        if response == "\"OK\""
+          response = "ok"
+        end
+        response
       end
     end
   end

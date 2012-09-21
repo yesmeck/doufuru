@@ -128,10 +128,10 @@ describe Doufuru::Client do
       it "should delete the review" do
         stub_delete("/book/review/#{@review_id}").with(:headers => {
           "Authorization" => "Bearer #{@access_token}"
-        }).to_return(:body => "OK")
+        }).to_return(:body => "\"OK\"")
 
         result = @client.delete_book_review(@review_id)
-        result.should == "OK"
+        result.should == "ok"
       end
     end
   end
