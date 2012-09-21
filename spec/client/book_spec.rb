@@ -135,4 +135,15 @@ describe Doufuru::Client do
       end
     end
   end
+
+  describe ".book_user_tags" do
+    context "with a book id passed" do
+      it "should return oauthed user's tags of the book" do
+        pending("豆瓣的返回好像有问题，获取不到标签")
+        stub_get("/book/user_tags/#{@book_id}").with(:headers => {
+          "Authorization" => "Bearer #{@access_token}"
+        }).to_return(:body => fixture("book_user_tags.json"))
+      end
+    end
+  end
 end
