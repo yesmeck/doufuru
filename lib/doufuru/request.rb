@@ -14,11 +14,15 @@ module Doufuru
       request(:put, path, params, raw)
     end
 
+    def delete(path, params = {}, raw = false)
+      request(:delete, path, params, raw)
+    end
+
     def request(method, path, params, raw)
       response = connection(raw).send(method) do |request|
         request.headers["Authorization"] = "Bearer #{access_token}" if oauthed?
         case method
-        when :get
+        when :get, :delete
           request.url(path, params)
         when :post, :put
           request.path = path
@@ -26,11 +30,7 @@ module Doufuru
         end
       end
 
-      if raw
-        response
-      else
-        response.body
-      end
+      response.body
     end
   end
 end

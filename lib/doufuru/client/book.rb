@@ -26,6 +26,10 @@ module Doufuru
       def update_book_review(review_id, params)
         put("book/review/#{review_id}", params)
       end
+
+      def delete_book_review(review_id, params = {})
+        delete("book/review/#{review_id}", params, true)
+      end
     end
   end
 end

@@ -16,6 +16,10 @@ def stub_put(url)
   stub_request(:put, douban_url(url))
 end
 
+def stub_delete(url)
+  stub_request(:delete, douban_url(url))
+end
+
 def fixture_path
   File.expand_path("../fixtures", __FILE__)
 end
