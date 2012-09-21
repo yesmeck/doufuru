@@ -101,13 +101,13 @@ describe Doufuru::Client do
 
         stub_put("/book/review/#{@review_id}").with(
           :content => {
-          :title => @review_title,
-          :content => @review_content,
-          :rating => @rating
-        },
-        :headers => {
-          "Authorization" => "Bearer #{@access_token}"
-        }
+            :title => @review_title,
+            :content => @review_content,
+            :rating => @rating
+          },
+          :headers => {
+            "Authorization" => "Bearer #{@access_token}"
+          }
         ).to_return(:body => fixture("book_review_update.json"))
 
         review = @client.update_book_review(@review_id, {
