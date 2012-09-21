@@ -7,8 +7,8 @@ module Doufuru
         get("user/#{user}")
       end
 
-      def search_users(options={})
-        get("user", options)['users']
+      def search_users(params = {})
+        get("user", params)['users']
       end
     end
   end
