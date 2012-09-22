@@ -63,7 +63,7 @@ describe Doufuru::Client do
       it "should return a tag list of the book" do
         stub_get("/book/#{@book_id}/tags").to_return(:body => fixture("book_tags.json"))
         book_tags = @client.book_tags(@book_id)
-        book_tags.first.title = @book_title
+        book_tags.first.title.should == @book_title
       end
     end
   end
