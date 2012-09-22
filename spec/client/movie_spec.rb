@@ -54,4 +54,15 @@ describe Doufuru::Client do
       end
     end
   end
+
+  describe ".movie_tags" do
+    context "with a movie id passed" do
+      it "should return a tag list" do
+        stub_get("/movie/#{@movie_id}/tags").to_return(:body => fixture("movie_tags.json"))
+
+        movie_tags = @client.movie_tags(@movie_id)
+        movie_tags.first.title.should == "童话"
+      end
+    end
+  end
 end

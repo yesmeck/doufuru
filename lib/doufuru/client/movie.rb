@@ -14,6 +14,10 @@ module Doufuru
       def search_movies(params = {})
         get("movie/search", params).movies
       end
+
+      def movie_tags(id, params = {})
+        get("movie/#{id}/tags", params).tags
+      end
     end
   end
 end
