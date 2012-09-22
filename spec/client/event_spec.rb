@@ -4,6 +4,8 @@ describe Doufuru::Client do
   before do
     @access_token = "myfaketoken"
     @event_id = 10055446
+    @event_title = "又是一年世界滑板日！！！！！"
+    @user_id = "coolzi"
     @client = Doufuru::Client.new(:access_token => @access_token)
   end
 
@@ -36,6 +38,17 @@ describe Doufuru::Client do
 
         wishers = @client.event_wishers(@event_id)
         wishers.first.uid.should eq "loni1227"
+      end
+    end
+  end
+
+  describe ".event_user_created" do
+    context "with a user id passed" do
+      it "should return a events list that the user created" do
+        stub_get("/event/user_created/#{@user_id}").to_return(:body => fixture("events.json"))
+
+        events = @client.event_user_created(@user_id)
+        events.first.title.should eq @event_title
       end
     end
   end
