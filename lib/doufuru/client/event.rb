@@ -19,8 +19,8 @@ module Doufuru
         get("/event/user_created/#{user_id}", params).events
       end
 
-      def event_user_participanted(user_id, params = {})
-        get("/event/user_participanted/#{user_id}", params).events
+      def event_user_participated(user_id, params = {})
+        get("/event/user_participated/#{user_id}", params).events
       end
 
       def event_user_wished(user_id, params = {})
