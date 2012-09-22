@@ -1,0 +1,74 @@
+{
+    "rating": {
+        "max": 5,
+        "value": "5",
+        "min": 1
+    },
+    "updated": "2012-09-22 19:46:34",
+    "author": {
+        "loc_id": "118159",
+        "name": "彼得潘",
+        "created": "2007-01-30 18:58:26",
+        "loc_name": "江苏南京",
+        "avatar": "http:\/\/img3.douban.com\/icon\/u1407404-33.jpg",
+        "uid": "coolzi",
+        "alt": "http:\/\/www.douban.com\/people\/coolzi\/",
+        "id": "1407404",
+        "desc": "                 \n\n           野生无证程序猿\n\n           前后左右端攻城湿\n\n           初级滑板爱好者\n\n           初级摇滚乐迷\n\n\n\n"
+    },
+    "title": "测试",
+    "votes": 0,
+    "comments": 0,
+    "content": "因为，绳命，是剁么的回晃；绳命，是入刺的井猜。壤窝们，巩痛嘱咐碰优。田下冯广宰饿妹，饿妹冯广宰呲处。壤窝们，嘱咐这缩优类缩优。开心的一小，火大的一小，壤绳命，梗楤容，壤绳命，梗秤巩，壤绳命，梗回晃。",
+    "music": {
+        "collection_link": "http:\/\/api.douban.com\/collection\/9895575",
+        "author": [{
+            "name": "My Chemical Romance"
+        }],
+        "alt_title": "",
+        "image": "http:\/\/img1.douban.com\/spic\/s2871182.jpg",
+        "tags": [{
+            "count": 2496,
+            "name": "MyChemicalRomance"
+        }, {
+            "count": 1544,
+            "name": "emo"
+        }, {
+            "count": 1046,
+            "name": "Rock"
+        }, {
+            "count": 915,
+            "name": "punk"
+        }, {
+            "count": 559,
+            "name": "摇滚"
+        }, {
+            "count": 345,
+            "name": "美国"
+        }, {
+            "count": 333,
+            "name": "My_Chemical_Romance"
+        }, {
+            "count": 222,
+            "name": "欧美"
+        }],
+        "mobile_link": "http:\/\/m.douban.com\/music\/subject\/1899400\/",
+        "attrs": {
+            "publisher": ["Hardly Art"],
+            "singer": ["My Chemical Romance"],
+            "version": ["Explicit Lyrics"],
+            "pubdate": ["2006"],
+            "title": ["The Black Parade"],
+            "media": ["Audio CD"],
+            "tracks": ["1. End\n2. Dead!\n3. This Is How I Disappear\n4. Sharpest Lives\n5. Welcome To The Black Parade\n6. I Don't Love You\n7. House Of Wolves\n8. Cancer\n9. Mama\n10. Sleep\n11. Teenagers\n12. Disenchanted\n13. Famous Last Words\n14. Heaven Help Us"],
+            "discs": ["1"]
+        },
+        "title": "The Black Parade",
+        "alt": "http:\/\/music.douban.com\/music\/1899400",
+        "id": "1899400"
+    },
+    "useless": 0,
+    "published": "2012-09-22 19:46:34",
+    "alt": "http:\/\/music.douban.com\/review\/5592559\/",
+    "id": "5592559"
+}

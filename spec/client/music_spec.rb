@@ -7,6 +7,9 @@ describe Doufuru::Client do
     @access_token = "myfaketoken"
     @music_id = 1899400
     @music_title = "The Black Parade"
+    @review_title = "测试"
+    @review_content = "因为，绳命，是剁么的回晃；绳命，是入刺的井猜。壤窝们，巩痛嘱咐碰优。田下冯广宰饿妹，饿妹冯广宰呲处。壤窝们，嘱咐这缩优类缩优。开心的一小，火大的一小，壤绳命，梗楤容，壤绳命，梗秤巩，壤绳命，梗回晃。"
+    @rating = "5"
     @client = Doufuru::Client.new(:access_token => @access_token)
   end
 
@@ -58,6 +61,32 @@ describe Doufuru::Client do
         music_tags = @client.music_tags(@music_id)
         music_tags.first.title.should == "MyChemicalRomance"
       end
+    end
+  end
+
+  describe ".create_music_review" do
+    it "should create a music review" do
+      stub_post("/music/reviews").with(
+        :content => {
+          :music => @music_id,
+          :title => @review_title,
+          :content => @review_content,
+          :rating => @rating
+        },
+        :headers => {
+          "Authorization" => "Bearer #{@access_token}"
+        }
+      ).to_return(:body => fixture("music_review_create.json"))
+      review = @client.create_music_review({
+        :music => @music_id,
+        :title => @review_title,
+        :content => @review_content,
+        :rating => @rating
+      })
+      review.music.title.should == @music_title
+      review.title.should == @review_title
+      review.content.should == @review_content
+      review.rating.value.should == @rating
     end
   end
 end
