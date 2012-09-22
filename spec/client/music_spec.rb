@@ -48,5 +48,17 @@ describe Doufuru::Client do
       end
     end
   end
+
+  describe ".music_tags" do
+    context "with a music id passed" do
+      it "should return a tag list of the music" do
+        stub_get("/music/#{@music_id}/tags").
+          to_return(:body => fixture("music_tags.json"))
+
+        music_tags = @client.music_tags(@music_id)
+        music_tags.first.title.should == "MyChemicalRomance"
+      end
+    end
+  end
 end
 
