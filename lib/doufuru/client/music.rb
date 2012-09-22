@@ -1,7 +1,5 @@
 # encoding: utf-8
 
-require "helper"
-
 module Doufuru
   class Client
     module Music
