@@ -19,6 +19,7 @@ module Doufuru
     end
 
     def request(method, path, params, raw)
+      path.sub!(%r{^/}, '')
       response = connection(raw).send(method) do |request|
         request.headers["Authorization"] = "Bearer #{access_token}" if oauthed?
         case method
