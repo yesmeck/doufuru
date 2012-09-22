@@ -107,7 +107,7 @@ Doufuru.search_movies(:q => "Peter Pan", :start => 0, :count => 10);
 Doufuru.search_movies(:tag => "Peter Pan", :start => 0, :count => 10);
 ```
 
-#### 某够电影中标记最对的标签
+#### 某够电影中标记最多的标签
 
 ```ruby
 Doufuru.movie_tags(1307931)
