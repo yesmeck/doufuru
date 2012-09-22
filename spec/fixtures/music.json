@@ -1,1 +1,58 @@
-{"rating":{"max":10,"average":"8.8","numRaters":12377,"min":0},"author":[{"name":"My Chemical Romance"}],"alt_title":"","image":"http:\/\/img1.douban.com\/spic\/s2871182.jpg","title":"The Black Parade","mobile_link":"http:\/\/m.douban.com\/music\/subject\/1899400\/","summary":"与前两张专辑一样，这张The Black Parade仍是一张概念专辑，主题围绕一个即将死去的病人展开。主唱Gerard Way接受iTunes采访时说：“这张专辑讲述了一个在医院中死去的病人的故事。在即将死去的那段日子，他极力的回顾自己的一生，总结自己所犯的错误。他印象最深的是小时候爸爸带他去参加一个游行的事情。因此，死亡来临的时候以black parade的形式。”歌迷猜测这个病人死于癌症，因为专辑中有一首歌曲叫做Cancer，而且在我们前几天发布的Welcome to the Black Parade的MV中，主唱Gerard Way将头发剪短并且漂成了白色，以此来比喻一个正在接受化疗的病人。\n*这张专辑必将My Chemical Romance推向最伟大的摇滚乐队行列……能够像Nirvana的Nevermind以及Green Day的American Idiot一样，成为美国历史上最伟大摇滚专辑。\n——英国NME杂志\n*2006年最好的mid-Seventies专辑。\n——美国《滚石》杂志\n美国新泽西乐队My Chemical Romance的第三张录音室专辑终于发行了，这张专辑不仅我们等的辛苦，从国外音乐论坛上的情况来看，关注率也是相当高的。无论如何，请各位都来听听，因为它实在太棒了！","attrs":{"publisher":["Hardly Art"],"singer":["My Chemical Romance"],"version":["Explicit Lyrics"],"pubdate":["2006"],"title":["The Black Parade"],"media":["Audio CD"],"tracks":["1. End\n2. Dead!\n3. This Is How I Disappear\n4. Sharpest Lives\n5. Welcome To The Black Parade\n6. I Don't Love You\n7. House Of Wolves\n8. Cancer\n9. Mama\n10. Sleep\n11. Teenagers\n12. Disenchanted\n13. Famous Last Words\n14. Heaven Help Us"],"discs":["1"],"songs":[{"index":1,"name":"track","title":"The End."}]},"alt":"http:\/\/music.douban.com\/music\/1899400","id":"1899400","tags":[{"count":2496,"name":"MyChemicalRomance"},{"count":1544,"name":"emo"},{"count":1046,"name":"Rock"},{"count":915,"name":"punk"},{"count":559,"name":"摇滚"},{"count":345,"name":"美国"},{"count":333,"name":"My_Chemical_Romance"},{"count":222,"name":"欧美"}]}
+{
+    "rating": {
+        "max": 10,
+        "average": "8.8",
+        "numRaters": 12377,
+        "min": 0
+    },
+    "author": [{
+        "name": "My Chemical Romance"
+    }],
+    "alt_title": "",
+    "image": "http:\/\/img1.douban.com\/spic\/s2871182.jpg",
+    "title": "The Black Parade",
+    "mobile_link": "http:\/\/m.douban.com\/music\/subject\/1899400\/",
+    "summary": "与前两张专辑一样，这张The Black Parade仍是一张概念专辑，主题围绕一个即将死去的病人展开。主唱Gerard Way接受iTunes采访时说：“这张专辑讲述了一个在医院中死去的病人的故事。在即将死去的那段日子，他极力的回顾自己的一生，总结自己所犯的错误。他印象最深的是小时候爸爸带他去参加一个游行的事情。因此，死亡来临的时候以black parade的形式。”歌迷猜测这个病人死于癌症，因为专辑中有一首歌曲叫做Cancer，而且在我们前几天发布的Welcome to the Black Parade的MV中，主唱Gerard Way将头发剪短并且漂成了白色，以此来比喻一个正在接受化疗的病人。\n*这张专辑必将My Chemical Romance推向最伟大的摇滚乐队行列……能够像Nirvana的Nevermind以及Green Day的American Idiot一样，成为美国历史上最伟大摇滚专辑。\n——英国NME杂志\n*2006年最好的mid-Seventies专辑。\n——美国《滚石》杂志\n美国新泽西乐队My Chemical Romance的第三张录音室专辑终于发行了，这张专辑不仅我们等的辛苦，从国外音乐论坛上的情况来看，关注率也是相当高的。无论如何，请各位都来听听，因为它实在太棒了！",
+    "attrs": {
+        "publisher": ["Hardly Art"],
+        "singer": ["My Chemical Romance"],
+        "version": ["Explicit Lyrics"],
+        "pubdate": ["2006"],
+        "title": ["The Black Parade"],
+        "media": ["Audio CD"],
+        "tracks": ["1. End\n2. Dead!\n3. This Is How I Disappear\n4. Sharpest Lives\n5. Welcome To The Black Parade\n6. I Don't Love You\n7. House Of Wolves\n8. Cancer\n9. Mama\n10. Sleep\n11. Teenagers\n12. Disenchanted\n13. Famous Last Words\n14. Heaven Help Us"],
+        "discs": ["1"],
+        "songs": [{
+            "index": 1,
+            "name": "track",
+            "title": "The End."
+        }]
+    },
+    "alt": "http:\/\/music.douban.com\/music\/1899400",
+    "id": "1899400",
+    "tags": [{
+        "count": 2496,
+        "name": "MyChemicalRomance"
+    }, {
+        "count": 1544,
+        "name": "emo"
+    }, {
+        "count": 1046,
+        "name": "Rock"
+    }, {
+        "count": 915,
+        "name": "punk"
+    }, {
+        "count": 559,
+        "name": "摇滚"
+    }, {
+        "count": 345,
+        "name": "美国"
+    }, {
+        "count": 333,
+        "name": "My_Chemical_Romance"
+    }, {
+        "count": 222,
+        "name": "欧美"
+    }]
+}
