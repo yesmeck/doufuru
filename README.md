@@ -177,7 +177,7 @@ Doufuru.musci_tags(1899400)
 
 ```ruby
 client = Doufuru::Client.new(:access_token => ACCESS_TOKEN)
-client.create_musci_review({
+client.create_music_review({
   :movie => 1899400,
   :title => "很好",
   :content => "正文必须150个字符以上",
@@ -189,7 +189,7 @@ client.create_musci_review({
 
 ```ruby
 client = Doufuru::Client.new(:access_token => ACCESS_TOKEN)
-client.update_musci_review(5592559, {
+client.update_music_review(5592559, {
   :title => "非常好",
   :content => "正文必须150个字符以上",
   :rating => 5
@@ -200,7 +200,7 @@ client.update_musci_review(5592559, {
 
 ```ruby
 client = Doufuru::Client.new(:access_token => ACCESS_TOKEN)
-client.delete_movie_review(5592559)
+client.delete_music_review(5592559)
 => ok
 ```
 
