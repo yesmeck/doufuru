@@ -34,6 +34,10 @@ module Doufuru
       def loc(loc_id, params = {})
         get("/loc/#{loc_id}", params)
       end
+
+      def loc_list(params = {})
+        get("/loc/list", params).locs
+      end
     end
   end
 end

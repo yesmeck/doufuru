@@ -98,4 +98,13 @@ describe Doufuru::Client do
       end
     end
   end
+
+  describe ".loc_list" do
+    it "should return the location list" do
+      stub_get("/loc/list").to_return(:body => fixture("locs.json"))
+
+      locs = @client.loc_list
+      locs.first.name.should eq "北京"
+    end
+  end
 end
