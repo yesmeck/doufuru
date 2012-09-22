@@ -90,7 +90,7 @@ describe Doufuru::Client do
       review.book.title.should == @book_title
       review.title.should == @review_title
       review.content.should == @review_content
-      review.rating.value = @rating
+      review.rating.value.should == @rating
     end
   end
 
@@ -118,7 +118,7 @@ describe Doufuru::Client do
         review.book.title.should == @book_title
         review.title.should == @review_title
         review.content.should == review_content
-        review.rating.value = @rating
+        review.rating.value.should == @rating
       end
     end
   end
