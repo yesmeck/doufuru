@@ -20,5 +20,33 @@ describe Doufuru::Client do
       end
     end
   end
+
+  describe ".search_musics" do
+    context "with a keyword passed" do
+      it "should return the matching musics" do
+        pending("豆瓣又返回 500")
+        params = {:q => @music_title, :start => 0, :count => 10}
+        stub_get("/music/search").
+          with(:query => params).
+          to_return(:body > fixture("musics.json"))
+
+        musics = @client.search_musics(params)
+        musics.first.title.should == @music_title
+      end
+    end
+
+    context "with a tag passed" do
+      it "should return the matching musics" do
+        pending("豆瓣又返回 500")
+        params = {:tag => @music_title, :start => 0, :count => 10}
+        stub_get("/music/search").
+          with(:query => params).
+          to_return(:body > fixture("musics.json"))
+
+        musics = @client.search_musics(params)
+        musics.first.title.should == @music_title
+      end
+    end
+  end
 end
 
