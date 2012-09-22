@@ -6,7 +6,7 @@ Simple Ruby wrapper for the Douban v2 API
 ## 使用
 
 * [图书](#doufuru-book)
-* 电影
+* [电影](#doufuru-movie)
 * 音乐
 * 同城
 * 广播
@@ -45,7 +45,6 @@ Doufuru.search_books(:tag => "小王子", :start => 0, :count => 10)
 
 ```ruby
 Doufuru.book_tags(1084336)
-=> [#<Hashie::Mash alt="http://book.douban.com/tag/小王子" count=29139 title="小王子">, #<Hashie::Mash alt="http://book.douban.com/tag/童话" count=22404 title="童话">, #<Hashie::Mash alt="http://book.douban.com/tag/圣埃克苏佩里" count=11456 title="圣埃克苏佩里">, #<Hashie::Mash alt="http://book.douban.com/tag/法国" count=9753 title=" 法国">, #<Hashie::Mash alt="http://book.douban.com/tag/经典" count=8052 title="经典">, #<Hashie::Mash alt="http://book.douban.com/tag/外国文学" count=6731 title="外国文学">, #<Hashie::Mash alt="http://book.douban.com/tag/哲学" count=4870 title="哲学">, #<Hashie::Mash alt="http://book.douban.com/tag/小说" count=3342 title="小说">, #<Hashie::Mash alt="http://book.douban.com/tag/文学" count=2475 title="文学">, #<Hashie::Mash alt="http://book.douban.com/tag/小說" count=813 title="小說">, #<Hashie::Mash alt="http://book.douban.com/tag/法国文学" count=359 title="法国文学">, #<Hashie::Mash alt="http://book.douban.com/tag/儿童文学" count=352 title="儿童文学">, #<Hashie::Mash alt="http://book.douban.com/tag/绘本" count=282 title="绘本">, #<Hashie::Mash alt="http://book.douban.com/tag/成长" count=187 title="成长">, #<Hashie::Mash alt="http://book.douban.com/tag/名著" count=147 title="名著">, #<Hashie::Mash alt="http://book.douban.com/tag/外国" count=136 title="外国">, #<Hashie::Mash alt="http://book.douban.com/tag/爱情" count=133 title="爱情">, #<Hashie::Mash alt="http://book.douban.com/tag/外国名著" count=123 title="外国名著">, #<Hashie::Mash alt="http://book.douban.com/tag/外国小说" count=121 title="外国小说">, #<Hashie::Mash alt="http://book.douban.com/tag/爱" count=121 title="爱">]
 ```
 
 #### 发表新评论
@@ -86,7 +85,72 @@ client.delete_book_review(5591773)
 client = Doufuru::Client.new(:access_token => ACCESS_TOKEN)
 client.book_user_tags(5591773)
 ```
+### <a name="doufuru-movie">电影</a>
 
+#### 获取电影信息
+
+```ruby
+Doufuru.movie(1307931)
+```
+
+#### 根据imdb获取电影信息
+
+```ruby
+Doufuru.movie_by_imdb("tt0316396")
+```
+
+#### 搜索电影
+
+```ruby
+Doufuru.search_movies(:q => "Peter Pan", :start => 0, :count => 10);
+# 或
+Doufuru.search_movies(:tag => "Peter Pan", :start => 0, :count => 10);
+```
+
+#### 某够电影中标记最对的标签
+
+```ruby
+Doufuru.movie_tags(1307931)
+```
+
+#### 发表新评论
+
+```ruby
+client = Doufuru::Client.new(:access_token => ACCESS_TOKEN)
+client.create_movie_review({
+  :movie => 1307931,
+  :title => "很好",
+  :content => "正文必须150个字符以上",
+  :rating => 5
+})
+```
+
+#### 修改评论
+
+```ruby
+client = Doufuru::Client.new(:access_token => ACCESS_TOKEN)
+client.update_movie_review(1307931, {
+  :title => "非常好",
+  :content => "正文必须150个字符以上",
+  :rating => 5
+})
+```
+
+#### 删除评论
+
+```ruby
+client = Doufuru::Client.new(:access_token => ACCESS_TOKEN)
+client.delete_movie_review(5592246)
+=> ok
+```
+
+### 用户对电影的所有标签
+
+```ruby
+# 未实现
+client = Doufuru::Client.new(:access_token => ACCESS_TOKEN)
+client.movie_user_tags(1307931)
+```
 
 ### <a name="doufuru-user">用户</a>
 
