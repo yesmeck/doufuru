@@ -63,4 +63,15 @@ describe Doufuru::Client do
       end
     end
   end
+
+  describe ".event_user_wished" do
+    context "with a user id passed" do
+      it "should return a events list that the user wished" do
+        stub_get("/event/user_wished/#{@user_id}").to_return(:body => fixture("events.json"))
+
+        events = @client.event_user_wished(@user_id)
+        events.first.title.should eq @event_title
+      end
+    end
+  end
 end

@@ -22,6 +22,10 @@ module Doufuru
       def event_user_participanted(user_id, params = {})
         get("/event/user_participanted/#{user_id}", params).events
       end
+
+      def event_user_wished(user_id, params = {})
+        get("/event/user_wished/#{user_id}", params).events
+      end
     end
   end
 end
