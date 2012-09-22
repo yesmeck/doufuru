@@ -132,4 +132,17 @@ describe Doufuru::Client do
       end
     end
   end
+
+  describe ".wish_event" do
+    context "with a event id passed" do
+      it "should add the event to oauthed user's wish list" do
+        stub_post("/event/#{@event_id}/wishers").
+          with(:headers => {"Authorization" => "Bearer #{@access_token}"}).
+          to_return(:body => "{}")
+
+          response = @client.wish_event(@event_id)
+          response.should eq "ok"
+      end
+    end
+  end
 end

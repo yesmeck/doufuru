@@ -46,6 +46,14 @@ module Doufuru
         end
         response
       end
+
+      def wish_event(event_id, params = {})
+        response = post("/event/#{event_id}/wishers", params, true)
+        if response == '{}'
+          response = 'ok'
+        end
+        response
+      end
     end
   end
 end
