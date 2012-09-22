@@ -1,5 +1,4 @@
-# Doufuru
-=======
+# Doufuru [![Build Status](https://secure.travis-ci.org/yesmeck/doufuru.png)](http://travis-ci.org/yesmeck/doufuru)
 
 Simple Ruby wrapper for the Douban v2 API
 
