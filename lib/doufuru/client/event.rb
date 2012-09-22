@@ -30,6 +30,10 @@ module Doufuru
       def event_list(params = {})
         get("/event/list", params).events
       end
+
+      def loc(loc_id, params = {})
+        get("/loc/#{loc_id}", params)
+      end
     end
   end
 end

@@ -87,4 +87,15 @@ describe Doufuru::Client do
       events.first.title.should eq @event_title
     end
   end
+
+  describe ".loc" do
+    context "with a location id passed" do
+      it "should return the location" do
+        stub_get("/loc/#{@loc_id}").to_return(:body => fixture("loc.json"))
+
+        loc = @client.loc(@loc_id)
+        loc.name.should eq "南京"
+      end
+    end
+  end
 end
