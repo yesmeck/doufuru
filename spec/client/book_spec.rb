@@ -9,7 +9,7 @@ describe Doufuru::Client do
     @book_title = "小王子"
     @review_title = "测试"
     @review_content = "测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
-    @rating = 5
+    @rating = "5"
     @client = Doufuru::Client.new(:access_token => @access_token)
     @review_id = 5591773
   end
