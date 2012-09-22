@@ -6,7 +6,7 @@ Simple Ruby wrapper for the Douban v2 API
 
 * [图书](#doufuru-book)
 * [电影](#doufuru-movie)
-* 音乐
+* [音乐](#doufuru-music)
 * 同城
 * 广播
 * [用户](#doufuru-user)
@@ -150,6 +150,68 @@ client.delete_movie_review(5592246)
 client = Doufuru::Client.new(:access_token => ACCESS_TOKEN)
 client.movie_user_tags(1307931)
 ```
+
+### <a name="doufuru-music">音乐</a>
+
+#### 获取音乐信息
+
+```ruby
+Doufuru.music(1899400)
+```
+
+#### 搜索音乐
+
+```ruby
+Doufuru.search_musics(:q => "The Black Parade", :start => 0, :count => 10);
+# 或
+Doufuru.search_musics(:tag => "The Black Parade", :start => 0, :count => 10);
+```
+
+#### 某够音乐中标记最多的标签
+
+```ruby
+Doufuru.musci_tags(1899400)
+```
+
+#### 发表新评论
+
+```ruby
+client = Doufuru::Client.new(:access_token => ACCESS_TOKEN)
+client.create_musci_review({
+  :movie => 1899400,
+  :title => "很好",
+  :content => "正文必须150个字符以上",
+  :rating => 5
+})
+```
+
+#### 修改评论
+
+```ruby
+client = Doufuru::Client.new(:access_token => ACCESS_TOKEN)
+client.update_musci_review(5592559, {
+  :title => "非常好",
+  :content => "正文必须150个字符以上",
+  :rating => 5
+})
+```
+
+#### 删除评论
+
+```ruby
+client = Doufuru::Client.new(:access_token => ACCESS_TOKEN)
+client.delete_movie_review(5592559)
+=> ok
+```
+
+### 用户对音乐的所有标签
+
+```ruby
+# 未实现
+client = Doufuru::Client.new(:access_token => ACCESS_TOKEN)
+client.music_user_tags(1899400)
+```
+
 
 ### <a name="doufuru-user">用户</a>
 
