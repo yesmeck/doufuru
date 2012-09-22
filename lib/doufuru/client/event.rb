@@ -54,6 +54,14 @@ module Doufuru
         end
         response
       end
+
+      def delete_wished_event(event_id, params = {})
+        response = delete("/event/#{event_id}/wishers", params, true)
+        if response == '{}'
+          response = 'ok'
+        end
+        response
+      end
     end
   end
 end
