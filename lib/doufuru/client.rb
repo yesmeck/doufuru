@@ -8,6 +8,7 @@ require "doufuru/client/user"
 require "doufuru/client/book"
 require "doufuru/client/movie"
 require "doufuru/client/music"
+require "doufuru/client/event"
 
 module Doufuru
   class Client
@@ -28,5 +29,6 @@ module Doufuru
     include Doufuru::Client::Book
     include Doufuru::Client::Movie
     include Doufuru::Client::Music
+    include Doufuru::Client::Event
   end
 end
