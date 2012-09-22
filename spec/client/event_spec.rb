@@ -119,4 +119,17 @@ describe Doufuru::Client do
       end
     end
   end
+
+  describe ".delete_participated_event" do
+    context "with a event id passed" do
+      it "should cancel user participant of the event" do
+        stub_delete("/event/#{@event_id}/participants").
+          with(:headers => {"Authorization" => "Bearer #{@access_token}"}).
+          to_return(:body => "{}")
+
+        response = @client.delete_participated_event(@event_id)
+        response.should eq "ok"
+      end
+    end
+  end
 end

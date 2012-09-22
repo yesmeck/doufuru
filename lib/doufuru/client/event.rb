@@ -38,6 +38,14 @@ module Doufuru
       def loc_list(params = {})
         get("/loc/list", params).locs
       end
+
+      def delete_participated_event(event_id, params = {})
+        response = delete("/event/#{event_id}/participants", params, true)
+        if response == '{}'
+          response = 'ok'
+        end
+        response
+      end
     end
   end
 end
