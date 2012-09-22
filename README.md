@@ -7,7 +7,7 @@ Simple Ruby wrapper for the Douban v2 API
 * [图书](#doufuru-book)
 * [电影](#doufuru-movie)
 * [音乐](#doufuru-music)
-* 同城
+* [同城](#doufuru-event)
 * 广播
 * [用户](#doufuru-user)
 * 豆邮
@@ -212,6 +212,95 @@ client = Doufuru::Client.new(:access_token => ACCESS_TOKEN)
 client.music_user_tags(1899400)
 ```
 
+### <a name="doufuru-event">同城</a>
+
+#### 获取活动
+
+```ruby
+Doufuru.event(10055446)
+=> #<Hashie::Mash adapt_url="http://www.douban.com/location/adapt/event/10055446/" address="杭州 旅行者酒吧" album="10297784" alt="http://www.douban.com/event/10055446/" begin_time="2008-04-20 15:00:00" can_invite="no" category="music" content="乐队：后海大鲨鱼\r\n时间：4月20日下午15:00\r\n地点：旅行者酒吧 曙光路176号\r\n票价：30 " end_time="2008-04-20 17:00:00" geo="0.0 0.0" id="10055446" image="http://img3.douban.com/pview/event_poster/median/public/cefba6f32fd1285.jpg" image_hlarge="http://img3.douban.com/pics/event/hlarge_event_dft.jpg" image_lmobile="http://img3.douban.com/pics/event/lmobile_event_dft.jpg" location="hangzhou" owner=#<Hashie::Mash alt="http://www.douban.com/people/wingoffire/" avatar="http://img3.douban.com/icon/u1173623-2.jpg" id="1173623" name="南瓜" uid="wingoffire"> participant_count=108 title="后海大鲨鱼全国巡演杭州站" wisher_count=39>
+```
+
+#### 获取参加活动的用户
+
+```ruby
+Doufuru.event_participants(10055446)
+```
+
+#### 获取活动感兴趣的用户
+
+```ruby
+Doufuru.event_wishers(10055446)
+```
+
+#### 获取用户创建的活动
+
+```ruby
+Doufuru.event_user_created("coolzi")
+```
+
+#### 获取用户参加的活动
+
+```ruby
+Doufuru.event_user_participated("coolzi")
+```
+
+#### 获取用户感兴趣的活动
+
+```ruby
+Doufuru.event_user_wished("coolzi")
+```
+
+#### 获取活动列表
+
+```ruby
+Doufuru.event_list(:loc => 118159, :day_type => "today", :type => "music")
+```
+
+#### 获取城市
+
+```ruby
+Doufuru.loc(118159)
+=> #<Hashie::Mash habitable="yes" id="118159" name="南京" parent="jiangsu" uid="nanjing">
+```
+
+#### 获取城市列表
+
+```ruby
+Doufuru.loc_list
+```
+
+#### 参加活动
+
+```ruby
+client = Doufuru::Client.new(:access_token => ACCESS_TOKEN)
+client.participate_event(17238776)
+=> "ok"
+```
+
+#### 取消参加活动
+
+```ruby
+client = Doufuru::Client.new(:access_token => ACCESS_TOKEN)
+client.delete_participated_event(17238776)
+=> "ok"
+```
+
+#### 对活动感兴趣
+
+```ruby
+client = Doufuru::Client.new(:access_token => ACCESS_TOKEN)
+client.wish_event(17238776)
+=> "ok"
+```
+
+### 取消对活动感兴趣
+
+```ruby
+client = Doufuru::Client.new(:access_token => ACCESS_TOKEN)
+client.delte_wish_event(17238776)
+=> "ok"
+```
 
 ### <a name="doufuru-user">用户</a>
 
