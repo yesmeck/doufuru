@@ -22,6 +22,14 @@ module Doufuru
       def create_movie_review(params = {})
         post("movie/reviews", params)
       end
+
+      def delete_movie_review(review_id, params = {})
+        response = delete("movie/review/#{review_id}", params, true)
+        if response == "\"OK\""
+          response = "ok"
+        end
+        response
+      end
     end
   end
 end
