@@ -20,6 +20,14 @@ module Doufuru
       def update_music_review(review_id, params = {})
         put("/music/review/#{review_id}", params)
       end
+
+      def delete_music_review(review_id, params = {})
+        response = delete("/music/review/#{review_id}", params, true)
+        if response == "\"OK\""
+          response = "ok"
+        end
+        response
+      end
     end
   end
 end

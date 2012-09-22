@@ -119,5 +119,18 @@ describe Doufuru::Client do
       end
     end
   end
+
+  describe ".delete_music_review" do
+    context "with a review id passed" do
+      it "should delete the review" do
+        stub_delete("/music/review/#{@review_id}").with(:headers => {
+          "Authorization" => "Bearer #{@access_token}"
+        }).to_return(:body => "\"OK\"")
+
+        result = @client.delete_music_review(@review_id)
+        result.should == "ok"
+      end
+    end
+  end
 end
 
