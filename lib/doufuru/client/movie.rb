@@ -18,6 +18,10 @@ module Doufuru
       def movie_tags(id, params = {})
         get("movie/#{id}/tags", params).tags
       end
+
+      def create_movie_review(params = {})
+        post("movie/reviews", params)
+      end
     end
   end
 end
