@@ -6,6 +6,7 @@ describe Doufuru::Client do
     @event_id = 10055446
     @event_title = "又是一年世界滑板日！！！！！"
     @user_id = "coolzi"
+    @loc_id = 118159
     @client = Doufuru::Client.new(:access_token => @access_token)
   end
 
@@ -72,6 +73,18 @@ describe Doufuru::Client do
         events = @client.event_user_wished(@user_id)
         events.first.title.should eq @event_title
       end
+    end
+  end
+
+  describe ".event_list" do
+    it "should return a event list" do
+      params = { :loc => @loc_id, :day_type => "todau", :type => "music" }
+      stub_get("/event/list").
+        with(:query => params).
+        to_return(:body => fixture("events.json"))
+
+      events = @client.event_list(params)
+      events.first.title.should eq @event_title
     end
   end
 end
