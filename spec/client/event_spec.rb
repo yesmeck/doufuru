@@ -17,4 +17,15 @@ describe Doufuru::Client do
       end
     end
   end
+
+  describe ".event_participants" do
+    context "with a id passed" do
+      it "should return a participants list of the event" do
+        stub_get("/event/#{@event_id}/participants").to_return(:body => fixture("event_participants.json"))
+
+        participants = @client.event_participants(@event_id)
+        participants.first.uid.should eq "yizhengcc"
+      end
+    end
+  end
 end
