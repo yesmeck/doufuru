@@ -10,6 +10,10 @@ module Doufuru
       def movie_by_imdb(imdb, params = {})
         get("movie/imdb/#{imdb}", params)
       end
+
+      def search_movies(params = {})
+        get("movie/search", params).movies
+      end
     end
   end
 end

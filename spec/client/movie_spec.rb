@@ -32,4 +32,26 @@ describe Doufuru::Client do
       end
     end
   end
+
+  describe ".search_movies" do
+    context "with a keyword passed" do
+      it "should return the matching movies" do
+        params = {:q => @movie_title, :start => 0, :count => 10};
+        stub_get("/movie/search").with(:query => params).to_return(:body => fixture("movies.json"))
+
+        movies = @client.search_movies(params)
+        movies.first.title == @movie_title
+      end
+    end
+
+    context "with a tag passed" do
+      it "should return the matching movies" do
+        params = {:tag => @movie_title, :start => 0, :count => 10};
+        stub_get("/movie/search").with(:query => params).to_return(:body => fixture("movies.json"))
+
+        movies = @client.search_movies(params)
+        movies.first.title == @movie_title
+      end
+    end
+  end
 end
