@@ -16,6 +16,10 @@ module Doufuru
       def create_music_review(params = {})
         post("/music/reviews", params)
       end
+
+      def update_music_review(review_id, params = {})
+        put("/music/review/#{review_id}", params)
+      end
     end
   end
 end
