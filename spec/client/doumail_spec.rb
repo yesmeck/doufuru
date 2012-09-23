@@ -52,4 +52,15 @@ describe Doufuru::Client do
       doumails = @client.doumail_outbox
     end
   end
+
+  describe ".mark_doumail_as_read" do
+    context "with a doumail id passed" do
+      it "should mark the doumail as read" do
+        pending("破豆瓣，又请求不到!")
+        stub_put("/doumail/#{@doumail_id}").
+          with(:headers => "Authorization: Bearer #{myfaketoken}").
+          to_return(:body => fixture("wtf.json"))
+      end
+    end
+  end
 end
