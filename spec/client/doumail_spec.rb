@@ -19,4 +19,15 @@ describe Doufuru::Client do
       end
     end
   end
+
+  describe ".doumail_inbox" do
+    it "return a doumail list of oauthed user's inbox" do
+      pending("破豆瓣，又请求不到!")
+      stub_get("/doumail/inbox").
+        with(:headers => "Authorization: Bearer #{myfaketoken}").
+        to_return(:body => fixture("doumails.json"))
+
+      doumails = @client.doumail_inbox
+    end
+  end
 end
