@@ -102,4 +102,13 @@ describe Doufuru::Client do
       end
     end
   end
+
+  describe ".send_doumail" do
+    it "should send a doumail to the user" do
+      pending("破豆瓣，又请求不到!")
+      params = { :title => "测试", :content => "测试", :receiver_id => "hualunlun" }
+      stub_post("/doumails").
+        with( :query => params, :headers => "Authorization: Bearer #{myfaketoken}")
+    end
+  end
 end
