@@ -110,8 +110,8 @@ describe Doufuru::Client do
 
   describe ".participate_event" do
     context "with a event id passed" do
-      pending("神奇的豆瓣居然返回 null")
       it "should let oauthed user participate the event" do
+        pending("神奇的豆瓣居然返回 null")
         params = {:participate_date => "2012-12-21"}
         stub_post("/event/#{@event_id}/participants").
           with(:query => params, :headers => {"Authorization" => "Bearer #{@access_token}"}).
