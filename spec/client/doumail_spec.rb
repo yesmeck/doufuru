@@ -41,4 +41,15 @@ describe Doufuru::Client do
       doumails = @client.doumail_outbox
     end
   end
+
+  describe ".doumail_inbox_unread" do
+    it "return a unread doumail list of the oauthed user's inbox" do
+      pending("破豆瓣，又请求不到!")
+      stub_get("/doumail/inbox/unread").
+        with(:headers => "Authorization: Bearer #{myfaketoken}").
+        to_return(:body => fixture("doumails.json"))
+
+      doumails = @client.doumail_outbox
+    end
+  end
 end
