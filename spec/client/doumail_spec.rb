@@ -77,4 +77,15 @@ describe Doufuru::Client do
       end
     end
   end
+
+  describe ".delete_doumail" do
+    context "with a id passed" do
+      it "should delete the doumail" do
+        pending("破豆瓣，又请求不到!")
+        stub_delete("/doumail/#{@doumail_id}").
+          with(:headers => "Authorization: Bearer #{myfaketoken}").
+          to_return(:body => fixture("wtf.json"))
+      end
+    end
+  end
 end
