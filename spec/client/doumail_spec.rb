@@ -63,4 +63,18 @@ describe Doufuru::Client do
       end
     end
   end
+
+  describe ".mark_doumails_as_read" do
+    context "with doumail ids passed" do
+      it "should mark them as read" do
+        pending("破豆瓣，又请求不到!")
+        stub_put("/doumail/read").
+          with(
+            :content => { :ids => @doumail_id },
+            :headers => "Authorization: Bearer #{myfaketoken}"
+          ).
+          to_return(:body => fixture("wtf.json"))
+      end
+    end
+  end
 end
