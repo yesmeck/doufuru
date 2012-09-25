@@ -5,6 +5,13 @@ require "rspec"
 require "webmock/rspec"
 
 
+shared_context "initialize client" do
+  before do
+    @access_token = "myfaketoken"
+    @client = Doufuru::Client.new(:access_token => @access_token)
+  end
+end
+
 def stub_get(url)
   stub_request(:get, douban_url(url))
 end

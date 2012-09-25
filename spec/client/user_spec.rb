@@ -3,10 +3,7 @@
 require "helper"
 
 describe Doufuru::Client::User do
-  before do
-    @access_token = "myfaketoken"
-    @client = Doufuru::Client.new(:access_token => @access_token)
-  end
+  include_context "initialize client"
 
   describe ".user" do
     context "with a uid passed" do

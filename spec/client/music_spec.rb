@@ -3,15 +3,15 @@
 require "helper"
 
 describe Doufuru::Client do
+  include_context "initialize client"
+
   before do
-    @access_token = "myfaketoken"
     @music_id = 1899400
     @music_title = "The Black Parade"
     @review_title = "测试"
     @review_content = "因为，绳命，是剁么的回晃；绳命，是入刺的井猜。壤窝们，巩痛嘱咐碰优。田下冯广宰饿妹，饿妹冯广宰呲处。壤窝们，嘱咐这缩优类缩优。开心的一小，火大的一小，壤绳命，梗楤容，壤绳命，梗秤巩，壤绳命，梗回晃。"
     @rating = "5"
     @review_id = 5592559
-    @client = Doufuru::Client.new(:access_token => @access_token)
   end
 
   describe ".music" do

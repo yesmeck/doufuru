@@ -1,13 +1,13 @@
 # encoding: utf-8
 
 describe Doufuru::Client do
+  include_context "initialize client"
+
   before do
-    @access_token = "myfaketoken"
     @event_id = 10055446
     @event_title = "又是一年世界滑板日！！！！！"
     @user_id = "coolzi"
     @loc_id = 118159
-    @client = Doufuru::Client.new(:access_token => @access_token)
   end
 
   describe ".event" do

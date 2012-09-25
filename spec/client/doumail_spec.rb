@@ -1,10 +1,10 @@
 # encoding: utf-8
 
 describe Doufuru::Client do
+  include_context "initialize client"
+
   before do
-    @access_token = "myfaketoken"
     @doumail_id = 268610725
-    @client = Doufuru::Client.new(:access_token => @access_token)
   end
 
   describe ".doumail" do
