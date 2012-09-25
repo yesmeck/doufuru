@@ -17,6 +17,10 @@ module Doufuru
       base.reset
     end
 
+    def configure
+      yield self
+    end
+
     def options
       VALID_OPTIONS_KEYS.inject({}) {|o, k| o.merge!(k => send(k))}
     end
