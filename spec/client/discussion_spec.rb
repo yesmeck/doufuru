@@ -7,6 +7,7 @@ describe Doufuru::Client do
     @discussion_id = 11676229
     @discussion_title =  "温蒂她爹就是虎克船长- =？"
     @discussion_content = "测试内容"
+    @target_id = 1307931
   end
 
   describe ".discussion" do
@@ -46,6 +47,24 @@ describe Doufuru::Client do
 
         response = @client.delete_discussion(@discussion_id)
         response.should eq "ok"
+      end
+    end
+  end
+
+  describe ".create_discussion" do
+    context "with a target id passed" do
+      it "should create a new discussion of the target" do
+        pending("豆瓣返回 invalid_request_uri")
+        stub_post("/target/#{@target_id}/discussions").
+          with(
+            :content => { :title => @discussion_title, :content => @discussion_content },
+            :headers => { "Authorization" => "Bearer #{@access_token}" }
+          ).
+          to_return(:body => fixture("discussion_create.json"))
+
+        discussion = @client.create_discussion(@target_id)
+        discussion.title.should eq @discussion_title
+        discussion.content.should eq @discussion_content
       end
     end
   end

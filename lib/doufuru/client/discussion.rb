@@ -19,6 +19,10 @@ module Doufuru
         end
         response
       end
+
+      def create_discussion(target_id, params = {})
+        post("/target/#{target_id}/discussions", params)
+      end
     end
   end
 end
