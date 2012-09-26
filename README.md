@@ -2,6 +2,8 @@
 
 Simple Ruby wrapper for the Douban v2 API
 
+目前还是个坑，因为豆瓣的新 API 太多坑了，很多接口不是请求不到就是返回错误。
+
 ## 文档
 
 https://github.com/yesmeck/doufuru/wiki
