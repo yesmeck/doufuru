@@ -68,4 +68,14 @@ describe Doufuru::Client do
       end
     end
   end
+
+  describe ".discussion_list" do
+    context "with a target id passed" do
+      it "should return a discussion list of the target" do
+        pending("豆瓣返回 404")
+        stub_get("/target/#{@target_id}/discussions").
+          to_return(:body => fixture("discussions.json"))
+      end
+    end
+  end
 end
