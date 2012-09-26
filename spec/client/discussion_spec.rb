@@ -36,4 +36,17 @@ describe Doufuru::Client do
       end
     end
   end
+
+  describe ".delete_discussion" do
+    context "with a id passed" do
+      it "should delete the discussion" do
+        stub_delete("/discussion/#{@discussion_id}").
+          with( :headers => { "Authorization" => "Bearer #{@access_token}" }).
+          to_return(:body => "{}")
+
+        response = @client.delete_discussion(@discussion_id)
+        response.should eq "ok"
+      end
+    end
+  end
 end
