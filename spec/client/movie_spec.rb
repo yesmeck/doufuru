@@ -99,7 +99,6 @@ describe Doufuru::Client do
   describe ".update_movie_review" do
     context "with a review id passed" do
       it "should update the review" do
-        pending("豆瓣接口有问题 http://www.douban.com/group/topic/32964168/")
         review_content = "#{@review_content}！"
         stub_put("/movie/review/#{@review_id}").with(
           :content => {

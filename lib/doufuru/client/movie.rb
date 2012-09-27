@@ -23,6 +23,10 @@ module Doufuru
         post("/movie/reviews", params)
       end
 
+      def update_movie_review(review_id, params = {})
+        put("/movie/review/#{review_id}", params)
+      end
+
       def delete_movie_review(review_id, params = {})
         response = delete("/movie/review/#{review_id}", params, true)
         if response == "\"OK\""
