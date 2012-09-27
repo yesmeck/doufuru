@@ -72,7 +72,6 @@ describe Doufuru::Client do
 
   describe ".create_movie_review" do
     it "should create a movie review" do
-      pending("豆瓣接口有问题 http://www.douban.com/group/topic/32964168/")
       stub_post("/movie/reviews").with(
         :content => {
           :movie => @movie_id,
