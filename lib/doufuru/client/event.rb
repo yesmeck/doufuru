@@ -39,6 +39,14 @@ module Doufuru
         get("/loc/list", params).locs
       end
 
+      def participate_event(id, params = {})
+        response = post("/event/#{id}/participants", params, true)
+        if response == '{}'
+          response = 'ok'
+        end
+        response
+      end
+
       def delete_participated_event(event_id, params = {})
         response = delete("/event/#{event_id}/participants", params, true)
         if response == '{}'
