@@ -1,5 +1,7 @@
 # encoding: utf-8
 
+require "spec_helper"
+
 describe Doufuru::Client do
   include_context "initialize client"
 
