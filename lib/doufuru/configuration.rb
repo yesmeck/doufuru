@@ -5,11 +5,13 @@ module Doufuru
     VALID_OPTIONS_KEYS = [
       :api_version,
       :api_url,
-      :access_token
+      :access_token,
+      :api_key,
+      :api_secret
     ]
 
     API_VERSION = 2
-    API_URL = "https://api.douban.com/v2/"
+    API_URL = "https://api.douban.com/"
 
     attr_accessor(*VALID_OPTIONS_KEYS)
 

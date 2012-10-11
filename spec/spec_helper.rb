@@ -37,5 +37,11 @@ def fixture(file)
 end
 
 def douban_url(url)
-  "https://api.douban.com/v2#{url}"
+ url.sub!(/^\//, "")
+ if url =~ /^shuo/
+   url.sub!(/^shuo/, "shuo/v2")
+ else
+   url = "v2/#{url}"
+ end
+  "https://api.douban.com/#{url}"
 end

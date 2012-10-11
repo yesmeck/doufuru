@@ -19,7 +19,12 @@ module Doufuru
     end
 
     def request(method, path, params, raw)
-      path.sub!(%r{^/}, '')
+      path.sub!(/^\//, '')
+      if path =~ /^shuo/
+        path.sub!(/^shuo/, "shuo/v2")
+      else
+        path = "v2/#{path}"
+      end
       response = connection(raw).send(method) do |request|
         request.headers["Authorization"] = "Bearer #{access_token}" if oauthed?
         case method
