@@ -4,7 +4,7 @@ module Doufuru
   class Client
     module Shuo
       def create_shuo(params = {})
-        post('/shuo/statuses', params)
+        post('/shuo/statuses/', params)
       end
     end
   end

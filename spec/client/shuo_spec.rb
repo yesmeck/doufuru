@@ -16,7 +16,7 @@ describe Doufuru::Client::Shuo do
     context "with a text passed" do
       it "should create a new shuo" do
         params = { :source =>  Doufuru.api_key, :text => @text }
-        stub_post('/shuo/statuses').
+        stub_post('/shuo/statuses/').
           with(
             :content => params,
             :headers => {
