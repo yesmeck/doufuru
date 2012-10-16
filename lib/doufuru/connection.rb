@@ -13,6 +13,7 @@ module Doufuru
       }
 
       connection = Faraday.new(options) do |builder|
+        builder.request :multipart
         builder.request :url_encoded
         unless raw
           builder.use FaradayMiddleware::Mashify

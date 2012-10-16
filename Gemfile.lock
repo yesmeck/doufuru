@@ -5,6 +5,7 @@ PATH
       faraday
       faraday_middleware
       hashie
+      mime-types
 
 GEM
   remote: https://rubygems.org/
@@ -18,6 +19,7 @@ GEM
       faraday (>= 0.7.4, < 0.9)
     hashie (1.2.0)
     json (1.7.5)
+    mime-types (1.19)
     multipart-post (1.1.5)
     rake (0.9.2.2)
     rspec (2.11.0)
