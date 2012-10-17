@@ -82,4 +82,17 @@ describe Doufuru::Client::Shuo do
       end
     end
   end
+
+  describe ".shuo_comments" do
+    context "with a shuo id passed" do
+      it "should return a comments list of the shuo." do
+        shuo_id = 1008730523
+        stub_get("/shuo/statuses/#{shuo_id}/comments").
+          to_return(:body => fixture("shuo_comments.json"))
+
+        comments = @client.shuo_comments(shuo_id)
+        comments.first.id.should eq 141664345
+      end
+    end
+  end
 end
