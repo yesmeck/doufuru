@@ -23,10 +23,24 @@ describe Doufuru::Client::Shuo do
               "Authorization" => "Bearer #{@access_token}"
             }
           ).
-          to_return(:body => fixture('shuo_create.json'));
+          to_return(:body => fixture('shuo_create.json'))
         shuo = @client.create_shuo(params)
         shuo.text.should eq @text
       end
+    end
+  end
+
+  describe ".shuo_timeline" do
+    it "should return current oauthed user's timeline" do
+      stub_get('/shuo/home_timeline').
+        with(
+          :headers => {
+            "Authorization" => "Bearer #{@access_token}"
+          }
+        ).
+        to_return(:body => fixture('shuo_timeline.json'))
+        shuos = @client.shuo_timeline
+        shuos.first.id.should eq 1027895573
     end
   end
 end
