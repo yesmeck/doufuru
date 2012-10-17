@@ -1,0 +1,66 @@
+{
+    "category": null,
+    "reshared_count": 0,
+    "attachments": [],
+    "source": {},
+    "text": "",
+    "created_at": "2012-10-17 22:25:20",
+    "title": "说：",
+    "can_reply": 1,
+    "entities": {
+        "user_mentions": [],
+        "topics": [],
+        "urls": []
+    },
+    "like_count": 0,
+    "comments_count": 0,
+    "user": {
+        "uid": "coolzi",
+        "description": "",
+        "small_avatar": "http:\/\/img3.douban.com\/icon\/u1407404-33.jpg",
+        "type": "user",
+        "id": "1407404",
+        "screen_name": "彼得潘"
+    },
+    "is_follow": false,
+    "has_photo": false,
+    "reshared_status": {
+        "category": null,
+        "reshared_count": 32,
+        "attachments": [{
+            "description": "",
+            "title": "",
+            "media": [],
+            "caption": "",
+            "href": "",
+            "type": "image",
+            "properties": {}
+        }],
+        "source": {},
+        "text": "单身就一个原因，那就是丑。。。囧",
+        "created_at": "2012-10-17 22:19:01",
+        "title": "说：",
+        "can_reply": 1,
+        "entities": {
+            "user_mentions": [],
+            "topics": [],
+            "urls": []
+        },
+        "like_count": 14,
+        "comments_count": 17,
+        "user": {
+            "uid": "tjz230",
+            "description": "",
+            "small_avatar": "http:\/\/img3.douban.com\/icon\/u1005928-127.jpg",
+            "type": "user",
+            "id": "1005928",
+            "screen_name": "影志再也不会"
+        },
+        "is_follow": false,
+        "has_photo": true,
+        "type": null,
+        "id": 1027857816
+    },
+    "type": "text",
+    "id": 1027862406
+}

@@ -25,6 +25,10 @@ module Doufuru
       def user_timeline(user_id, params = {})
         get("/shuo/user_timeline/#{user_id}", params)
       end
+
+      def shuo(shuo_id, params = {})
+        get("/shuo/statuses/#{shuo_id}", params)
+      end
     end
   end
 end

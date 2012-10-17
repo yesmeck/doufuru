@@ -10,6 +10,7 @@ describe Doufuru::Client::Shuo do
       c.api_key = 'myfakeapikey'
     end
     @text = "测试"
+    @shuo_id = 1027862406
   end
 
   describe ".create_shuo" do
@@ -51,6 +52,16 @@ describe Doufuru::Client::Shuo do
         stub_get("/shuo/user_timeline/#{user_id}").to_return(:body => fixture("user_timeline.json"))
         shuos = @client.user_timeline(user_id)
         shuos.first.id.should eq 1027862406
+      end
+    end
+  end
+
+  describe ".shuo" do
+    context "with a shuo id passed" do
+      it "should return the shuo" do
+        stub_get("/shuo/statuses/#{@shuo_id}").to_return(:body => fixture("shuo.json"))
+        shuo = @client.shuo(@shuo_id)
+        shuo.id.should eq @shuo_id
       end
     end
   end
