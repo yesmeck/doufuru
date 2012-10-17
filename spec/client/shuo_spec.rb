@@ -65,4 +65,21 @@ describe Doufuru::Client::Shuo do
       end
     end
   end
+
+  describe ".delete_shuos" do
+    context "with a shuo id passed" do
+      it "should delete the shuo" do
+        stub_delete("/shuo/statuses/#{@shuo_id}").
+        with(
+          :headers => {
+            "Authorization" => "Bearer #{@access_token}"
+          }
+        ).
+        to_return(:body => fixture('shuo.json'))
+
+        shuo = @client.delete_shuo(@shuo_id)
+        shuo.id.should eq @shuo_id
+      end
+    end
+  end
 end

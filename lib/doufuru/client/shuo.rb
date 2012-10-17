@@ -29,6 +29,10 @@ module Doufuru
       def shuo(shuo_id, params = {})
         get("/shuo/statuses/#{shuo_id}", params)
       end
+
+      def delete_shuo(shuo_id, params = {})
+        delete("/shuo/statuses/#{shuo_id}", params)
+      end
     end
   end
 end
