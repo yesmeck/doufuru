@@ -107,10 +107,23 @@ describe Doufuru::Client::Shuo do
             "Authorization" => "Bearer #{@access_token}"
           }
         ).
-        to_return(:body => fixture('shuo_comment_create.json'))
+        to_return(:body => fixture('shuo_comment.json'))
 
       comment = @client.create_shuo_comment(shuo_id, params)
       comment.id.should eq 144731746
+    end
+  end
+
+  describe ".shuo_comment" do
+    context "with a comment id passed" do
+      it "should return the comment" do
+        comment_id = 144731746
+        stub_get("/shuo/statuses/comment/#{comment_id}").
+          to_return(:body => fixture("shuo_comment.json"))
+
+        comment = @client.shuo_comment(comment_id)
+        comment.id.should eq comment_id
+      end
     end
   end
 end

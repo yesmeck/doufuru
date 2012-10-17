@@ -41,6 +41,10 @@ module Doufuru
       def create_shuo_comment(shuo_id, params = {})
         post("/shuo/statuses/#{shuo_id}/comments", params)
       end
+
+      def shuo_comment(comment_id, params = {})
+        get("/shuo/statuses/comment/#{comment_id}", params)
+      end
     end
   end
 end
