@@ -6,9 +6,7 @@ require 'parts'
 
 class Object
   def require(file)
-    if file != "parts"
-      super
-    end
+    super if file != "parts"
   end
 end
 
