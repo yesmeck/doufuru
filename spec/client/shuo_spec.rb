@@ -30,7 +30,7 @@ describe Doufuru::Client::Shuo do
     end
   end
 
-  describe ".shuo_timeline" do
+  describe ".timeline" do
     it "should return current oauthed user's timeline" do
       stub_get('/shuo/home_timeline').
         with(
@@ -39,7 +39,7 @@ describe Doufuru::Client::Shuo do
           }
         ).
         to_return(:body => fixture('shuo_timeline.json'))
-        shuos = @client.shuo_timeline
+        shuos = @client.timeline
         shuos.first.id.should eq 1027895573
     end
   end

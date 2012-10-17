@@ -18,7 +18,7 @@ module Doufuru
         post('/shuo/statuses/', params)
       end
 
-      def shuo_timeline(params = {})
+      def timeline(params = {})
         get('/shuo/home_timeline', params)
       end
     end
