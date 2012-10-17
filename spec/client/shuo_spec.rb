@@ -126,4 +126,22 @@ describe Doufuru::Client::Shuo do
       end
     end
   end
+
+  describe ".delete_shuo_comment" do
+    context "with a comment id passed" do
+      it "should delete and return the comment" do
+        comment_id = 144731746
+        stub_delete("/shuo/statuses/comment/#{comment_id}").
+          with(
+            :headers => {
+              "Authorization" => "Bearer #{@access_token}"
+            }
+          ).
+          to_return(:body => fixture("shuo_comment.json"))
+
+        comment = @client.delete_shuo_comment(comment_id)
+        comment.id.should eq comment_id
+      end
+    end
+  end
 end

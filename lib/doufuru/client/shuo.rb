@@ -45,6 +45,10 @@ module Doufuru
       def shuo_comment(comment_id, params = {})
         get("/shuo/statuses/comment/#{comment_id}", params)
       end
+
+      def delete_shuo_comment(comment_id, params = {})
+        delete("/shuo/statuses/comment/#{comment_id}", params)
+      end
     end
   end
 end
