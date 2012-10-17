@@ -95,4 +95,22 @@ describe Doufuru::Client::Shuo do
       end
     end
   end
+
+  describe ".create_shuo_comment" do
+    it "should create a shuo comment." do
+      shuo_id = 1008730523
+      params = { :text => "test" }
+      stub_post("/shuo/statuses/#{shuo_id}/comments").
+        with(
+          :content => params,
+          :headers => {
+            "Authorization" => "Bearer #{@access_token}"
+          }
+        ).
+        to_return(:body => fixture('shuo_comment_create.json'))
+
+      comment = @client.create_shuo_comment(shuo_id, params)
+      comment.id.should eq 144731746
+    end
+  end
 end
