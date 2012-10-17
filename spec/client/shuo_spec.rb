@@ -43,4 +43,15 @@ describe Doufuru::Client::Shuo do
         shuos.first.id.should eq 1027895573
     end
   end
+
+  describe ".user_timeline" do
+    context "with a user id or screename passed" do
+      it "should return the user's timeline." do
+        user_id = "coolzi"
+        stub_get("/shuo/user_timeline/#{user_id}").to_return(:body => fixture("user_timeline.json"))
+        shuos = @client.user_timeline(user_id)
+        shuos.first.id.should eq 1027862406
+      end
+    end
+  end
 end
