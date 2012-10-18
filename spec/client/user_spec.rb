@@ -61,4 +61,12 @@ describe Doufuru::Client::User do
       end
     end
   end
+
+  describe ".user_suggestions" do
+    context "with a user id passed" do
+      it "should return users that current oauthed user following and followed the user." do
+        pending("豆瓣返回 invalid_request_uri，文档地址也是错的。")
+      end
+    end
+  end
 end
