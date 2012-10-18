@@ -65,6 +65,10 @@ module Doufuru
       def like_shuo(shuo_id, params = {})
         post("/shuo/statuses/#{shuo_id}/like", params)
       end
+
+      def unlike_shuo(shuo_id, params = {})
+        delete("/shuo/statuses/#{shuo_id}/like", params)
+      end
     end
   end
 end

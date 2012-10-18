@@ -219,4 +219,20 @@ describe Doufuru::Client::Shuo do
       end
     end
   end
+
+  describe ".unlike_shuo" do
+    context "with a shuo id passed" do
+      it "should unlike the shuo." do
+        stub_delete("/shuo/statuses/#{@shuo_id}/like").
+          with(
+            :headers => {
+              "Authorization" => "Bearer #{@access_token}"
+            }
+          ).
+          to_return(:body => fixture("shuo.json"))
+        shuo = @client.unlike_shuo(@shuo_id)
+        shuo.id.should eq @shuo_id
+      end
+    end
+  end
 end
