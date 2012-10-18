@@ -157,4 +157,20 @@ describe Doufuru::Client::Shuo do
       end
     end
   end
+
+  describe ".reshare_shuo" do
+    context "with a shuo id passed" do
+      it "should reshare the shuo." do
+        stub_post("/shuo/statuses/#{@shuo_id}/reshare").
+          with(
+            :headers => {
+              "Authorization" => "Bearer #{@access_token}"
+            }
+          ).
+          to_return(:body => fixture("shuo.json"))
+        shuo = @client.reshare_shuo(@shuo_id)
+        shuo.id.should eq @shuo_id
+      end
+    end
+  end
 end
