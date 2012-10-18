@@ -61,6 +61,10 @@ module Doufuru
       def shuo_like_info(shuo_id, params = {})
         get("/shuo/statuses/#{shuo_id}/like", params)
       end
+
+      def like_shuo(shuo_id, params = {})
+        post("/shuo/statuses/#{shuo_id}/like", params)
+      end
     end
   end
 end
