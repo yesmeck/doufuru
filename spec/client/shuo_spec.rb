@@ -173,4 +173,34 @@ describe Doufuru::Client::Shuo do
       end
     end
   end
+
+  describe ".unreshare_shuo" do
+    context "with a shuo id passed" do
+      it "should unreshare the shuo." do
+        pending("豆瓣返回 null，且不能正确取消转播")
+        stub_delete("/shuo/statuses/#{@shuo_id}/reshare").
+          with(
+            :headers => {
+              "Authorization" => "Bearer #{@access_token}"
+            }
+          ).
+          to_return(:body => fixture("shuo.json"))
+        shuo = @client.unreshare_shuo(@shuo_id)
+        shuo.id.should eq @shuo_id
+      end
+    end
+  end
+
+  describe ".shuo_like_info" do
+    context "with a shuo id passed" do
+      it "should like info of the shuo." do
+        shuo_id = 1008730523
+        stub_get("/shuo/statuses/#{shuo_id}/like").
+          to_return(:body => fixture("shuo_like.json"))
+
+        like_info = @client.shuo_like_info(shuo_id)
+        like_info.first.id.should eq "3176599"
+      end
+    end
+  end
 end

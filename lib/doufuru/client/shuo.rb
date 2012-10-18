@@ -57,6 +57,10 @@ module Doufuru
       def reshare_shuo(shuo_id, params = {})
         post("/shuo/statuses/#{shuo_id}/reshare", params)
       end
+
+      def shuo_like_info(shuo_id, params = {})
+        get("/shuo/statuses/#{shuo_id}/like", params)
+      end
     end
   end
 end
