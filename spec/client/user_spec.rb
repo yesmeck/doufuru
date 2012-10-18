@@ -53,4 +53,12 @@ describe Doufuru::Client::User do
       end
     end
   end
+
+  describe ".user_follow_in_common" do
+    context "with a user id passed" do
+      it "should return users that the user and current oauthed user followed in common." do
+        pending("豆瓣返回 invalid_request_uri")
+      end
+    end
+  end
 end
