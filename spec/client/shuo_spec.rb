@@ -145,14 +145,14 @@ describe Doufuru::Client::Shuo do
     end
   end
 
-  describe ".shuo_reshare" do
+  describe ".shuo_reshare_info" do
     context "with a shuo id passed" do
       it "should reshare list of the shuo" do
         shuo_id = 1008730523
         stub_get("/shuo/statuses/#{shuo_id}/reshare").
           to_return(:body => fixture("shuo_reshare.json"))
 
-        reshare = @client.shuo_reshare(shuo_id)
+        reshare = @client.shuo_reshare_info(shuo_id)
         reshare.first.uid.should eq "2085950"
       end
     end

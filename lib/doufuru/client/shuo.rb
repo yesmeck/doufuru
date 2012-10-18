@@ -50,7 +50,7 @@ module Doufuru
         delete("/shuo/statuses/comment/#{comment_id}", params)
       end
 
-      def shuo_reshare(shuo_id, params = {})
+      def shuo_reshare_info(shuo_id, params = {})
         get("/shuo/statuses/#{shuo_id}/reshare", params)
       end
 
