@@ -138,8 +138,8 @@ describe Doufuru::Client do
 
   describe ".movie_user_tags" do
     context "with a user id passed" do
-      uid = 1407404
       it "should return oauthed user's all movie tahs." do
+        uid = 1407404
         stub_get("/movie/user_tags/#{uid}").
           to_return(:body => fixture("movie_user_tags.json"))
 

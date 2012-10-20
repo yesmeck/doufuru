@@ -26,6 +26,10 @@ module Doufuru
         end
         response
       end
+
+      def music_user_tags(uid, params = {})
+        get("/music/user_tags/#{uid}", params).tags
+      end
     end
   end
 end
