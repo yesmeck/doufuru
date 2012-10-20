@@ -148,4 +148,16 @@ describe Doufuru::Client do
       end
     end
   end
+
+  describe ".book_user_collections" do
+    context "with a user id passed" do
+      it "should return the user's book collections." do
+        stub_get("/book/user/#{@uid}/collections").
+          to_return(:body => fixture("book_user_collections.json"))
+
+        books = @client.book_user_collections(@uid)
+        books.first.id.should eq 592321300
+      end
+    end
+  end
 end

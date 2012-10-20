@@ -38,6 +38,10 @@ module Doufuru
       def book_user_tags(uid, params = {})
         get("/book/user/#{uid}/tags", params).tags
       end
+
+      def book_user_collections(uid, params = {})
+        get("/book/user/#{uid}/collections", params).collections
+      end
     end
   end
 end

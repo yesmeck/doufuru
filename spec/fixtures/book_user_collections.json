@@ -1,0 +1,1142 @@
+{
+    "count": 20,
+    "start": 0,
+    "total": 243,
+    "collections": [{
+        "status": "wish",
+        "updated": "2012-10-17 01:10:09",
+        "book": {
+            "publisher": "人民邮电",
+            "subtitle": "SQL反模式",
+            "isbn10": "711526127X",
+            "isbn13": "9787115261274",
+            "title": "SQL反模式",
+            "url": "http:\/\/api.douban.com\/v2\/book\/6800774",
+            "origin_title": "SQL Antipatterns: Avoiding the Pitfalls of Database Programming",
+            "image": "http:\/\/img3.douban.com\/mpic\/s8846357.jpg",
+            "alt_title": "SQL Antipatterns: Avoiding the Pitfalls of Database Programming",
+            "binding": "平装",
+            "author_intro": "Bill Karwin作为软件工程师、咨询师和管理者，他在20年间开发并支持了各种各样的应用、程序库以及服务器，如PHP 5的Zend Framework, Interbase关系型数据库，以及Enhydra Java应用服务器等。他一直无私地分享他的专业知识，来帮助其他程序员提高效率、获得成功。他曾以各种方式回答了上千个关于SQL的疑问，其中不乏一些 严重但又经常被忽略的问题。",
+            "pages": "253",
+            "price": "59.00元",
+            "author": ["卡尔文"],
+            "translator": ["谭振林", "Push Chen"],
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s8846357.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s8846357.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s8846357.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/6800774\/",
+            "pubdate": "2011-9",
+            "id": "6800774",
+            "tags": [{
+                "count": 141,
+                "name": "SQL"
+            }, {
+                "count": 116,
+                "name": "数据库"
+            }, {
+                "count": 38,
+                "name": "数据库设计"
+            }, {
+                "count": 23,
+                "name": "计算机"
+            }, {
+                "count": 17,
+                "name": "编程"
+            }, {
+                "count": 14,
+                "name": "DataBase"
+            }, {
+                "count": 11,
+                "name": "软件开发"
+            }, {
+                "count": 9,
+                "name": "计算机科学"
+            }]
+        },
+        "user_id": "1407404",
+        "book_id": "6800774",
+        "id": 592321300
+    }, {
+        "status": "wish",
+        "updated": "2012-10-16 22:19:30",
+        "book": {
+            "publisher": "人民邮电出版社",
+            "subtitle": "权威指南",
+            "isbn10": "7115281483",
+            "isbn13": "9787115281487",
+            "title": "HTTP权威指南",
+            "url": "http:\/\/api.douban.com\/v2\/book\/10746113",
+            "origin_title": "HTTP: The Definitive Guide",
+            "image": "http:\/\/img5.douban.com\/mpic\/s11154909.jpg",
+            "alt_title": "HTTP: The Definitive Guide",
+            "binding": "Paperback",
+            "author_intro": "David Gourley是Endeca的首席技术官（Chief Technology Officer），负责Endeca产品的研究及开发。Endeca开发的因特网及内部网络信息访问解决方案为企业级数据的导航及研究提供了一些新的方式。在到Endeca工作之前，David是Inktomi基础工程组的一员，他在那儿帮助开发了Inktomi的因特网搜索数据库，是Inktomi的Web缓存产品的主要开发者。\nDavid在加州大学伯克利分校获得了计算机科学的学士学位，还拥有Web技术方面的几项专利。\nBrian Totty最近出任了Inktomi公司（这是1996年他参与建立的一家公司）研发部副总裁，在公司中他负责Web缓存、流媒体及因特网搜索技术的研发工作。他曾是Silicon Graphics公司的一名科学家，他在那儿为高性能网络和超级计算机系统设计软件并对其进行优化。在那之前，他是苹果计算机公司高级技术组的一名工程师。\nBrian在伊利诺伊大学Urbana-Champaign分校获得了计算机科学的博士学位，在MIT获得了计算机科学及电子工程的学士学位，在那里他获得了计算机系统研究的Organick奖。他还为加州大学扩展系统开发并讲授了一些屡获殊荣的因特网技术方面的课程。\nMarjorie Sayer在Inktomi公司负责编写Web缓存方面的软件。在加州大学伯克利分校获得了数学硕士和博士学位之后，一直致力于数学课程的改革。从1990年开始致力于能量资源管理、并行系统软件、电话和网络方面的写作。\nSailu Reddy目前在Inktomi公司负责嵌入式的性能增强型HTTP 代理的开发。Sailu从事复杂软件系统的开发已经有12年了，从1995年开始深入Web架构的研发工作。他是Netscape第一台Web服务器、Web 代理产品，以及后面几代产品的核心工程师。他具备HTTP应用程序、数据压缩技术、数据库引擎以及合作管理等方面的技术经验。Sailu在亚里桑那大学获得了信息系统的硕士学位并握有Web技术方面的多项专利。\nAnshu Aggarwal是Inktomi公司的工程总监。他领导着Inktomi公司Web缓存产品的协议处理工程组，从1997年就开始参与Inktomi的Web技术设计工作。Anshu在科罗拉多大学Boulder分校获得了计算机科学的硕士和博士学位，从事分布式多处理器的内存一致性技术研究。他还拥有电子工程的硕士和学士学位。Anshu撰写了多篇技术论文，还拥有两项专利。",
+            "pages": "720",
+            "price": "109.00元",
+            "author": ["David Gourley", "Brian Totty"],
+            "translator": ["陈涓", "赵振平"],
+            "images": {
+                "small": "http:\/\/img5.douban.com\/spic\/s11154909.jpg",
+                "large": "http:\/\/img5.douban.com\/lpic\/s11154909.jpg",
+                "medium": "http:\/\/img5.douban.com\/mpic\/s11154909.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/10746113\/",
+            "pubdate": "2012-8",
+            "id": "10746113",
+            "tags": [{
+                "count": 525,
+                "name": "HTTP"
+            }, {
+                "count": 234,
+                "name": "网络"
+            }, {
+                "count": 188,
+                "name": "计算机"
+            }, {
+                "count": 147,
+                "name": "协议"
+            }, {
+                "count": 145,
+                "name": "互联网"
+            }, {
+                "count": 110,
+                "name": "web开发"
+            }, {
+                "count": 60,
+                "name": "基础理论"
+            }, {
+                "count": 53,
+                "name": "计算机科学"
+            }]
+        },
+        "user_id": "1407404",
+        "book_id": "10746113",
+        "id": 592260317
+    }, {
+        "status": "read",
+        "updated": "2012-10-08 00:19:30",
+        "book": {
+            "publisher": "作家出版社",
+            "subtitle": "",
+            "isbn10": "7506330156",
+            "isbn13": "9787506330152",
+            "title": "借我一生",
+            "url": "http:\/\/api.douban.com\/v2\/book\/1049215",
+            "origin_title": "",
+            "image": "http:\/\/img3.douban.com\/mpic\/s1042736.jpg",
+            "alt_title": "",
+            "binding": "平装",
+            "author_intro": "余秋雨，一九四六年生，浙江余姚人。在家乡读完小学后到上海读中学和大学，大学毕业后留校任教至今。在海内外出版过史论专著多部，曾被授予“国家级突出贡献专家”、“上海市十大高教精英”等荣誉称号。做过几年学院院长，辞职后潜心写作，在繁多的头衔中比较重视上海市写作学会一职，因为这个学会由全上海各大学的写作教授们组成，专门研究“写作”究竟是怎么回事。",
+            "pages": "617",
+            "price": "42.00元",
+            "author": ["余秋雨"],
+            "translator": [],
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s1042736.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s1042736.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s1042736.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/1049215\/",
+            "pubdate": "2004-08",
+            "id": "1049215",
+            "tags": [{
+                "count": 2086,
+                "name": "余秋雨"
+            }, {
+                "count": 777,
+                "name": "借我一生"
+            }, {
+                "count": 731,
+                "name": "传记"
+            }, {
+                "count": 564,
+                "name": "散文"
+            }, {
+                "count": 394,
+                "name": "回忆"
+            }, {
+                "count": 315,
+                "name": "中国文学"
+            }, {
+                "count": 192,
+                "name": "文学"
+            }, {
+                "count": 179,
+                "name": "散文随笔"
+            }]
+        },
+        "user_id": "1407404",
+        "book_id": "1049215",
+        "id": 588835959
+    }, {
+        "status": "read",
+        "updated": "2012-10-08 00:19:11",
+        "book": {
+            "publisher": "东方出版中心",
+            "subtitle": "",
+            "isbn10": "780627698X",
+            "isbn13": "9787806276983",
+            "title": "文化苦旅",
+            "url": "http:\/\/api.douban.com\/v2\/book\/1050339",
+            "origin_title": "",
+            "image": "http:\/\/img1.douban.com\/mpic\/s2166670.jpg",
+            "alt_title": "",
+            "binding": "平装",
+            "author_intro": "余秋雨，1946年生，汉族，浙江人。文化史学家、艺术学教授、博士生导师。现任上海戏剧学院教授上海写作学会会长。十余年来越野历险万公里，实地考察了中华文化在内的人类各大文明的兴衰脉络，沿途写下了《文化苦旅》、《山居笔记》、《霜冷长河》、《千年一叹》、《行者无疆》等著作。这些著作出版后，一直位居全球华文书排行榜前列。",
+            "pages": "376",
+            "price": "22.00元",
+            "author": ["余秋雨"],
+            "translator": [],
+            "images": {
+                "small": "http:\/\/img1.douban.com\/spic\/s2166670.jpg",
+                "large": "http:\/\/img1.douban.com\/lpic\/s2166670.jpg",
+                "medium": "http:\/\/img1.douban.com\/mpic\/s2166670.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/1050339\/",
+            "pubdate": "2001-4",
+            "id": "1050339",
+            "tags": [{
+                "count": 10786,
+                "name": "余秋雨"
+            }, {
+                "count": 6498,
+                "name": "散文"
+            }, {
+                "count": 4186,
+                "name": "文化苦旅"
+            }, {
+                "count": 2651,
+                "name": "随笔"
+            }, {
+                "count": 2342,
+                "name": "文化"
+            }, {
+                "count": 1926,
+                "name": "中国文学"
+            }, {
+                "count": 1855,
+                "name": "游记"
+            }, {
+                "count": 1267,
+                "name": "旅行"
+            }]
+        },
+        "user_id": "1407404",
+        "book_id": "1050339",
+        "id": 588835861
+    }, {
+        "status": "wish",
+        "updated": "2012-09-29 08:37:43",
+        "book": {
+            "publisher": "Apress",
+            "subtitle": "Conquering the Command Line",
+            "isbn10": "1590593766",
+            "isbn13": "9781590593769",
+            "title": "From Bash to Z Shell",
+            "url": "http:\/\/api.douban.com\/v2\/book\/2579543",
+            "origin_title": "",
+            "image": "http:\/\/img5.douban.com\/mpic\/s3631689.jpg",
+            "alt_title": "",
+            "binding": "Pap",
+            "author_intro": "",
+            "pages": "472",
+            "price": "$34.99",
+            "author": ["Oliver Kiddle", "Jerry Peek", "Peter Stephenson"],
+            "translator": [],
+            "images": {
+                "small": "http:\/\/img5.douban.com\/spic\/s3631689.jpg",
+                "large": "http:\/\/img5.douban.com\/lpic\/s3631689.jpg",
+                "medium": "http:\/\/img5.douban.com\/mpic\/s3631689.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/2579543\/",
+            "pubdate": "November 15, 2004",
+            "id": "2579543",
+            "tags": [{
+                "count": 8,
+                "name": "zsh"
+            }, {
+                "count": 5,
+                "name": "bash"
+            }, {
+                "count": 4,
+                "name": "shell"
+            }, {
+                "count": 3,
+                "name": "Linux"
+            }, {
+                "count": 2,
+                "name": "计算机"
+            }, {
+                "count": 2,
+                "name": "Shell"
+            }, {
+                "count": 2,
+                "name": "Linux\/Unix"
+            }, {
+                "count": 1,
+                "name": "ce"
+            }]
+        },
+        "user_id": "1407404",
+        "book_id": "2579543",
+        "id": 585386859
+    }, {
+        "status": "read",
+        "comment": "还在看，但是我忍不住来打分了。",
+        "updated": "2012-09-27 01:50:22",
+        "book": {
+            "publisher": "Pragmatic Bookshelf",
+            "subtitle": "Behaviour Driven Development with Rspec, Cucumber, and Friends",
+            "isbn10": "1934356379",
+            "isbn13": "9781934356371",
+            "title": "The RSpec Book",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3603693",
+            "origin_title": "",
+            "image": "http:\/\/img5.douban.com\/mpic\/s4246159.jpg",
+            "alt_title": "",
+            "binding": "Paperback",
+            "author_intro": "David Chelimsky is the lead developer\/maintainer of RSpec. He has been developing software for nearly a decade, and exploring TDD for over five of those years. After three years training and mentoring agile teams at Object Mentor, David currently leads the software development team at Articulated Man, a Chicago based, interactive design firm. In his spare time, David likes to play guitar, travel, and speak something resembling Portuguese.\nDave Astels is a Software Engineer at Engine Yard and has been involved with software and computing for over 25 years, recently having spent several years working exclusively with Ruby and Rails. Dave wrote the article that prompted Steven Baker to start the RSpec project.\nBryan Helmkamp is the lead maintainer of Webrat, a library to implement acceptance testing of a Ruby web application in a more expressive and maintainable way. Following three years of Ruby on Rails consulting, Bryan is now a software engineer at Weplay, a New York City-based startup building online tools for the youth sports community.\nDan North works with technology consultancy ThoughtWorks where he delivers software, coaches development teams, and hangs out at conferences. In 2003 and 2004 he developed the idea of Behaviour Driven Development and delights in the community that has grown up around RSpec and the enthusiasm and dedication of their core contributors.\nZach Dennis is a lead developer and co-founder of Mutually Human Software, a Grand Rapids, MI based web development consultancy. He has been enjoying Ruby for nearly 7 years and has contributed to several projects such as Ruby's standard library documentation, Ruby on Rails, and RSpec. In his spare time, Zach loves spending time with his wife, reading, listening to music, and running continuousthinking.com.\nAslak Hellesoy is the Chief Scientist of BEKK Consulting, a Norwegian business and technology consulting firm. In 2003, after seven years of Java programming, he fell in love with Ruby. He has contributed to dozens of open source projects and is the founder of the Cucumber project. Aslak likes to cook, ski, and travel.",
+            "pages": "448",
+            "price": "USD 42.95",
+            "author": ["David Chelimsky", "Dave Astels", "Bryan Helmkamp", "Dan North", "Zach Dennis", "Aslak Hellesoy"],
+            "translator": [],
+            "images": {
+                "small": "http:\/\/img5.douban.com\/spic\/s4246159.jpg",
+                "large": "http:\/\/img5.douban.com\/lpic\/s4246159.jpg",
+                "medium": "http:\/\/img5.douban.com\/mpic\/s4246159.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3603693\/",
+            "pubdate": "2010-04-30",
+            "id": "3603693",
+            "tags": [{
+                "count": 47,
+                "name": "RSpec"
+            }, {
+                "count": 32,
+                "name": "BDD"
+            }, {
+                "count": 24,
+                "name": "ruby"
+            }, {
+                "count": 18,
+                "name": "Cucumber"
+            }, {
+                "count": 17,
+                "name": "测试"
+            }, {
+                "count": 16,
+                "name": "Rails"
+            }, {
+                "count": 13,
+                "name": "RoR"
+            }, {
+                "count": 6,
+                "name": "编程"
+            }]
+        },
+        "user_id": "1407404",
+        "book_id": "3603693",
+        "rating": {
+            "max": 5,
+            "value": "5",
+            "min": 0
+        },
+        "id": 575592665
+    }, {
+        "status": "wish",
+        "updated": "2012-09-25 12:17:06",
+        "book": {
+            "publisher": "Wiley",
+            "subtitle": "Reverse Engineering Beauty",
+            "isbn10": "1119998956",
+            "isbn13": "9781119998952",
+            "title": "Design for Hackers",
+            "url": "http:\/\/api.douban.com\/v2\/book\/6727454",
+            "origin_title": "",
+            "image": "http:\/\/img1.douban.com\/mpic\/s6781711.jpg",
+            "alt_title": "",
+            "binding": "Paperback",
+            "author_intro": "",
+            "pages": "352",
+            "price": "USD 39.99",
+            "author": ["David Kadavy"],
+            "translator": [],
+            "images": {
+                "small": "http:\/\/img1.douban.com\/spic\/s6781711.jpg",
+                "large": "http:\/\/img1.douban.com\/lpic\/s6781711.jpg",
+                "medium": "http:\/\/img1.douban.com\/mpic\/s6781711.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/6727454\/",
+            "pubdate": "2011-10-18",
+            "id": "6727454",
+            "tags": [{
+                "count": 25,
+                "name": "design"
+            }, {
+                "count": 14,
+                "name": "hacker"
+            }, {
+                "count": 9,
+                "name": "设计"
+            }, {
+                "count": 6,
+                "name": "交互设计"
+            }, {
+                "count": 5,
+                "name": "用户体验"
+            }, {
+                "count": 3,
+                "name": "编程"
+            }, {
+                "count": 2,
+                "name": "hack"
+            }, {
+                "count": 2,
+                "name": "计算机"
+            }]
+        },
+        "user_id": "1407404",
+        "book_id": "6727454",
+        "id": 584002656
+    }, {
+        "status": "read",
+        "rating": {
+            "max": 5,
+            "value": "5",
+            "min": 0
+        },
+        "updated": "2012-09-21 13:07:56",
+        "book": {
+            "publisher": "上海三联书店",
+            "subtitle": "纳粹德国与民主德国时期的宣传活动",
+            "isbn10": "7542637908",
+            "isbn13": "9787542637901",
+            "title": "弯曲的脊梁",
+            "url": "http:\/\/api.douban.com\/v2\/book\/10546119",
+            "origin_title": "",
+            "image": "http:\/\/img3.douban.com\/mpic\/s9089357.jpg",
+            "alt_title": "",
+            "binding": "平装",
+            "author_intro": "作者介绍：\n兰德尔·彼特沃克（Randall L. Bytwerk） 美国密歇根州加尔文学院（大急流城）传播学教授。除本书外还著有《国家社会主义的演讲里程碑》（Landmark Speeches of National Socialism）、《尤利乌斯•施特莱彻》（获得全美传播学会50周年纪念奖）。创办并主持“德国宣传档案”网站(German Propaganda Archive) 网站提供大量并不断更新的有关纳粹和东德宣传领域的英译资料和影像。\n彼特沃克最早的兴趣是生物学，后来迅速转向德国、历史、哲学。刚巧因为一位老师在找懂德语且对德国宣传感兴趣的学生，而转向了对德国宣传领域的研究，全部学术生涯致力于此。对纳粹宣传感兴趣是因为它极权主义的观念模式无所不包。他认为纳粹主义与其说是一个简单的政治立场，不如说更像一种宗教。\n“就像神学家凯波尔（Abraham Kuyper）认为每一方寸土地都属耶稣，纳粹党员在本质上也持有一样的观点——世界上和生活上的方方面面都应该取决于纳粹的意识形态……没有什么是在党的视野之外的。”\n\n译者介绍：\n张洪  浙江大学国际政治、法学学士，华东师范大学政治学、法学硕士。",
+            "pages": "278",
+            "price": "38.00元",
+            "author": ["(美) 彼特沃克"],
+            "translator": ["张洪"],
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s9089357.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s9089357.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s9089357.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/10546119\/",
+            "pubdate": "2012-6",
+            "id": "10546119",
+            "tags": [{
+                "count": 359,
+                "name": "极权主义"
+            }, {
+                "count": 261,
+                "name": "德国"
+            }, {
+                "count": 213,
+                "name": "社会学"
+            }, {
+                "count": 156,
+                "name": "历史"
+            }, {
+                "count": 140,
+                "name": "政治学"
+            }, {
+                "count": 98,
+                "name": "政治"
+            }, {
+                "count": 82,
+                "name": "宣传学"
+            }, {
+                "count": 55,
+                "name": "彼特沃克"
+            }]
+        },
+        "user_id": "1407404",
+        "book_id": "10546119",
+        "id": 582460293
+    }, {
+        "status": "read",
+        "rating": {
+            "max": 5,
+            "value": "3",
+            "min": 0
+        },
+        "updated": "2012-09-21 02:10:24",
+        "book": {
+            "publisher": "湖北人民出版社",
+            "subtitle": "",
+            "isbn10": "7216041283",
+            "isbn13": "9787216041287",
+            "title": "十一位牺牲在建国前的中共无衔军事家",
+            "url": "http:\/\/api.douban.com\/v2\/book\/1000001",
+            "origin_title": "",
+            "image": "http:\/\/img3.douban.com\/mpic\/s1727038.jpg",
+            "alt_title": "",
+            "binding": "平装",
+            "author_intro": "",
+            "pages": "403",
+            "price": "26.00元",
+            "author": ["少华"],
+            "translator": [],
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s1727038.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s1727038.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s1727038.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/1000001\/",
+            "pubdate": "2005-01",
+            "id": "1000001",
+            "tags": [{
+                "count": 14,
+                "name": "军事"
+            }, {
+                "count": 7,
+                "name": "豆瓣第一个条目"
+            }, {
+                "count": 7,
+                "name": "第一"
+            }, {
+                "count": 3,
+                "name": "传记"
+            }, {
+                "count": 2,
+                "name": "中共无衔军事家"
+            }, {
+                "count": 2,
+                "name": "中国"
+            }, {
+                "count": 2,
+                "name": "历史"
+            }, {
+                "count": 1,
+                "name": "一本见证了豆瓣诞生的书"
+            }]
+        },
+        "user_id": "1407404",
+        "book_id": "1000001",
+        "id": 582367864
+    }, {
+        "status": "wish",
+        "updated": "2012-09-09 11:12:40",
+        "book": {
+            "publisher": "Pragmatic Bookshelf",
+            "subtitle": "",
+            "isbn10": "1934356549",
+            "isbn13": "9781934356548",
+            "title": "Agile Web Development with Rails",
+            "url": "http:\/\/api.douban.com\/v2\/book\/4774858",
+            "origin_title": "",
+            "image": "http:\/\/img1.douban.com\/mpic\/s4486293.jpg",
+            "alt_title": "",
+            "binding": "Paperback",
+            "author_intro": "Sam Ruby is a prominent software developer who is a co-chair of the W3C HTML Working Group and has made significant contributions to many of the Apache Software Foundation's open source software projects. He is a Senior Technical Staff Member in the Emerging Technologies Group of IBM.\nDave Thomas, as one of the authors of the Agile Manifesto, understands agility. As the author of \"Programming Ruby,\" he understands Ruby. And, as an active Rails developer, he knows Rails.\nDavid Heinemeier Hansson is the creator of the Rails framework.",
+            "pages": "480",
+            "price": "USD 43.95",
+            "author": ["Sam Ruby", "Dave Thomas", "David Heinemeier Hansson"],
+            "translator": [],
+            "images": {
+                "small": "http:\/\/img1.douban.com\/spic\/s4486293.jpg",
+                "large": "http:\/\/img1.douban.com\/lpic\/s4486293.jpg",
+                "medium": "http:\/\/img1.douban.com\/mpic\/s4486293.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/4774858\/",
+            "pubdate": "2011-3-31",
+            "id": "4774858",
+            "tags": [{
+                "count": 37,
+                "name": "rails"
+            }, {
+                "count": 32,
+                "name": "Ruby"
+            }, {
+                "count": 24,
+                "name": "ROR"
+            }, {
+                "count": 14,
+                "name": "Web"
+            }, {
+                "count": 13,
+                "name": "Programming"
+            }, {
+                "count": 13,
+                "name": "Agile"
+            }, {
+                "count": 7,
+                "name": "敏捷开发"
+            }, {
+                "count": 5,
+                "name": "互联网"
+            }]
+        },
+        "user_id": "1407404",
+        "book_id": "4774858",
+        "id": 570366636
+    }, {
+        "status": "read",
+        "rating": {
+            "max": 5,
+            "value": "4",
+            "min": 0
+        },
+        "updated": "2012-09-09 01:17:06",
+        "book": {
+            "publisher": "电子工业出版社",
+            "subtitle": "",
+            "isbn10": "7121160722",
+            "isbn13": "9787121160721",
+            "title": "白帽子讲Web安全",
+            "url": "http:\/\/api.douban.com\/v2\/book\/10546925",
+            "origin_title": "",
+            "image": "http:\/\/img1.douban.com\/mpic\/s8977570.jpg",
+            "alt_title": "",
+            "binding": "",
+            "author_intro": "吴翰清，毕业于西安交通大学少年班，从2000年开始研究网络攻防技术。在大学期间创立了在中国安全圈内极具影响力的组织“幻影”。",
+            "pages": "432",
+            "price": "69.00元",
+            "author": ["吴翰清"],
+            "translator": [],
+            "images": {
+                "small": "http:\/\/img1.douban.com\/spic\/s8977570.jpg",
+                "large": "http:\/\/img1.douban.com\/lpic\/s8977570.jpg",
+                "medium": "http:\/\/img1.douban.com\/mpic\/s8977570.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/10546925\/",
+            "pubdate": "2012-3",
+            "id": "10546925",
+            "tags": [{
+                "count": 477,
+                "name": "网络安全"
+            }, {
+                "count": 237,
+                "name": "安全"
+            }, {
+                "count": 167,
+                "name": "黑客"
+            }, {
+                "count": 137,
+                "name": "信息安全"
+            }, {
+                "count": 132,
+                "name": "计算机"
+            }, {
+                "count": 108,
+                "name": "互联网"
+            }, {
+                "count": 57,
+                "name": "Security"
+            }, {
+                "count": 37,
+                "name": "软件开发"
+            }]
+        },
+        "user_id": "1407404",
+        "book_id": "10546925",
+        "id": 514405897
+    }, {
+        "status": "wish",
+        "updated": "2012-09-08 14:51:15",
+        "book": {
+            "publisher": "人民邮电出版社",
+            "subtitle": "Matrix67数学笔记",
+            "isbn10": "7115275866",
+            "isbn13": "9787115275868",
+            "title": "思考的乐趣",
+            "url": "http:\/\/api.douban.com\/v2\/book\/10779597",
+            "origin_title": "",
+            "image": "http:\/\/img1.douban.com\/mpic\/s10323913.jpg",
+            "alt_title": "",
+            "binding": "平装",
+            "author_intro": "作者简介：\n顾森\n网名Matrix67，北京大学中文系应用语言学专业学生，数学爱好者。2005年开办数学博http:\/\/www.matrix67.com，至今已积累上千篇文章，已有上万人订阅。长期为各类科普杂志供稿，从事中学数学教育工作多年。",
+            "pages": "266",
+            "price": "45.00元",
+            "author": ["顾森"],
+            "translator": [],
+            "images": {
+                "small": "http:\/\/img1.douban.com\/spic\/s10323913.jpg",
+                "large": "http:\/\/img1.douban.com\/lpic\/s10323913.jpg",
+                "medium": "http:\/\/img1.douban.com\/mpic\/s10323913.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/10779597\/",
+            "pubdate": "2012-6",
+            "id": "10779597",
+            "tags": [{
+                "count": 1552,
+                "name": "数学"
+            }, {
+                "count": 675,
+                "name": "科普"
+            }, {
+                "count": 427,
+                "name": "思考的乐趣：Matrix67数学笔记"
+            }, {
+                "count": 368,
+                "name": "思维"
+            }, {
+                "count": 314,
+                "name": "数学思维"
+            }, {
+                "count": 301,
+                "name": "Matrix67"
+            }, {
+                "count": 113,
+                "name": "顾森"
+            }, {
+                "count": 87,
+                "name": "计算机科学"
+            }]
+        },
+        "user_id": "1407404",
+        "book_id": "10779597",
+        "id": 577949698
+    }, {
+        "status": "wish",
+        "updated": "2012-09-05 00:24:35",
+        "book": {
+            "publisher": "Pragmatic Bookshelf",
+            "subtitle": "Better Software Through Faster Feedback",
+            "isbn10": "1934356700",
+            "isbn13": "9781934356708",
+            "title": "Continuous Testing",
+            "url": "http:\/\/api.douban.com\/v2\/book\/5917144",
+            "origin_title": "",
+            "image": "http:\/\/img3.douban.com\/mpic\/s8774377.jpg",
+            "alt_title": "",
+            "binding": "平装",
+            "author_intro": "Ben Rady is a passionate and pragmatic software developer. He is the creator of Infinitest, a continuous test runner for Java, and contributes to a number of other projects that benefit the open source community. Presently employed as a Software Engineer at DRW Trading, Ben is focused on development practices that support rapid and regular delivery of well crafted software. You can follow Ben on Twitter at twitter.com\/benrady, or at his blog at benrady.com.\nRod Coffin is a Principal Consultant at Improving Enterprises, which provides training, consulting, and outsourcing services. He has coached and mentored several teams on agile software development and is equally passionate about the organizational and technical sides of effective software development. He is a frequent speaker at software conferences and has written many articles on a range of software development topics including agility, enterprise software development, and semantics.",
+            "pages": "160",
+            "price": "$ 37.29",
+            "author": ["Ben Rady", "Rod Coffin"],
+            "translator": [],
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s8774377.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s8774377.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s8774377.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/5917144\/",
+            "pubdate": "2011-7",
+            "id": "5917144",
+            "tags": [{
+                "count": 4,
+                "name": "程序设计"
+            }, {
+                "count": 4,
+                "name": "Ruby"
+            }, {
+                "count": 3,
+                "name": "软件开发"
+            }, {
+                "count": 2,
+                "name": "软件工程"
+            }, {
+                "count": 1,
+                "name": "Programming"
+            }, {
+                "count": 1,
+                "name": "技术"
+            }, {
+                "count": 1,
+                "name": "Pragmatic"
+            }, {
+                "count": 1,
+                "name": "编程"
+            }]
+        },
+        "user_id": "1407404",
+        "book_id": "5917144",
+        "id": 576714124
+    }, {
+        "status": "wish",
+        "updated": "2012-09-05 00:23:49",
+        "book": {
+            "publisher": "The Pragmatic Bookshelf",
+            "subtitle": "Keeping Your Application Healthy",
+            "isbn10": "1934356646",
+            "isbn13": "9781934356647",
+            "title": "Rails Test Prescriptions",
+            "url": "http:\/\/api.douban.com\/v2\/book\/4818063",
+            "origin_title": "",
+            "image": "http:\/\/img3.douban.com\/mpic\/s4343595.jpg",
+            "alt_title": "",
+            "binding": "",
+            "author_intro": "Noel Rappin is a Senior Consultant at Obtiva. A Rails developer for five years, Noel has spoken at RailsConf and Windy City Rails, and is the author of Professional Ruby on Rails from Wrox Press. A blog relating to this book can be found at http:\/\/www.railsrx.com.",
+            "pages": "350",
+            "price": "$22.00",
+            "author": ["Noel Rappin"],
+            "translator": [],
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s4343595.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s4343595.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s4343595.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/4818063\/",
+            "pubdate": "October 15, 2010",
+            "id": "4818063",
+            "tags": [{
+                "count": 2,
+                "name": "Programming"
+            }, {
+                "count": 2,
+                "name": "Rails"
+            }, {
+                "count": 1,
+                "name": "2011"
+            }, {
+                "count": 1,
+                "name": "LevelA"
+            }, {
+                "count": 1,
+                "name": "Ruby"
+            }, {
+                "count": 1,
+                "name": "Ruby红宝石"
+            }]
+        },
+        "user_id": "1407404",
+        "book_id": "4818063",
+        "id": 576713925
+    }, {
+        "status": "wish",
+        "updated": "2012-09-04 22:28:14",
+        "book": {
+            "publisher": "电子工业出版社",
+            "subtitle": "",
+            "isbn10": "7121091674",
+            "isbn13": "9787121091674",
+            "title": "Web界面设计",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3821157",
+            "origin_title": "",
+            "image": "http:\/\/img3.douban.com\/mpic\/s3857678.jpg",
+            "alt_title": "Designing Web Interfaces",
+            "binding": "彩印",
+            "author_intro": "Bill Scott居住在美国加利福尼亚州洛斯盖多斯，目前是Netflix公司的UI工程总监，他在这个职位上发挥着自己在界面工程和设计方面的专长。此前，他是雅虎公司的Ajax技术推广专家，并负责管理Yahoo! Design Pattern Library（Yahoo!设计模式库）。\nBill的IT从业经历漫长而耐人寻味，他对设计可用性产品的技术和创意具有独到的见解。通过www. looksgoodworkswell.com可以了解他广泛的爱好和思想发展脉络。\nTheresa Neil是一位居住在美国得克萨斯州奥斯汀市的用户体验咨询师，她的职业是为创业型公司和财富500强公司设计互联网应用程序。访问www.designgenie.org可以欣赏她的设计作品。",
+            "pages": "340",
+            "price": "80.00",
+            "author": ["Bill Scott", "Theresa Neil"],
+            "translator": ["李松峰"],
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s3857678.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s3857678.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s3857678.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3821157\/",
+            "pubdate": "2009年7月",
+            "id": "3821157",
+            "tags": [{
+                "count": 392,
+                "name": "web设计"
+            }, {
+                "count": 348,
+                "name": "交互设计"
+            }, {
+                "count": 189,
+                "name": "用户界面"
+            }, {
+                "count": 161,
+                "name": "用户体验"
+            }, {
+                "count": 137,
+                "name": "设计"
+            }, {
+                "count": 125,
+                "name": "web"
+            }, {
+                "count": 99,
+                "name": "互联网"
+            }, {
+                "count": 83,
+                "name": "ui"
+            }]
+        },
+        "user_id": "1407404",
+        "book_id": "3821157",
+        "id": 576664827
+    }, {
+        "status": "wish",
+        "updated": "2012-09-02 13:58:25",
+        "book": {
+            "publisher": "Apress",
+            "subtitle": "",
+            "isbn10": "1430230576",
+            "isbn13": "9781430230571",
+            "title": "Pro Puppet",
+            "url": "http:\/\/api.douban.com\/v2\/book\/4761333",
+            "origin_title": "",
+            "image": "http:\/\/img3.douban.com\/mpic\/s6959916.jpg",
+            "alt_title": "",
+            "binding": "Paperback",
+            "author_intro": "",
+            "pages": "336",
+            "price": "USD 49.99",
+            "author": ["James Turnbull", "Jeffrey McCune"],
+            "translator": [],
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s6959916.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s6959916.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s6959916.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/4761333\/",
+            "pubdate": "2011-5-4",
+            "id": "4761333",
+            "tags": [{
+                "count": 14,
+                "name": "puppet"
+            }, {
+                "count": 8,
+                "name": "sysadmin"
+            }, {
+                "count": 7,
+                "name": "系统管理员"
+            }, {
+                "count": 5,
+                "name": "运维"
+            }, {
+                "count": 3,
+                "name": "系统管理"
+            }, {
+                "count": 2,
+                "name": "计算机"
+            }, {
+                "count": 2,
+                "name": "技术"
+            }, {
+                "count": 2,
+                "name": "devops"
+            }]
+        },
+        "user_id": "1407404",
+        "book_id": "4761333",
+        "id": 575722522
+    }, {
+        "status": "read",
+        "updated": "2012-08-31 20:48:07",
+        "book": {
+            "publisher": "O'Reilly Media",
+            "subtitle": "",
+            "isbn10": "1449305040",
+            "isbn13": "9781449305048",
+            "title": "Redis Cookbook",
+            "url": "http:\/\/api.douban.com\/v2\/book\/6782272",
+            "origin_title": "",
+            "image": "http:\/\/img1.douban.com\/mpic\/s6833933.jpg",
+            "alt_title": "",
+            "binding": "Paperback",
+            "author_intro": "",
+            "pages": "76",
+            "price": "USD 19.99",
+            "author": ["Tiago Macedo", "Fred Oliveira"],
+            "translator": [],
+            "images": {
+                "small": "http:\/\/img1.douban.com\/spic\/s6833933.jpg",
+                "large": "http:\/\/img1.douban.com\/lpic\/s6833933.jpg",
+                "medium": "http:\/\/img1.douban.com\/mpic\/s6833933.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/6782272\/",
+            "pubdate": "2011-8-3",
+            "id": "6782272",
+            "tags": [{
+                "count": 43,
+                "name": "Redis"
+            }, {
+                "count": 32,
+                "name": "NoSQL"
+            }, {
+                "count": 15,
+                "name": "O'Reilly"
+            }, {
+                "count": 9,
+                "name": "Cookbook"
+            }, {
+                "count": 7,
+                "name": "编程"
+            }, {
+                "count": 6,
+                "name": "计算机"
+            }, {
+                "count": 5,
+                "name": "Programming"
+            }, {
+                "count": 4,
+                "name": "计算机科学"
+            }]
+        },
+        "user_id": "1407404",
+        "book_id": "6782272",
+        "id": 574719668
+    }, {
+        "status": "wish",
+        "updated": "2012-08-21 21:03:50",
+        "book": {
+            "publisher": "O'Reilly Media",
+            "subtitle": "Up and Running",
+            "isbn10": "1449304230",
+            "isbn13": "9781449304232",
+            "title": "Sinatra",
+            "url": "http:\/\/api.douban.com\/v2\/book\/6429591",
+            "origin_title": "",
+            "image": "http:\/\/img3.douban.com\/mpic\/s7003838.jpg",
+            "alt_title": "",
+            "binding": "Paperback",
+            "author_intro": "Allen Downey is an Associate Professor of Computer Science at the Olin College of Engineering. He has taught computer science at Wellesley College, Colby College and U.C. Berkeley. He has a Ph.D. in Computer Science from U.C. Berkeley and Master’s and Bachelor’s degrees from MIT.",
+            "pages": "120",
+            "price": "USD 19.99",
+            "author": ["Alan Harris", "Konstantin Haase"],
+            "translator": [],
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s7003838.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s7003838.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s7003838.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/6429591\/",
+            "pubdate": "2011-12-6",
+            "id": "6429591",
+            "tags": [{
+                "count": 7,
+                "name": "Ruby"
+            }, {
+                "count": 5,
+                "name": "统计学"
+            }, {
+                "count": 4,
+                "name": "Web"
+            }, {
+                "count": 3,
+                "name": "Programming"
+            }, {
+                "count": 3,
+                "name": "Sinatra"
+            }, {
+                "count": 2,
+                "name": "2011"
+            }, {
+                "count": 2,
+                "name": "O'Reilly"
+            }, {
+                "count": 1,
+                "name": "LevelC"
+            }]
+        },
+        "user_id": "1407404",
+        "book_id": "6429591",
+        "id": 571078532
+    }, {
+        "status": "wish",
+        "updated": "2012-08-14 23:14:40",
+        "book": {
+            "publisher": "人民邮电出版社",
+            "subtitle": "",
+            "isbn10": "7115163626",
+            "isbn13": "9787115163622",
+            "title": "修改代码的艺术",
+            "url": "http:\/\/api.douban.com\/v2\/book\/2248759",
+            "origin_title": "Working Effectively with Legacy Code",
+            "image": "http:\/\/img1.douban.com\/mpic\/s2690732.jpg",
+            "alt_title": "Working Effectively with Legacy Code",
+            "binding": "",
+            "author_intro": "Michael Feathers 世界级面向对象技术专家，以丰富的软件项目开发经验著称。目前在世界顶尖的软件咨询公司Object Mentor从事敏捷方法\/极限编程、测试驱动开发、重构、面向对象设计、Java、C#和C++等方面的培训和项目指导。他是著名测试框架CppUnit和FitCpp的开发者，已经主持了三次面向对象界盛会OOPSLA上的CodeFest比赛。\n刘未鹏，热爱编程技术，长期关注C++，现在南京大学计算机系攻读硕士学位，译有《Imperfect C++中文版》、《Exceptional C++ Style中文版》（人民邮电出版社出版）。个人blog：http:\/\/blog.csdn.net\/pongba。",
+            "pages": "384",
+            "price": "59.00元",
+            "author": ["Michael Feathers"],
+            "translator": ["刘未鹏"],
+            "images": {
+                "small": "http:\/\/img1.douban.com\/spic\/s2690732.jpg",
+                "large": "http:\/\/img1.douban.com\/lpic\/s2690732.jpg",
+                "medium": "http:\/\/img1.douban.com\/mpic\/s2690732.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/2248759\/",
+            "pubdate": "2007-09-25",
+            "id": "2248759",
+            "tags": [{
+                "count": 196,
+                "name": "重构"
+            }, {
+                "count": 123,
+                "name": "代码"
+            }, {
+                "count": 103,
+                "name": "编程"
+            }, {
+                "count": 95,
+                "name": "软件开发"
+            }, {
+                "count": 71,
+                "name": "programming"
+            }, {
+                "count": 59,
+                "name": "计算机"
+            }, {
+                "count": 51,
+                "name": "软件工程"
+            }, {
+                "count": 44,
+                "name": "程序设计"
+            }]
+        },
+        "user_id": "1407404",
+        "book_id": "2248759",
+        "id": 568239257
+    }, {
+        "status": "wish",
+        "comment": "我一直很担心以后教不好孩子怎么办，虽然我现在连妹纸都没有。",
+        "updated": "2012-08-10 12:29:23",
+        "book": {
+            "publisher": "作家出版社",
+            "subtitle": "一个教育专家16年的教子手记",
+            "isbn10": "7506345048",
+            "isbn13": "9787506345040",
+            "title": "好妈妈胜过好老师",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3465080",
+            "origin_title": "",
+            "image": "http:\/\/img1.douban.com\/mpic\/s8992981.jpg",
+            "alt_title": "",
+            "binding": "平装",
+            "author_intro": "尹建莉，教育专家．教育学硕士，从教多年，现从事家庭教育研究及咨询工作。\n作者熟悉学校教育，对家庭教育有精深的研究，并且自己培养了一个优秀的女儿。作者的女儿品学兼优，曾跳级两次，2007年16岁参加高考，取得了超过当年清华录取线22分的优异成绩，被内地和香港两所名校同时录取；在个性品格方面，表现出超越年龄的成熟。自主自立，乐于助人，被评为北京市市级三好生。",
+            "pages": "344",
+            "price": "28.00元",
+            "author": ["尹建莉"],
+            "translator": [],
+            "images": {
+                "small": "http:\/\/img1.douban.com\/spic\/s8992981.jpg",
+                "large": "http:\/\/img1.douban.com\/lpic\/s8992981.jpg",
+                "medium": "http:\/\/img1.douban.com\/mpic\/s8992981.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3465080\/",
+            "pubdate": "2009-1-1",
+            "id": "3465080",
+            "tags": [{
+                "count": 881,
+                "name": "教育"
+            }, {
+                "count": 833,
+                "name": "育儿"
+            }, {
+                "count": 486,
+                "name": "家庭教育"
+            }, {
+                "count": 324,
+                "name": "好妈妈胜过好老师"
+            }, {
+                "count": 238,
+                "name": "儿童教育"
+            }, {
+                "count": 143,
+                "name": "幼儿教育"
+            }, {
+                "count": 142,
+                "name": "亲子"
+            }, {
+                "count": 82,
+                "name": "教育学"
+            }]
+        },
+        "user_id": "1407404",
+        "book_id": "3465080",
+        "id": 566357657
+    }]
+}
