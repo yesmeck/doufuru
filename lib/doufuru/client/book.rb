@@ -54,6 +54,11 @@ module Doufuru
       def update_book_collection(id, params = {})
         put("/book/#{id}/collection", params)
       end
+
+      def delete_book_collection(id, params = {})
+        delete("/book/#{id}/collection", params)
+        "ok"
+      end
     end
   end
 end

@@ -216,4 +216,21 @@ describe Doufuru::Client do
       end
     end
   end
+
+  describe ".delete_book_collection" do
+    context "with a book id passed" do
+      it "should delete the book's collection." do
+        stub_delete("/book/#{@book_id}/collection").
+          with(
+            :headers => {
+              "Authorization" => "Bearer #{@access_token}"
+            }
+          ).
+          to_return(:body => '')
+
+        response = @client.delete_book_collection(@book_id)
+        response.should eq "ok"
+      end
+    end
+  end
 end
