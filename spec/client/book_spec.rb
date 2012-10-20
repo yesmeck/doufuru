@@ -6,7 +6,7 @@ describe Doufuru::Client do
   include_context "initialize client"
 
   before do
-    @book_id = 1084336
+    @book_id = "1084336"
     @book_title = "小王子"
     @review_title = "测试"
     @review_content = "测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
@@ -157,6 +157,22 @@ describe Doufuru::Client do
 
         books = @client.book_user_collections(@uid)
         books.first.id.should eq 592321300
+      end
+    end
+  end
+
+  describe ".book_collection" do
+    context "with a book id passed" do
+      it "should return the oauthed user's collection info of the book." do
+        stub_get("/book/#{@book_id}/collection").
+          with(:headers => {
+            "Authorization" => "Bearer #{@access_token}"
+          }).
+          to_return(:body => fixture("book_collection.json"))
+
+        book = @client.book_collection(@book_id)
+        book.book_id.should eq @book_id
+        book.status.should eq "read"
       end
     end
   end

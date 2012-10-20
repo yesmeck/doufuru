@@ -42,6 +42,10 @@ module Doufuru
       def book_user_collections(uid, params = {})
         get("/book/user/#{uid}/collections", params).collections
       end
+
+      def book_collection(id, params = {})
+        get("/book/#{id}/collection", params)
+      end
     end
   end
 end
