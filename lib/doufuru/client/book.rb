@@ -46,6 +46,10 @@ module Doufuru
       def book_collection(id, params = {})
         get("/book/#{id}/collection", params)
       end
+
+      def create_book_collection(id, params = {})
+        post("/book/#{id}/collection", params)
+      end
     end
   end
 end

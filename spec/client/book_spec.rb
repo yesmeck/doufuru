@@ -176,4 +176,24 @@ describe Doufuru::Client do
       end
     end
   end
+
+  describe ".create_book_collection" do
+    context "with a book id passed" do
+      it "should add the book to the oauthed user's collection list." do
+        params = { :status => 'read' }
+        stub_post("/book/#{@book_id}/collection").
+          with(
+            :content => params,
+            :headers => {
+              "Authorization" => "Bearer #{@access_token}"
+            }
+          ).
+          to_return(:body => fixture("book_collection.json"))
+
+        book = @client.create_book_collection(@book_id, params)
+        book.book_id.should eq @book_id
+        book.status.should eq "read"
+      end
+    end
+  end
 end
