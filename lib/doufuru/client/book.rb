@@ -34,6 +34,10 @@ module Doufuru
         end
         response
       end
+
+      def book_user_tags(uid, params = {})
+        get("/book/user/#{uid}/tags", params).tags
+      end
     end
   end
 end

@@ -12,6 +12,7 @@ describe Doufuru::Client do
     @review_content = "测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
     @rating = "5"
     @review_id = 5591773
+    @uid = "coolzi"
   end
 
   describe ".book" do
@@ -137,12 +138,13 @@ describe Doufuru::Client do
   end
 
   describe ".book_user_tags" do
-    context "with a book id passed" do
-      it "should return oauthed user's tags of the book" do
-        pending("豆瓣的返回好像有问题，获取不到标签")
-        stub_get("/book/user_tags/#{@book_id}").with(:headers => {
-          "Authorization" => "Bearer #{@access_token}"
-        }).to_return(:body => fixture("book_user_tags.json"))
+    context "with a user id passed" do
+      it "should return the user's all book's tags." do
+        stub_get("/book/user/#{@uid}/tags").
+          to_return(:body => fixture("book_user_tags.json"))
+
+        tags = @client.book_user_tags(@uid)
+        tags.first.title.should eq "余华"
       end
     end
   end
