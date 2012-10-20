@@ -137,12 +137,14 @@ describe Doufuru::Client do
   end
 
   describe ".movie_user_tags" do
-    context "with a movie id passed" do
-      it "should return oauthed user's tags of the movie" do
-        pending("豆瓣的返回好像有问题，获取不到标签")
-        stub_get("/movie/user_tags/#{@movie_id}").with(:headers => {
-          "Authorization" => "Bearer #{@access_token}"
-        }).to_return(:body => fixture("movie_user_tags.json"))
+    context "with a user id passed" do
+      uid = 1407404
+      it "should return oauthed user's all movie tahs." do
+        stub_get("/movie/user_tags/#{uid}")
+          .to_return(:body => fixture("movie_user_tags.json"))
+
+        tags = @client.movie_user_tags(uid)
+        tags.first.title.should eq "滑板"
       end
     end
   end

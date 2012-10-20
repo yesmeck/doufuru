@@ -34,6 +34,11 @@ module Doufuru
         end
         response
       end
+
+      # 这里的 uid 只能是数字 uid
+      def movie_user_tags(uid, params = {})
+        get("/movie/user_tags/#{uid}", params).tags
+      end
     end
   end
 end
