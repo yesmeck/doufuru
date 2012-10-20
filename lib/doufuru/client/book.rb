@@ -50,6 +50,10 @@ module Doufuru
       def create_book_collection(id, params = {})
         post("/book/#{id}/collection", params)
       end
+
+      def update_book_collection(id, params = {})
+        put("/book/#{id}/collection", params)
+      end
     end
   end
 end

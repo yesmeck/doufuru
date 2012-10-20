@@ -196,4 +196,24 @@ describe Doufuru::Client do
       end
     end
   end
+
+  describe ".update_book_collection" do
+    context "with a book id passed" do
+      it "should update the book's collection status." do
+        params = { :status => 'read' }
+        stub_put("/book/#{@book_id}/collection").
+          with(
+            :content => params,
+            :headers => {
+              "Authorization" => "Bearer #{@access_token}"
+            }
+          ).
+          to_return(:body => fixture("book_collection.json"))
+
+        book = @client.update_book_collection(@book_id, params)
+        book.book_id.should eq @book_id
+        book.status.should eq "read"
+      end
+    end
+  end
 end
