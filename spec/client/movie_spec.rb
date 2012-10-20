@@ -140,8 +140,8 @@ describe Doufuru::Client do
     context "with a user id passed" do
       uid = 1407404
       it "should return oauthed user's all movie tahs." do
-        stub_get("/movie/user_tags/#{uid}")
-          .to_return(:body => fixture("movie_user_tags.json"))
+        stub_get("/movie/user_tags/#{uid}").
+          to_return(:body => fixture("movie_user_tags.json"))
 
         tags = @client.movie_user_tags(uid)
         tags.first.title.should eq "滑板"
