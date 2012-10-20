@@ -69,4 +69,12 @@ describe Doufuru::Client::User do
       end
     end
   end
+
+  describe ".block_user" do
+    context "with a user id passed" do
+      it "should block the user" do
+        pending("豆瓣返回 invalid_request_uri")
+      end
+    end
+  end
 end
