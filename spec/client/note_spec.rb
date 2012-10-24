@@ -9,15 +9,18 @@ describe Doufuru::Client::Note do
   before do
     @id = "243481362"
     @title = "test"
+    @privacy = "private"
+    @can_reply = "false"
+    @content = "aha"
   end
 
   describe ".create_note" do
     it "should create a new note." do
       params = {
         :title => @title,
-        :privacy => 'private',
-        :can_reply => 'false',
-        :content => 'aha'
+        :privacy => @privacy,
+        :can_reply => @can_reply,
+        :content => @content
       }
       stub_post("/notes").
         with(
@@ -34,7 +37,7 @@ describe Doufuru::Client::Note do
   end
 
   describe ".delete_note" do
-    context "with a note id passed." do
+    context "with a note id passed" do
       it "should delete the note." do
         stub_delete("/note/#{@id}").
           with(
@@ -46,6 +49,30 @@ describe Doufuru::Client::Note do
 
         response = @client.delete_note(@id)
         response.should eq "ok"
+      end
+    end
+  end
+
+  describe ".update_node" do
+    context "with a note id passed" do
+      it "should update the note." do
+        params = {
+          :title => @title,
+          :privacy => @privacy,
+          :can_reply => @can_reply,
+          :content => @content
+        }
+        stub_put("/note/#{@id}").
+          with(
+            :content => params,
+            :headers => {
+              "Authorization" => "Bearer #{@access_token}"
+            }
+          ).
+          to_return(:body => fixture("note.json"))
+
+        note = @client.update_note(@id)
+        note.title.should eq @title
       end
     end
   end

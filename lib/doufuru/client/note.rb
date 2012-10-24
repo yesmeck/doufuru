@@ -7,6 +7,10 @@ module Doufuru
         post("/notes", params)
       end
 
+      def update_note(id, params = {})
+        put("/note/#{id}", params)
+      end
+
       def delete_note(id, params = {})
         response = delete("/note/#{id}", params, true)
         if response == '{}'
