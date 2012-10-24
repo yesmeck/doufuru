@@ -7,6 +7,7 @@ describe Doufuru::Client::Note do
   include_context "initialize client"
 
   before do
+    @id = "243481362"
     @title = "test"
   end
 
@@ -29,6 +30,23 @@ describe Doufuru::Client::Note do
 
       note = @client.create_note(params)
       note.title.should eq @title
+    end
+  end
+
+  describe ".delete_note" do
+    context "with a note id passed." do
+      it "should delete the note." do
+        stub_delete("/note/#{@id}").
+          with(
+            :headers => {
+              "Authorization" => "Bearer #{@access_token}"
+            }
+          ).
+          to_return(:body => "{}")
+
+        response = @client.delete_note(@id)
+        response.should eq "ok"
+      end
     end
   end
 end
