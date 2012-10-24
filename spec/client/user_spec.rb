@@ -85,4 +85,12 @@ describe Doufuru::Client::User do
       end
     end
   end
+
+  describe ".unfollow_user" do
+    context "with a user id passed" do
+      it "should let the oauthed user unfollow the user." do
+        pending("豆瓣返回 invalid_request_uri")
+      end
+    end
+  end
 end
