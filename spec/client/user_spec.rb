@@ -93,4 +93,10 @@ describe Doufuru::Client::User do
       end
     end
   end
+
+  describe ".show_friendship" do
+    it "should return two users relationship." do
+        pending("豆瓣返回 invalid_request_uri")
+    end
+  end
 end
