@@ -10,6 +10,7 @@ require "doufuru/client/shuo"
 require "doufuru/client/movie"
 require "doufuru/client/music"
 require "doufuru/client/event"
+require "doufuru/client/note"
 require "doufuru/client/discussion"
 
 module Doufuru
@@ -33,6 +34,7 @@ module Doufuru
     include Doufuru::Client::Movie
     include Doufuru::Client::Music
     include Doufuru::Client::Event
+    include Doufuru::Client::Note
     include Doufuru::Client::Discussion
   end
 end
