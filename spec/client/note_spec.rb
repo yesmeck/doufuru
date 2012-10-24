@@ -76,4 +76,15 @@ describe Doufuru::Client::Note do
       end
     end
   end
+
+  describe ".note" do
+    context "with a note id passed" do
+      it "should return the note." do
+        stub_get("/note/#{@id}").to_return(:body => fixture("note.json"))
+
+        note = @client.note(@id)
+        note.title.should eq @title
+      end
+    end
+  end
 end

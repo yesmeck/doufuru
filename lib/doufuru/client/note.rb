@@ -18,6 +18,10 @@ module Doufuru
         end
         response
       end
+
+      def note(id, params = {})
+        get("/note/#{id}", params)
+      end
     end
   end
 end
