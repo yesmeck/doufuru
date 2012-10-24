@@ -53,7 +53,7 @@ describe Doufuru::Client::Note do
     end
   end
 
-  describe ".update_node" do
+  describe ".update_note" do
     context "with a note id passed" do
       it "should update the note." do
         params = {
