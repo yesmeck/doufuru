@@ -3,8 +3,8 @@
 module Doufuru
   class Client
     module Book
-      def book(id, params = {})
-        get("/book/#{id}")
+      def book(id, raw = false)
+        get("/book/#{id}", {}, raw)
       end
 
       def book_by_isbn(isbn, params = {})
