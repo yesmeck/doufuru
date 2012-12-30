@@ -2,21 +2,27 @@
 
 module Doufuru
   module Configuration
-    VALID_OPTIONS_KEYS = [
-      :api_version,
-      :api_url,
-      :access_token,
-      :api_key,
-      :api_secret
-    ]
 
-    API_VERSION = 2
-    API_URL = "https://api.douban.com/"
+    VALID_OPTIONS_KEYS = [
+      :adapter,
+      :endpoint,
+      :user_agent,
+      :oauth_token,
+      :user
+    ].freeze
+
+    DEFAULT_ADAPTER = :net_http
+
+    DEFAULT_ENDPOINT = "https://api.douban.com/v2".freeze
+
+    DEFAULT_USER_AGENT = "Doufuru #{Doufuru::VERSION::STRING}".freeze
+
+    DEFAULT_USER = nil
 
     attr_accessor(*VALID_OPTIONS_KEYS)
 
     def self.extended(base)
-      base.reset
+      base.set_defaults
     end
 
     def configure
@@ -24,13 +30,16 @@ module Doufuru
     end
 
     def options
-      VALID_OPTIONS_KEYS.inject({}) {|o, k| o.merge!(k => send(k))}
+      options = {}
+      VALID_OPTIONS_KEYS.each { |k| options[k] = send(k) }
+      options
     end
 
-    def reset
-      self.api_version = API_VERSION
-      self.api_url = API_URL
-      self.access_token = nil
+    def set_defaults
+      self.adapter = DEFAULT_ADAPTER
+      self.endpoint = DEFAULT_ENDPOINT
+      self.user_agent = DEFAULT_USER_AGENT
+      self.user = DEFAULT_USER
     end
   end
 end

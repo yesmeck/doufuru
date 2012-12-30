@@ -11,13 +11,19 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/yesmeck/doufuru"
   s.summary = s.description
   s.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.version = Doufuru::VERSION
+  s.version = Doufuru::VERSION::STRING
+
   s.add_dependency "faraday"
   s.add_dependency "faraday_middleware"
   s.add_dependency "hashie"
   s.add_dependency "mime-types"
+  s.add_dependency "multi_json"
+
   s.add_development_dependency "json"
   s.add_development_dependency "rake"
   s.add_development_dependency "rspec"
+  s.add_development_dependency "guard-rspec"
   s.add_development_dependency "webmock"
+  s.add_development_dependency "pry"
+  s.add_development_dependency "pry-nav"
 end

@@ -4,15 +4,6 @@ require "doufuru/oauth"
 require "doufuru/connection"
 require "doufuru/request"
 
-require "doufuru/client/user"
-require "doufuru/client/book"
-require "doufuru/client/shuo"
-require "doufuru/client/movie"
-require "doufuru/client/music"
-require "doufuru/client/event"
-require "doufuru/client/note"
-require "doufuru/client/discussion"
-
 module Doufuru
   class Client
     attr_accessor(*Configuration::VALID_OPTIONS_KEYS)
@@ -27,14 +18,5 @@ module Doufuru
     include Doufuru::Oauth
     include Doufuru::Connection
     include Doufuru::Request
-
-    include Doufuru::Client::User
-    include Doufuru::Client::Book
-    include Doufuru::Client::Shuo
-    include Doufuru::Client::Movie
-    include Doufuru::Client::Music
-    include Doufuru::Client::Event
-    include Doufuru::Client::Note
-    include Doufuru::Client::Discussion
   end
 end

@@ -1,18 +1,25 @@
 # encoding: utf-8
 
+require "pry" if ENV["DOUFURU_DEV"]
+require "pry-nav" if ENV["DOUFURU_DEV"]
 require "parts"
 require "doufuru/core_ext/object"
 require "doufuru/parts/file_part"
 require "doufuru/version"
 require "doufuru/configuration"
 require "doufuru/client"
+require "doufuru/api"
+require "doufuru/books"
 
 module Doufuru
   extend Configuration
 
   class << self
-    def new(options = {})
-      Doufuru::Client.new(options)
+
+    attr_accessor :api_client
+
+    def new(options = {}, &block)
+      Doufuru::Client.new(options, &block)
     end
 
     def method_missing(method, *args, &block)

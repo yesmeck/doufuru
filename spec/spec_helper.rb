@@ -5,27 +5,28 @@ require "rspec"
 require "webmock/rspec"
 
 
-shared_context "initialize client" do
-  before do
-    @access_token = "myfaketoken"
-    @client = Doufuru::Client.new(:access_token => @access_token)
-  end
+# Requires supporting files with custom matchers and macros, etc,
+# in ./support/ and its subdirectories.
+Dir["#{File.dirname(__FILE__)}/{support,shared}/**/*.rb"].each { |f| require f }
+
+def stub_get(path)
+  stub_request(:get, douban_url(path))
 end
 
-def stub_get(url)
-  stub_request(:get, douban_url(url))
+def stub_post(path)
+  stub_request(:post, douban_url(path))
 end
 
-def stub_post(url)
-  stub_request(:post, douban_url(url))
+def stub_put(path)
+  stub_request(:put, douban_url(path))
 end
 
-def stub_put(url)
-  stub_request(:put, douban_url(url))
+def stub_delete(path)
+  stub_request(:delete, douban_url(path))
 end
 
-def stub_delete(url)
-  stub_request(:delete, douban_url(url))
+def a_get(path)
+  a_request(:get, douban_url(path))
 end
 
 def fixture_path
@@ -36,12 +37,12 @@ def fixture(file)
   File.new(fixture_path + '/' + file)
 end
 
-def douban_url(url)
- url.sub!(/^\//, "")
- if url =~ /^shuo/
-   url.sub!(/^shuo/, "shuo/v2")
+def douban_url(path)
+ path.sub!(/^\//, "")
+ if path =~ /^shuo/
+   path.sub!(/^shuo/, "shuo/v2")
  else
-   url = "v2/#{url}"
+   path = "v2/#{path}"
  end
-  "https://api.douban.com/#{url}"
+  "https://api.douban.com/#{path}"
 end
