@@ -1,0 +1,1786 @@
+{
+    "count": 20,
+    "start": 0,
+    "total": 90,
+    "annotations": [{
+        "chapter": "",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 703,
+                "average": "9.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2009-4-1",
+            "image": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s3651235.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s3651235.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3590768\/",
+            "id": "3590768",
+            "title": "JavaScript语言精粹",
+            "author_intro": "Douglas Crockford是一名来自Yahoo!的资深JavaScript架构师，以创造和维护JSON (JavaScriptObject Notation) 格式而为大家所熟知。他定期在各类会议上发表有关高级JavaScript的主题演讲。",
+            "tags": [{
+                "count": 889,
+                "name": "JavaScript",
+                "title": "JavaScript"
+            }, {
+                "count": 260,
+                "name": "Web前端开发",
+                "title": "Web前端开发"
+            }, {
+                "count": 126,
+                "name": "O'Reilly",
+                "title": "O'Reilly"
+            }, {
+                "count": 99,
+                "name": "web开发",
+                "title": "web开发"
+            }, {
+                "count": 89,
+                "name": "web",
+                "title": "web"
+            }, {
+                "count": 77,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 67,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 63,
+                "name": "javacript",
+                "title": "javacript"
+            }],
+            "origin_title": "",
+            "price": "35.00",
+            "translator": ["赵泽欣", "鄢学鹍"],
+            "pages": "155",
+            "publisher": "电子工业出版社",
+            "isbn10": "7121084376",
+            "isbn13": "9787121084379",
+            "alt_title": "JavaScript: The Good Parts",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3590768",
+            "author": ["Douglas Crockford"],
+            "summary": "本书通过对JavaScript语言的分析，甄别出好的和坏的特性，从而提取出相对这门语言的整体而言具有更好的可靠性、可读性和可维护性的JavaScript的子集，以便你能用它创建真正可扩展的和高效的代码。\n雅虎资深JavaScript架构师Douglas Crockford倾力之作。\n向读者介绍如何运用JavaScript创建真正可扩展的和高效的代码。"
+        },
+        "author_user": {
+            "name": "老卡",
+            "url": "http:\/\/api.douban.com\/v2\/user\/1126793",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u1126793-8.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/greengnn\/",
+            "id": "1126793",
+            "uid": "greengnn"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "函数化编程\r\n\r\n\r\n\/代码内容已省略\/\r\n\r\n用函数式编程技术编写优美的 JavaScript\r\nhttp:\/\/www.ibm.com\/developerworks\/cn\/web\/wa-javascript.html\r\n函数式JavaScript编程指南\r\nhttp:\/\/shiningray.cn\/functional_jav...",
+        "summary": "函数化编程\r\n\r\n\r\n\/代码内容已省略\/\r\n\r\n用函数式编程技术编写优美的 JavaScript\r\nhttp:\/\/www.ibm.com\/developerworks\/cn\/web\/wa-javascript.html\r\n函数式JavaScript编程指南\r\nhttp:\/\/shiningray.cn\/functional_jav...",
+        "content": "函数化编程\r\n\r\n\r\n<代码开始 lang=\"javascript\">\r\n\/\/ 函数方法化 将静态函数变换为方法\r\nfunction methodize(fun, attr){\r\n    return function(){\r\n        var args = [].slice.call(arguments), self = attr?this[attr]:this;\r\n        return fun.apply(null, [self].concat(args));\r\n    }\r\n}\r\n\r\n\/\/ 数组循环静态函数\r\nvar forEach = function(arr,callback,pThis){\r\n    for (var i =0,len=arr.length;i<len;i++){\r\n        if (i in arr) callback.call(pThis,arr[i],i,arr);\r\n    }\r\n} \r\n\r\n\/\/数组追加静态函数\r\nvar add = function(x,y){\r\n\tx.push(y);\r\n\treturn x;\r\n}\r\n\r\n\/\/方法化\r\nArray.prototype.forEach = methodize(forEach);\r\nArray.prototype.add = methodize(add);\r\n\r\n\/\/方法函数\r\nArray.prototype.forEach2 = function(fn,idx){\r\n    for (var i =0,len=this.length;i<len;i++){\r\n        if (i in this) fn.call(idx,this[i],i,this);\r\n    }\r\n};\r\n\r\n\/\/测试\r\nfunction print(el,index){ \r\n\tconsole.log(index+\" : \"+el);\r\n}\r\n\r\n\r\n[1,2,3].forEach(print);\r\n[1,2,3].forEach2(print);\r\n\r\nconsole.log([1,2,3].add(2));\r\n<\/代码结束>\r\n\r\n用函数式编程技术编写优美的 JavaScript\r\nhttp:\/\/www.ibm.com\/developerworks\/cn\/web\/wa-javascript.html\r\n函数式JavaScript编程指南\r\nhttp:\/\/shiningray.cn\/functional_javascript_programming.html\r\n\r\n",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 0,
+        "hasmath": false,
+        "book_id": "3590768",
+        "time": "2011-05-19 04:58:26",
+        "author_id": "1126793",
+        "id": "12922455",
+        "page_no": 52
+    }, {
+        "chapter": "正则表达式",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 703,
+                "average": "9.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2009-4-1",
+            "image": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s3651235.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s3651235.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3590768\/",
+            "id": "3590768",
+            "title": "JavaScript语言精粹",
+            "author_intro": "Douglas Crockford是一名来自Yahoo!的资深JavaScript架构师，以创造和维护JSON (JavaScriptObject Notation) 格式而为大家所熟知。他定期在各类会议上发表有关高级JavaScript的主题演讲。",
+            "tags": [{
+                "count": 889,
+                "name": "JavaScript",
+                "title": "JavaScript"
+            }, {
+                "count": 260,
+                "name": "Web前端开发",
+                "title": "Web前端开发"
+            }, {
+                "count": 126,
+                "name": "O'Reilly",
+                "title": "O'Reilly"
+            }, {
+                "count": 99,
+                "name": "web开发",
+                "title": "web开发"
+            }, {
+                "count": 89,
+                "name": "web",
+                "title": "web"
+            }, {
+                "count": 77,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 67,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 63,
+                "name": "javacript",
+                "title": "javacript"
+            }],
+            "origin_title": "",
+            "price": "35.00",
+            "translator": ["赵泽欣", "鄢学鹍"],
+            "pages": "155",
+            "publisher": "电子工业出版社",
+            "isbn10": "7121084376",
+            "isbn13": "9787121084379",
+            "alt_title": "JavaScript: The Good Parts",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3590768",
+            "author": ["Douglas Crockford"],
+            "summary": "本书通过对JavaScript语言的分析，甄别出好的和坏的特性，从而提取出相对这门语言的整体而言具有更好的可靠性、可读性和可维护性的JavaScript的子集，以便你能用它创建真正可扩展的和高效的代码。\n雅虎资深JavaScript架构师Douglas Crockford倾力之作。\n向读者介绍如何运用JavaScript创建真正可扩展的和高效的代码。"
+        },
+        "author_user": {
+            "name": "JeremyWei",
+            "url": "http:\/\/api.douban.com\/v2\/user\/2459878",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u2459878-11.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/Jeremywei\/",
+            "id": "2459878",
+            "uid": "Jeremywei"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "1. 正则表达式标识：\r\nvar regexp = \/ab\/g 匹配 abab　\r\nvar regexp = \/ab\/i  匹配 AB\r\nvar regexp = \/^ab$\/m 匹配如下：\r\nab\r\nab\r\ng(全局)\r\ni(大小写不敏感)\r\nm(多行，与^$一齐使用)\r\n\r\n点.匹配除了换行符之外所...",
+        "summary": "1. 正则表达式标识：\r\nvar regexp = \/ab\/g 匹配 abab　\r\nvar regexp = \/ab\/i  匹配 AB\r\nvar regexp = \/^ab$\/m 匹配如下：\r\nab\r\nab\r\ng(全局)\r\ni(大小写不敏感)\r\nm(多行，与^$一齐使用)\r\n\r\n点.匹配除了换行符之外所...",
+        "content": "1. 正则表达式标识：\r\nvar regexp = \/ab\/g 匹配 abab　\r\nvar regexp = \/ab\/i  匹配 AB\r\nvar regexp = \/^ab$\/m 匹配如下：\r\nab\r\nab\r\ng(全局)\r\ni(大小写不敏感)\r\nm(多行，与^$一齐使用)\r\n\r\n点.匹配除了换行符之外所有内容\r\n\r\n2. 正则方法：\r\nRegExp对象有exec和test(不建议使用g标识)方法，String对象有match和search(忽略g标识)方法。\r\n\r\n3. 正则表达式分组：\r\na. 捕获：()\r\nb. 非捕获：(?:)\r\nc. 向前正向匹配：(?=) bad\r\nd. 向前负向匹配：(?!) bad\r\n\r\n4. Class\r\n[^a-zbb\\u00fc-\\u00ff]\r\n需要转义的有：- \/ [ \\ ] ^\r\n\r\n5. 量词\r\n? = {0,1} \r\n* = {0,}\r\n+ = {1,}\r\n\r\n默认为贪婪，量词后面加?为非贪婪\r\n",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 0,
+        "hasmath": false,
+        "book_id": "3590768",
+        "time": "2012-12-31 10:48:34",
+        "author_id": "2459878",
+        "id": "23541177",
+        "page_no": 71
+    }, {
+        "chapter": "精华",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 703,
+                "average": "9.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2009-4-1",
+            "image": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s3651235.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s3651235.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3590768\/",
+            "id": "3590768",
+            "title": "JavaScript语言精粹",
+            "author_intro": "Douglas Crockford是一名来自Yahoo!的资深JavaScript架构师，以创造和维护JSON (JavaScriptObject Notation) 格式而为大家所熟知。他定期在各类会议上发表有关高级JavaScript的主题演讲。",
+            "tags": [{
+                "count": 889,
+                "name": "JavaScript",
+                "title": "JavaScript"
+            }, {
+                "count": 260,
+                "name": "Web前端开发",
+                "title": "Web前端开发"
+            }, {
+                "count": 126,
+                "name": "O'Reilly",
+                "title": "O'Reilly"
+            }, {
+                "count": 99,
+                "name": "web开发",
+                "title": "web开发"
+            }, {
+                "count": 89,
+                "name": "web",
+                "title": "web"
+            }, {
+                "count": 77,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 67,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 63,
+                "name": "javacript",
+                "title": "javacript"
+            }],
+            "origin_title": "",
+            "price": "35.00",
+            "translator": ["赵泽欣", "鄢学鹍"],
+            "pages": "155",
+            "publisher": "电子工业出版社",
+            "isbn10": "7121084376",
+            "isbn13": "9787121084379",
+            "alt_title": "JavaScript: The Good Parts",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3590768",
+            "author": ["Douglas Crockford"],
+            "summary": "本书通过对JavaScript语言的分析，甄别出好的和坏的特性，从而提取出相对这门语言的整体而言具有更好的可靠性、可读性和可维护性的JavaScript的子集，以便你能用它创建真正可扩展的和高效的代码。\n雅虎资深JavaScript架构师Douglas Crockford倾力之作。\n向读者介绍如何运用JavaScript创建真正可扩展的和高效的代码。"
+        },
+        "author_user": {
+            "name": "cdh",
+            "url": "http:\/\/api.douban.com\/v2\/user\/46814962",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u46814962-15.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/chendahui007\/",
+            "id": "46814962",
+            "uid": "chendahui007"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "大多数编程语言都有精华部分和鸡肋部分. 我发现如果只使用精华部分而避免鸡肋部的部分, 我可以成为一个更好的程序员.",
+        "summary": "大多数编程语言都有精华部分和鸡肋部分. 我发现如果只使用精华部分而避免鸡肋部的部分, 我可以成为一个更好的程序员.",
+        "content": "<原文开始>大多数编程语言都有精华部分和鸡肋部分. 我发现如果只使用精华部分而避免鸡肋部的部分, 我可以成为一个更好的程序员.<\/原文结束>",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 1,
+        "hasmath": false,
+        "book_id": "3590768",
+        "time": "2012-12-23 22:16:20",
+        "author_id": "46814962",
+        "id": "23374829",
+        "page_no": 1
+    }, {
+        "chapter": "函数",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 703,
+                "average": "9.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2009-4-1",
+            "image": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s3651235.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s3651235.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3590768\/",
+            "id": "3590768",
+            "title": "JavaScript语言精粹",
+            "author_intro": "Douglas Crockford是一名来自Yahoo!的资深JavaScript架构师，以创造和维护JSON (JavaScriptObject Notation) 格式而为大家所熟知。他定期在各类会议上发表有关高级JavaScript的主题演讲。",
+            "tags": [{
+                "count": 889,
+                "name": "JavaScript",
+                "title": "JavaScript"
+            }, {
+                "count": 260,
+                "name": "Web前端开发",
+                "title": "Web前端开发"
+            }, {
+                "count": 126,
+                "name": "O'Reilly",
+                "title": "O'Reilly"
+            }, {
+                "count": 99,
+                "name": "web开发",
+                "title": "web开发"
+            }, {
+                "count": 89,
+                "name": "web",
+                "title": "web"
+            }, {
+                "count": 77,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 67,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 63,
+                "name": "javacript",
+                "title": "javacript"
+            }],
+            "origin_title": "",
+            "price": "35.00",
+            "translator": ["赵泽欣", "鄢学鹍"],
+            "pages": "155",
+            "publisher": "电子工业出版社",
+            "isbn10": "7121084376",
+            "isbn13": "9787121084379",
+            "alt_title": "JavaScript: The Good Parts",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3590768",
+            "author": ["Douglas Crockford"],
+            "summary": "本书通过对JavaScript语言的分析，甄别出好的和坏的特性，从而提取出相对这门语言的整体而言具有更好的可靠性、可读性和可维护性的JavaScript的子集，以便你能用它创建真正可扩展的和高效的代码。\n雅虎资深JavaScript架构师Douglas Crockford倾力之作。\n向读者介绍如何运用JavaScript创建真正可扩展的和高效的代码。"
+        },
+        "author_user": {
+            "name": "JeremyWei",
+            "url": "http:\/\/api.douban.com\/v2\/user\/2459878",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u2459878-11.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/Jeremywei\/",
+            "id": "2459878",
+            "uid": "Jeremywei"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "\r\nJavaScript中的函数就是对象，对象字面量产生的对象连接到Object.prototype。\r\n函数对象连接到Function.prototype（Function.prototype连接到Object.prototype）。\r\n每个函数在创建时会附加两个隐藏属性：函数...",
+        "summary": "\r\nJavaScript中的函数就是对象，对象字面量产生的对象连接到Object.prototype。\r\n函数对象连接到Function.prototype（Function.prototype连接到Object.prototype）。\r\n每个函数在创建时会附加两个隐藏属性：函数...",
+        "content": "<原文开始>\r\nJavaScript中的函数就是对象，对象字面量产生的对象连接到Object.prototype。\r\n函数对象连接到Function.prototype（Function.prototype连接到Object.prototype）。\r\n每个函数在创建时会附加两个隐藏属性：函数的上下文和实现函数行为的代码。\r\n\r\n每个函数对象在创建时候也随配有一个prototype属性。它的值是一个拥有constructor属性且值即为该函数的对象。\r\n<\/原文结束>\r\n\r\n\r\n<代码开始 lang=\"javascript\">\r\n\/\/ o是字面变量对象，继承Object.prototype chain\r\nvar o = {}\r\nObject.prototype.o = function () {\r\n    return \"o\";\r\n}\r\n\r\n\/\/ 输出\"o\"\r\nconsole.log(o.o());\r\n\r\n\/\/ f是函数对象，继承自Function.prototype\r\nvar f = function () {}\r\nFunction.prototype.f = function () {\r\n    return \"f\";\r\n}\r\n\/\/ 输出\"function\"\r\nconsole.log(typeof(f));\r\n\r\n\/\/ 输出\"f\"\r\nconsole.log(f.f());\r\n\r\n\/\/ f函数对象的prototype属性\r\nconsole.log(f.prototype);\r\n\r\n\/\/ 创建f对象\r\nfObject = new f();\r\n\r\n\/\/ 输出\"object\"\r\nconsole.log(typeof(fObject));\r\n\r\n\/\/Error\r\ntry {\r\n    fObject.f();\r\n} catch (e) {\r\n    console.log(e);\r\n}\r\n\r\n\/\/ 在f.prototype中添加f函数\r\nf.prototype.f = function () {\r\n    return \"f of f\"\r\n};\r\n\r\n\/\/ 输出\"f of f\"\r\nfObject.f();\r\n\r\n<\/代码结束>\r\n\r\n",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 0,
+        "hasmath": false,
+        "book_id": "3590768",
+        "time": "2012-12-22 17:51:50",
+        "author_id": "2459878",
+        "id": "23346003",
+        "page_no": 26
+    }, {
+        "chapter": "模块",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 703,
+                "average": "9.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2009-4-1",
+            "image": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s3651235.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s3651235.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3590768\/",
+            "id": "3590768",
+            "title": "JavaScript语言精粹",
+            "author_intro": "Douglas Crockford是一名来自Yahoo!的资深JavaScript架构师，以创造和维护JSON (JavaScriptObject Notation) 格式而为大家所熟知。他定期在各类会议上发表有关高级JavaScript的主题演讲。",
+            "tags": [{
+                "count": 889,
+                "name": "JavaScript",
+                "title": "JavaScript"
+            }, {
+                "count": 260,
+                "name": "Web前端开发",
+                "title": "Web前端开发"
+            }, {
+                "count": 126,
+                "name": "O'Reilly",
+                "title": "O'Reilly"
+            }, {
+                "count": 99,
+                "name": "web开发",
+                "title": "web开发"
+            }, {
+                "count": 89,
+                "name": "web",
+                "title": "web"
+            }, {
+                "count": 77,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 67,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 63,
+                "name": "javacript",
+                "title": "javacript"
+            }],
+            "origin_title": "",
+            "price": "35.00",
+            "translator": ["赵泽欣", "鄢学鹍"],
+            "pages": "155",
+            "publisher": "电子工业出版社",
+            "isbn10": "7121084376",
+            "isbn13": "9787121084379",
+            "alt_title": "JavaScript: The Good Parts",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3590768",
+            "author": ["Douglas Crockford"],
+            "summary": "本书通过对JavaScript语言的分析，甄别出好的和坏的特性，从而提取出相对这门语言的整体而言具有更好的可靠性、可读性和可维护性的JavaScript的子集，以便你能用它创建真正可扩展的和高效的代码。\n雅虎资深JavaScript架构师Douglas Crockford倾力之作。\n向读者介绍如何运用JavaScript创建真正可扩展的和高效的代码。"
+        },
+        "author_user": {
+            "name": "JeremyWei",
+            "url": "http:\/\/api.douban.com\/v2\/user\/2459878",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u2459878-11.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/Jeremywei\/",
+            "id": "2459878",
+            "uid": "Jeremywei"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "\/代码内容已省略\/",
+        "summary": "\/代码内容已省略\/",
+        "content": "<代码开始 lang=\"javascript\">\r\nvar serial_number = function () {\r\n\tvar prefix = '';\r\n\tvar seq = 0;\r\n\t\r\n\treturn {\r\n\t\tset_prefix : function (p) {\r\n\t\t\tprefix = String(p);\r\n\t\t},\r\n\t\tset_seq : function (s) {\r\n\t\t\tseq = s;\r\n\t\t},\r\n\t\tgensym : function () {\r\n\t\t\tvar result = prefix + seq;\r\n\t\t\tseq += 1;\r\n\t\t\treturn result;\r\n\t\t}\r\n\t}\r\n}\r\n\r\n\/\/ seqer的中的prefix和seq称为了私有属性，外部不能直接修改，\r\n\/\/ 只能通过set_prefix和set_seq方法进行修改\r\nvar seqer = serial_number();\r\nseqer.set_prefix('Q');\r\nseqer.set_seq(1000);\r\nvar unique = seqer.gensym();\r\n<\/代码结束>",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 0,
+        "hasmath": false,
+        "book_id": "3590768",
+        "time": "2012-12-22 15:49:41",
+        "author_id": "2459878",
+        "id": "23345358",
+        "page_no": 41
+    }, {
+        "chapter": "函数",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 703,
+                "average": "9.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2009-4-1",
+            "image": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s3651235.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s3651235.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3590768\/",
+            "id": "3590768",
+            "title": "JavaScript语言精粹",
+            "author_intro": "Douglas Crockford是一名来自Yahoo!的资深JavaScript架构师，以创造和维护JSON (JavaScriptObject Notation) 格式而为大家所熟知。他定期在各类会议上发表有关高级JavaScript的主题演讲。",
+            "tags": [{
+                "count": 889,
+                "name": "JavaScript",
+                "title": "JavaScript"
+            }, {
+                "count": 260,
+                "name": "Web前端开发",
+                "title": "Web前端开发"
+            }, {
+                "count": 126,
+                "name": "O'Reilly",
+                "title": "O'Reilly"
+            }, {
+                "count": 99,
+                "name": "web开发",
+                "title": "web开发"
+            }, {
+                "count": 89,
+                "name": "web",
+                "title": "web"
+            }, {
+                "count": 77,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 67,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 63,
+                "name": "javacript",
+                "title": "javacript"
+            }],
+            "origin_title": "",
+            "price": "35.00",
+            "translator": ["赵泽欣", "鄢学鹍"],
+            "pages": "155",
+            "publisher": "电子工业出版社",
+            "isbn10": "7121084376",
+            "isbn13": "9787121084379",
+            "alt_title": "JavaScript: The Good Parts",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3590768",
+            "author": ["Douglas Crockford"],
+            "summary": "本书通过对JavaScript语言的分析，甄别出好的和坏的特性，从而提取出相对这门语言的整体而言具有更好的可靠性、可读性和可维护性的JavaScript的子集，以便你能用它创建真正可扩展的和高效的代码。\n雅虎资深JavaScript架构师Douglas Crockford倾力之作。\n向读者介绍如何运用JavaScript创建真正可扩展的和高效的代码。"
+        },
+        "author_user": {
+            "name": "JeremyWei",
+            "url": "http:\/\/api.douban.com\/v2\/user\/2459878",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u2459878-11.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/Jeremywei\/",
+            "id": "2459878",
+            "uid": "Jeremywei"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "内部函数可以访问外部函数的变量：\r\n\/代码内容已省略\/",
+        "summary": "内部函数可以访问外部函数的变量：\r\n\/代码内容已省略\/",
+        "content": "内部函数可以访问外部函数的变量：\r\n<代码开始 lang=\"javascript\">\r\n\/\/ 以下代码希望点击节点时候输出节点的序号，可是实际上输出的是节点总数\r\n\/\/ 因为onclick事件处理器与变量i进行了绑定，而不是函数创建时候的i值\r\nvar add_the_handlers = function (nodes) {\r\n\tvar i;\r\n\tfor (var i = 0; i < nodes.length; i++) {\r\n\t\tnodes[i].onclick = function (e) {\r\n\t\t\talert(i)\r\n\t\t}\t\r\n\t}\r\n}\r\n\r\n\/\/ 正确方式\r\nvar add_the_handlers = function (nodes) {\r\n\tvar helper = function (i) {\r\n\t\treturn function (e) {\r\n\t\t\talert(i);\r\n\t\t}\r\n\t}\r\n\tvar i;\r\n\tfor (var i = 0; i < nodes.length; i++) {\r\n\t\tnodes[i].onclick = helper(i);\t\r\n\t}\r\n}\r\n\r\n<\/代码结束>",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 0,
+        "hasmath": false,
+        "book_id": "3590768",
+        "time": "2012-12-22 15:03:34",
+        "author_id": "2459878",
+        "id": "23344345",
+        "page_no": 38
+    }, {
+        "chapter": "",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 703,
+                "average": "9.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2009-4-1",
+            "image": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s3651235.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s3651235.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3590768\/",
+            "id": "3590768",
+            "title": "JavaScript语言精粹",
+            "author_intro": "Douglas Crockford是一名来自Yahoo!的资深JavaScript架构师，以创造和维护JSON (JavaScriptObject Notation) 格式而为大家所熟知。他定期在各类会议上发表有关高级JavaScript的主题演讲。",
+            "tags": [{
+                "count": 889,
+                "name": "JavaScript",
+                "title": "JavaScript"
+            }, {
+                "count": 260,
+                "name": "Web前端开发",
+                "title": "Web前端开发"
+            }, {
+                "count": 126,
+                "name": "O'Reilly",
+                "title": "O'Reilly"
+            }, {
+                "count": 99,
+                "name": "web开发",
+                "title": "web开发"
+            }, {
+                "count": 89,
+                "name": "web",
+                "title": "web"
+            }, {
+                "count": 77,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 67,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 63,
+                "name": "javacript",
+                "title": "javacript"
+            }],
+            "origin_title": "",
+            "price": "35.00",
+            "translator": ["赵泽欣", "鄢学鹍"],
+            "pages": "155",
+            "publisher": "电子工业出版社",
+            "isbn10": "7121084376",
+            "isbn13": "9787121084379",
+            "alt_title": "JavaScript: The Good Parts",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3590768",
+            "author": ["Douglas Crockford"],
+            "summary": "本书通过对JavaScript语言的分析，甄别出好的和坏的特性，从而提取出相对这门语言的整体而言具有更好的可靠性、可读性和可维护性的JavaScript的子集，以便你能用它创建真正可扩展的和高效的代码。\n雅虎资深JavaScript架构师Douglas Crockford倾力之作。\n向读者介绍如何运用JavaScript创建真正可扩展的和高效的代码。"
+        },
+        "author_user": {
+            "name": "stephansun",
+            "url": "http:\/\/api.douban.com\/v2\/user\/37103573",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u37103573-2.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/stephansun\/",
+            "id": "37103573",
+            "uid": "stephansun"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "\r\n一种常见的Ajax模式是把服务端发送过来的一个HTML文本片段赋值给某个HTML元素的innerHTML属性。这是一个非常糟糕的习惯。如果这个HTML包含一个<script>标签或其等价物，那么一个恶意脚本将被运行。这可能...",
+        "summary": "\r\n一种常见的Ajax模式是把服务端发送过来的一个HTML文本片段赋值给某个HTML元素的innerHTML属性。这是一个非常糟糕的习惯。如果这个HTML包含一个<script>标签或其等价物，那么一个恶意脚本将被运行。这可能...",
+        "content": "<原文开始>\r\n一种常见的Ajax模式是把服务端发送过来的一个HTML文本片段赋值给某个HTML元素的innerHTML属性。这是一个非常糟糕的习惯。如果这个HTML包含一个<script>标签或其等价物，那么一个恶意脚本将被运行。这可能又是因为服务端存在漏洞。\r\n<\/原文结束>\r\n<原文开始>\r\n这个危险是JavaScript全局变量的直接后果，它是JavaScript众多糟粕之中最糟糕的一个。这这些危险并不是由Ajax、JSON、XMLHttpRequest或Web2.0（不管它是什么）导致的。自从JavaScript被引入浏览器，这些危险就已经存在，并且它将一直存在，直到JavaScript有一天被取代。所以，请务必当心。\r\n<\/原文结束>",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 0,
+        "hasmath": false,
+        "book_id": "3590768",
+        "time": "2012-12-22 13:27:16",
+        "author_id": "37103573",
+        "id": "23342488",
+        "page_no": 140
+    }, {
+        "chapter": "",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 703,
+                "average": "9.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2009-4-1",
+            "image": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s3651235.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s3651235.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3590768\/",
+            "id": "3590768",
+            "title": "JavaScript语言精粹",
+            "author_intro": "Douglas Crockford是一名来自Yahoo!的资深JavaScript架构师，以创造和维护JSON (JavaScriptObject Notation) 格式而为大家所熟知。他定期在各类会议上发表有关高级JavaScript的主题演讲。",
+            "tags": [{
+                "count": 889,
+                "name": "JavaScript",
+                "title": "JavaScript"
+            }, {
+                "count": 260,
+                "name": "Web前端开发",
+                "title": "Web前端开发"
+            }, {
+                "count": 126,
+                "name": "O'Reilly",
+                "title": "O'Reilly"
+            }, {
+                "count": 99,
+                "name": "web开发",
+                "title": "web开发"
+            }, {
+                "count": 89,
+                "name": "web",
+                "title": "web"
+            }, {
+                "count": 77,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 67,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 63,
+                "name": "javacript",
+                "title": "javacript"
+            }],
+            "origin_title": "",
+            "price": "35.00",
+            "translator": ["赵泽欣", "鄢学鹍"],
+            "pages": "155",
+            "publisher": "电子工业出版社",
+            "isbn10": "7121084376",
+            "isbn13": "9787121084379",
+            "alt_title": "JavaScript: The Good Parts",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3590768",
+            "author": ["Douglas Crockford"],
+            "summary": "本书通过对JavaScript语言的分析，甄别出好的和坏的特性，从而提取出相对这门语言的整体而言具有更好的可靠性、可读性和可维护性的JavaScript的子集，以便你能用它创建真正可扩展的和高效的代码。\n雅虎资深JavaScript架构师Douglas Crockford倾力之作。\n向读者介绍如何运用JavaScript创建真正可扩展的和高效的代码。"
+        },
+        "author_user": {
+            "name": "stephansun",
+            "url": "http:\/\/api.douban.com\/v2\/user\/37103573",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u37103573-2.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/stephansun\/",
+            "id": "37103573",
+            "uid": "stephansun"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "\r\n在软件系统中，存储成本是无足轻重的，但是在移动应用中，它又变得重要了。它们太高的电池的效能成本，因为摩尔定律并不适用于电池。\r\n\r\n这种理解倒是第一次见..",
+        "summary": "\r\n在软件系统中，存储成本是无足轻重的，但是在移动应用中，它又变得重要了。它们太高的电池的效能成本，因为摩尔定律并不适用于电池。\r\n\r\n这种理解倒是第一次见..",
+        "content": "<原文开始>\r\n在软件系统中，存储成本是无足轻重的，但是在移动应用中，它又变得重要了。它们太高的电池的效能成本，因为摩尔定律并不适用于电池。\r\n<\/原文结束>\r\n这种理解倒是第一次见..",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 0,
+        "hasmath": false,
+        "book_id": "3590768",
+        "time": "2012-12-22 13:17:37",
+        "author_id": "37103573",
+        "id": "23342324",
+        "page_no": 99
+    }, {
+        "chapter": "",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 703,
+                "average": "9.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2009-4-1",
+            "image": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s3651235.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s3651235.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3590768\/",
+            "id": "3590768",
+            "title": "JavaScript语言精粹",
+            "author_intro": "Douglas Crockford是一名来自Yahoo!的资深JavaScript架构师，以创造和维护JSON (JavaScriptObject Notation) 格式而为大家所熟知。他定期在各类会议上发表有关高级JavaScript的主题演讲。",
+            "tags": [{
+                "count": 889,
+                "name": "JavaScript",
+                "title": "JavaScript"
+            }, {
+                "count": 260,
+                "name": "Web前端开发",
+                "title": "Web前端开发"
+            }, {
+                "count": 126,
+                "name": "O'Reilly",
+                "title": "O'Reilly"
+            }, {
+                "count": 99,
+                "name": "web开发",
+                "title": "web开发"
+            }, {
+                "count": 89,
+                "name": "web",
+                "title": "web"
+            }, {
+                "count": 77,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 67,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 63,
+                "name": "javacript",
+                "title": "javacript"
+            }],
+            "origin_title": "",
+            "price": "35.00",
+            "translator": ["赵泽欣", "鄢学鹍"],
+            "pages": "155",
+            "publisher": "电子工业出版社",
+            "isbn10": "7121084376",
+            "isbn13": "9787121084379",
+            "alt_title": "JavaScript: The Good Parts",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3590768",
+            "author": ["Douglas Crockford"],
+            "summary": "本书通过对JavaScript语言的分析，甄别出好的和坏的特性，从而提取出相对这门语言的整体而言具有更好的可靠性、可读性和可维护性的JavaScript的子集，以便你能用它创建真正可扩展的和高效的代码。\n雅虎资深JavaScript架构师Douglas Crockford倾力之作。\n向读者介绍如何运用JavaScript创建真正可扩展的和高效的代码。"
+        },
+        "author_user": {
+            "name": "stephansun",
+            "url": "http:\/\/api.douban.com\/v2\/user\/37103573",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u37103573-2.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/stephansun\/",
+            "id": "37103573",
+            "uid": "stephansun"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "\r\n函数是头等对象\r\n    在精简JavaScript中，函数是词法作用域的闭包（lambda）\r\n基于原型继承的动态对象\r\n    对象是无类别的。我们可以通过普通的赋值给任何对象增加一个新成员元素。一个对象可以从另一个对象...",
+        "summary": "\r\n函数是头等对象\r\n    在精简JavaScript中，函数是词法作用域的闭包（lambda）\r\n基于原型继承的动态对象\r\n    对象是无类别的。我们可以通过普通的赋值给任何对象增加一个新成员元素。一个对象可以从另一个对象...",
+        "content": "<原文开始>\r\n函数是头等对象\r\n    在精简JavaScript中，函数是词法作用域的闭包（lambda）\r\n基于原型继承的动态对象\r\n    对象是无类别的。我们可以通过普通的赋值给任何对象增加一个新成员元素。一个对象可以从另一个对象继承成员元素。\r\n对象字面量和数组字面量\r\n    这对创建新的对象和数组来说是一种非常方便的表示法。JavaScript字面量是数据交换格式JSON的灵感之源。\r\n<\/原文结束>",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 0,
+        "hasmath": false,
+        "book_id": "3590768",
+        "time": "2012-12-22 13:11:46",
+        "author_id": "37103573",
+        "id": "23342190",
+        "page_no": 98
+    }, {
+        "chapter": "",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 703,
+                "average": "9.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2009-4-1",
+            "image": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s3651235.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s3651235.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3590768\/",
+            "id": "3590768",
+            "title": "JavaScript语言精粹",
+            "author_intro": "Douglas Crockford是一名来自Yahoo!的资深JavaScript架构师，以创造和维护JSON (JavaScriptObject Notation) 格式而为大家所熟知。他定期在各类会议上发表有关高级JavaScript的主题演讲。",
+            "tags": [{
+                "count": 889,
+                "name": "JavaScript",
+                "title": "JavaScript"
+            }, {
+                "count": 260,
+                "name": "Web前端开发",
+                "title": "Web前端开发"
+            }, {
+                "count": 126,
+                "name": "O'Reilly",
+                "title": "O'Reilly"
+            }, {
+                "count": 99,
+                "name": "web开发",
+                "title": "web开发"
+            }, {
+                "count": 89,
+                "name": "web",
+                "title": "web"
+            }, {
+                "count": 77,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 67,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 63,
+                "name": "javacript",
+                "title": "javacript"
+            }],
+            "origin_title": "",
+            "price": "35.00",
+            "translator": ["赵泽欣", "鄢学鹍"],
+            "pages": "155",
+            "publisher": "电子工业出版社",
+            "isbn10": "7121084376",
+            "isbn13": "9787121084379",
+            "alt_title": "JavaScript: The Good Parts",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3590768",
+            "author": ["Douglas Crockford"],
+            "summary": "本书通过对JavaScript语言的分析，甄别出好的和坏的特性，从而提取出相对这门语言的整体而言具有更好的可靠性、可读性和可维护性的JavaScript的子集，以便你能用它创建真正可扩展的和高效的代码。\n雅虎资深JavaScript架构师Douglas Crockford倾力之作。\n向读者介绍如何运用JavaScript创建真正可扩展的和高效的代码。"
+        },
+        "author_user": {
+            "name": "stephansun",
+            "url": "http:\/\/api.douban.com\/v2\/user\/37103573",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u37103573-2.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/stephansun\/",
+            "id": "37103573",
+            "uid": "stephansun"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "函数字面量可以出现在任何允许表达式出现的地方。函数也可以被定义在其他函数中。一个内部函数自然可以访问自己的参数和变量，同时它也能方便的访问它被嵌套在其中的那个函数的参数和变量。通过函数字面量创建的...",
+        "summary": "函数字面量可以出现在任何允许表达式出现的地方。函数也可以被定义在其他函数中。一个内部函数自然可以访问自己的参数和变量，同时它也能方便的访问它被嵌套在其中的那个函数的参数和变量。通过函数字面量创建的...",
+        "content": "<原文开始>函数字面量可以出现在任何允许表达式出现的地方。函数也可以被定义在其他函数中。一个内部函数自然可以访问自己的参数和变量，同时它也能方便的访问它被嵌套在其中的那个函数的参数和变量。通过函数字面量创建的函数对象包含一个连到外部上下文的连接。这被称为“闭包”<\/原文结束>\r\n<原文开始>在javascript中一共有四种调用模式：方法调用模式、函数调用模式、构造器调用模式和apply调用模式。这些模式在如何初始化关键参数this上存在差异。<\/原文结束>",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 0,
+        "hasmath": false,
+        "book_id": "3590768",
+        "time": "2012-12-21 21:23:21",
+        "author_id": "37103573",
+        "id": "23332378",
+        "page_no": 27
+    }, {
+        "chapter": "",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 703,
+                "average": "9.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2009-4-1",
+            "image": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s3651235.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s3651235.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3590768\/",
+            "id": "3590768",
+            "title": "JavaScript语言精粹",
+            "author_intro": "Douglas Crockford是一名来自Yahoo!的资深JavaScript架构师，以创造和维护JSON (JavaScriptObject Notation) 格式而为大家所熟知。他定期在各类会议上发表有关高级JavaScript的主题演讲。",
+            "tags": [{
+                "count": 889,
+                "name": "JavaScript",
+                "title": "JavaScript"
+            }, {
+                "count": 260,
+                "name": "Web前端开发",
+                "title": "Web前端开发"
+            }, {
+                "count": 126,
+                "name": "O'Reilly",
+                "title": "O'Reilly"
+            }, {
+                "count": 99,
+                "name": "web开发",
+                "title": "web开发"
+            }, {
+                "count": 89,
+                "name": "web",
+                "title": "web"
+            }, {
+                "count": 77,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 67,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 63,
+                "name": "javacript",
+                "title": "javacript"
+            }],
+            "origin_title": "",
+            "price": "35.00",
+            "translator": ["赵泽欣", "鄢学鹍"],
+            "pages": "155",
+            "publisher": "电子工业出版社",
+            "isbn10": "7121084376",
+            "isbn13": "9787121084379",
+            "alt_title": "JavaScript: The Good Parts",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3590768",
+            "author": ["Douglas Crockford"],
+            "summary": "本书通过对JavaScript语言的分析，甄别出好的和坏的特性，从而提取出相对这门语言的整体而言具有更好的可靠性、可读性和可维护性的JavaScript的子集，以便你能用它创建真正可扩展的和高效的代码。\n雅虎资深JavaScript架构师Douglas Crockford倾力之作。\n向读者介绍如何运用JavaScript创建真正可扩展的和高效的代码。"
+        },
+        "author_user": {
+            "name": "stephansun",
+            "url": "http:\/\/api.douban.com\/v2\/user\/37103573",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u37103573-2.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/stephansun\/",
+            "id": "37103573",
+            "uid": "stephansun"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "一般来说，所谓编程就是将一组需求分解成一组函数与数据结构的技能。\r\n每个函数对象在创建时也随带有一个prototype属性。它的值是一个拥有constructor属性且值即为该函数的对象。这和隐藏连接到Function.prototyp...",
+        "summary": "一般来说，所谓编程就是将一组需求分解成一组函数与数据结构的技能。\r\n每个函数对象在创建时也随带有一个prototype属性。它的值是一个拥有constructor属性且值即为该函数的对象。这和隐藏连接到Function.prototyp...",
+        "content": "<原文开始>一般来说，所谓编程就是将一组需求分解成一组函数与数据结构的技能。<\/原文结束>\r\n<原文开始>每个函数对象在创建时也随带有一个prototype属性。它的值是一个拥有constructor属性且值即为该函数的对象。这和隐藏连接到Function.prototype完全不同。这个令人费解的构造过程的意义将会在下个章节中揭示。<\/原文结束>",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 0,
+        "hasmath": false,
+        "book_id": "3590768",
+        "time": "2012-12-21 20:17:51",
+        "author_id": "37103573",
+        "id": "23330914",
+        "page_no": 26
+    }, {
+        "chapter": "",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 703,
+                "average": "9.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2009-4-1",
+            "image": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s3651235.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s3651235.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3590768\/",
+            "id": "3590768",
+            "title": "JavaScript语言精粹",
+            "author_intro": "Douglas Crockford是一名来自Yahoo!的资深JavaScript架构师，以创造和维护JSON (JavaScriptObject Notation) 格式而为大家所熟知。他定期在各类会议上发表有关高级JavaScript的主题演讲。",
+            "tags": [{
+                "count": 889,
+                "name": "JavaScript",
+                "title": "JavaScript"
+            }, {
+                "count": 260,
+                "name": "Web前端开发",
+                "title": "Web前端开发"
+            }, {
+                "count": 126,
+                "name": "O'Reilly",
+                "title": "O'Reilly"
+            }, {
+                "count": 99,
+                "name": "web开发",
+                "title": "web开发"
+            }, {
+                "count": 89,
+                "name": "web",
+                "title": "web"
+            }, {
+                "count": 77,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 67,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 63,
+                "name": "javacript",
+                "title": "javacript"
+            }],
+            "origin_title": "",
+            "price": "35.00",
+            "translator": ["赵泽欣", "鄢学鹍"],
+            "pages": "155",
+            "publisher": "电子工业出版社",
+            "isbn10": "7121084376",
+            "isbn13": "9787121084379",
+            "alt_title": "JavaScript: The Good Parts",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3590768",
+            "author": ["Douglas Crockford"],
+            "summary": "本书通过对JavaScript语言的分析，甄别出好的和坏的特性，从而提取出相对这门语言的整体而言具有更好的可靠性、可读性和可维护性的JavaScript的子集，以便你能用它创建真正可扩展的和高效的代码。\n雅虎资深JavaScript架构师Douglas Crockford倾力之作。\n向读者介绍如何运用JavaScript创建真正可扩展的和高效的代码。"
+        },
+        "author_user": {
+            "name": "stephansun",
+            "url": "http:\/\/api.douban.com\/v2\/user\/37103573",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u37103573-2.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/stephansun\/",
+            "id": "37103573",
+            "uid": "stephansun"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "\r\n\/代码内容已省略\/\r\n\r\n这里明显不能翻译成令人困惑，而是要直接\r\n\/代码内容已省略\/\r\n",
+        "summary": "\r\n\/代码内容已省略\/\r\n\r\n这里明显不能翻译成令人困惑，而是要直接\r\n\/代码内容已省略\/\r\n",
+        "content": "\r\n<代码开始 lang=\"javascript\">\r\ndocument.writeln(myQuo.get_status()); \/\/令人困惑\r\n<\/代码结束>\r\n\r\n这里明显不能翻译成令人困惑，而是要直接\r\n<代码开始 lang=\"javascript\">\r\ndocument.writeln(myQuo.get_status()); \/\/ confused\r\n<\/代码结束>\r\n",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 0,
+        "hasmath": false,
+        "book_id": "3590768",
+        "time": "2012-12-21 14:33:55",
+        "author_id": "37103573",
+        "id": "23324961",
+        "page_no": 30
+    }, {
+        "chapter": "",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 703,
+                "average": "9.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2009-4-1",
+            "image": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s3651235.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s3651235.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3590768\/",
+            "id": "3590768",
+            "title": "JavaScript语言精粹",
+            "author_intro": "Douglas Crockford是一名来自Yahoo!的资深JavaScript架构师，以创造和维护JSON (JavaScriptObject Notation) 格式而为大家所熟知。他定期在各类会议上发表有关高级JavaScript的主题演讲。",
+            "tags": [{
+                "count": 889,
+                "name": "JavaScript",
+                "title": "JavaScript"
+            }, {
+                "count": 260,
+                "name": "Web前端开发",
+                "title": "Web前端开发"
+            }, {
+                "count": 126,
+                "name": "O'Reilly",
+                "title": "O'Reilly"
+            }, {
+                "count": 99,
+                "name": "web开发",
+                "title": "web开发"
+            }, {
+                "count": 89,
+                "name": "web",
+                "title": "web"
+            }, {
+                "count": 77,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 67,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 63,
+                "name": "javacript",
+                "title": "javacript"
+            }],
+            "origin_title": "",
+            "price": "35.00",
+            "translator": ["赵泽欣", "鄢学鹍"],
+            "pages": "155",
+            "publisher": "电子工业出版社",
+            "isbn10": "7121084376",
+            "isbn13": "9787121084379",
+            "alt_title": "JavaScript: The Good Parts",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3590768",
+            "author": ["Douglas Crockford"],
+            "summary": "本书通过对JavaScript语言的分析，甄别出好的和坏的特性，从而提取出相对这门语言的整体而言具有更好的可靠性、可读性和可维护性的JavaScript的子集，以便你能用它创建真正可扩展的和高效的代码。\n雅虎资深JavaScript架构师Douglas Crockford倾力之作。\n向读者介绍如何运用JavaScript创建真正可扩展的和高效的代码。"
+        },
+        "author_user": {
+            "name": "麦穗NaC",
+            "url": "http:\/\/api.douban.com\/v2\/user\/44438474",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u44438474-8.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/simpleapples\/",
+            "id": "44438474",
+            "uid": "simpleapples"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "这本书的附录部分和正文部分一样重要。",
+        "summary": "这本书的附录部分和正文部分一样重要。",
+        "content": "这本书的附录部分和正文部分一样重要。",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 0,
+        "hasmath": false,
+        "book_id": "3590768",
+        "time": "2012-12-16 14:26:05",
+        "author_id": "44438474",
+        "id": "23206030",
+        "page_no": 101
+    }, {
+        "chapter": "第7章",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 703,
+                "average": "9.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2009-4-1",
+            "image": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s3651235.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s3651235.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3590768\/",
+            "id": "3590768",
+            "title": "JavaScript语言精粹",
+            "author_intro": "Douglas Crockford是一名来自Yahoo!的资深JavaScript架构师，以创造和维护JSON (JavaScriptObject Notation) 格式而为大家所熟知。他定期在各类会议上发表有关高级JavaScript的主题演讲。",
+            "tags": [{
+                "count": 889,
+                "name": "JavaScript",
+                "title": "JavaScript"
+            }, {
+                "count": 260,
+                "name": "Web前端开发",
+                "title": "Web前端开发"
+            }, {
+                "count": 126,
+                "name": "O'Reilly",
+                "title": "O'Reilly"
+            }, {
+                "count": 99,
+                "name": "web开发",
+                "title": "web开发"
+            }, {
+                "count": 89,
+                "name": "web",
+                "title": "web"
+            }, {
+                "count": 77,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 67,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 63,
+                "name": "javacript",
+                "title": "javacript"
+            }],
+            "origin_title": "",
+            "price": "35.00",
+            "translator": ["赵泽欣", "鄢学鹍"],
+            "pages": "155",
+            "publisher": "电子工业出版社",
+            "isbn10": "7121084376",
+            "isbn13": "9787121084379",
+            "alt_title": "JavaScript: The Good Parts",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3590768",
+            "author": ["Douglas Crockford"],
+            "summary": "本书通过对JavaScript语言的分析，甄别出好的和坏的特性，从而提取出相对这门语言的整体而言具有更好的可靠性、可读性和可维护性的JavaScript的子集，以便你能用它创建真正可扩展的和高效的代码。\n雅虎资深JavaScript架构师Douglas Crockford倾力之作。\n向读者介绍如何运用JavaScript创建真正可扩展的和高效的代码。"
+        },
+        "author_user": {
+            "name": "小石",
+            "url": "http:\/\/api.douban.com\/v2\/user\/1042985",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u1042985-3.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/dhcn\/",
+            "id": "1042985",
+            "uid": "dhcn"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "JS的许多特性都借鉴自其他语言。语法借鉴自Java，函数借鉴自Scheme，原型继承借鉴自Self。",
+        "summary": "JS的许多特性都借鉴自其他语言。语法借鉴自Java，函数借鉴自Scheme，原型继承借鉴自Self。",
+        "content": "<原文开始>JS的许多特性都借鉴自其他语言。语法借鉴自Java，函数借鉴自Scheme，原型继承借鉴自Self。<\/原文结束>",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 0,
+        "hasmath": false,
+        "book_id": "3590768",
+        "time": "2012-10-31 17:04:21",
+        "author_id": "1042985",
+        "id": "22128187",
+        "page_no": 64
+    }, {
+        "chapter": "第6章 数组",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 703,
+                "average": "9.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2009-4-1",
+            "image": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s3651235.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s3651235.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3590768\/",
+            "id": "3590768",
+            "title": "JavaScript语言精粹",
+            "author_intro": "Douglas Crockford是一名来自Yahoo!的资深JavaScript架构师，以创造和维护JSON (JavaScriptObject Notation) 格式而为大家所熟知。他定期在各类会议上发表有关高级JavaScript的主题演讲。",
+            "tags": [{
+                "count": 889,
+                "name": "JavaScript",
+                "title": "JavaScript"
+            }, {
+                "count": 260,
+                "name": "Web前端开发",
+                "title": "Web前端开发"
+            }, {
+                "count": 126,
+                "name": "O'Reilly",
+                "title": "O'Reilly"
+            }, {
+                "count": 99,
+                "name": "web开发",
+                "title": "web开发"
+            }, {
+                "count": 89,
+                "name": "web",
+                "title": "web"
+            }, {
+                "count": 77,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 67,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 63,
+                "name": "javacript",
+                "title": "javacript"
+            }],
+            "origin_title": "",
+            "price": "35.00",
+            "translator": ["赵泽欣", "鄢学鹍"],
+            "pages": "155",
+            "publisher": "电子工业出版社",
+            "isbn10": "7121084376",
+            "isbn13": "9787121084379",
+            "alt_title": "JavaScript: The Good Parts",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3590768",
+            "author": ["Douglas Crockford"],
+            "summary": "本书通过对JavaScript语言的分析，甄别出好的和坏的特性，从而提取出相对这门语言的整体而言具有更好的可靠性、可读性和可维护性的JavaScript的子集，以便你能用它创建真正可扩展的和高效的代码。\n雅虎资深JavaScript架构师Douglas Crockford倾力之作。\n向读者介绍如何运用JavaScript创建真正可扩展的和高效的代码。"
+        },
+        "author_user": {
+            "name": "小石",
+            "url": "http:\/\/api.douban.com\/v2\/user\/1042985",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u1042985-3.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/dhcn\/",
+            "id": "1042985",
+            "uid": "dhcn"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "这一页的译注有个很明显的排版错误。",
+        "summary": "这一页的译注有个很明显的排版错误。",
+        "content": "这一页的译注有个很明显的排版错误。",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 0,
+        "hasmath": false,
+        "book_id": "3590768",
+        "time": "2012-10-31 16:50:45",
+        "author_id": "1042985",
+        "id": "22127786",
+        "page_no": 58
+    }, {
+        "chapter": "第4章 函数",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 703,
+                "average": "9.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2009-4-1",
+            "image": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s3651235.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s3651235.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3590768\/",
+            "id": "3590768",
+            "title": "JavaScript语言精粹",
+            "author_intro": "Douglas Crockford是一名来自Yahoo!的资深JavaScript架构师，以创造和维护JSON (JavaScriptObject Notation) 格式而为大家所熟知。他定期在各类会议上发表有关高级JavaScript的主题演讲。",
+            "tags": [{
+                "count": 889,
+                "name": "JavaScript",
+                "title": "JavaScript"
+            }, {
+                "count": 260,
+                "name": "Web前端开发",
+                "title": "Web前端开发"
+            }, {
+                "count": 126,
+                "name": "O'Reilly",
+                "title": "O'Reilly"
+            }, {
+                "count": 99,
+                "name": "web开发",
+                "title": "web开发"
+            }, {
+                "count": 89,
+                "name": "web",
+                "title": "web"
+            }, {
+                "count": 77,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 67,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 63,
+                "name": "javacript",
+                "title": "javacript"
+            }],
+            "origin_title": "",
+            "price": "35.00",
+            "translator": ["赵泽欣", "鄢学鹍"],
+            "pages": "155",
+            "publisher": "电子工业出版社",
+            "isbn10": "7121084376",
+            "isbn13": "9787121084379",
+            "alt_title": "JavaScript: The Good Parts",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3590768",
+            "author": ["Douglas Crockford"],
+            "summary": "本书通过对JavaScript语言的分析，甄别出好的和坏的特性，从而提取出相对这门语言的整体而言具有更好的可靠性、可读性和可维护性的JavaScript的子集，以便你能用它创建真正可扩展的和高效的代码。\n雅虎资深JavaScript架构师Douglas Crockford倾力之作。\n向读者介绍如何运用JavaScript创建真正可扩展的和高效的代码。"
+        },
+        "author_user": {
+            "name": "小石",
+            "url": "http:\/\/api.douban.com\/v2\/user\/1042985",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u1042985-3.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/dhcn\/",
+            "id": "1042985",
+            "uid": "dhcn"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "在很多书中可能花了几页纸来说明的东西，到这本书中往往一句话就讲明白了,真正达到了作者所说的保护环境的效果。",
+        "summary": "在很多书中可能花了几页纸来说明的东西，到这本书中往往一句话就讲明白了,真正达到了作者所说的保护环境的效果。",
+        "content": "在很多书中可能花了几页纸来说明的东西，到这本书中往往一句话就讲明白了,真正达到了作者所说的保护环境的效果。",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 0,
+        "hasmath": false,
+        "book_id": "3590768",
+        "time": "2012-10-31 14:48:16",
+        "author_id": "1042985",
+        "id": "22124634",
+        "page_no": 40
+    }, {
+        "chapter": "第4章 函数",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 703,
+                "average": "9.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2009-4-1",
+            "image": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s3651235.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s3651235.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3590768\/",
+            "id": "3590768",
+            "title": "JavaScript语言精粹",
+            "author_intro": "Douglas Crockford是一名来自Yahoo!的资深JavaScript架构师，以创造和维护JSON (JavaScriptObject Notation) 格式而为大家所熟知。他定期在各类会议上发表有关高级JavaScript的主题演讲。",
+            "tags": [{
+                "count": 889,
+                "name": "JavaScript",
+                "title": "JavaScript"
+            }, {
+                "count": 260,
+                "name": "Web前端开发",
+                "title": "Web前端开发"
+            }, {
+                "count": 126,
+                "name": "O'Reilly",
+                "title": "O'Reilly"
+            }, {
+                "count": 99,
+                "name": "web开发",
+                "title": "web开发"
+            }, {
+                "count": 89,
+                "name": "web",
+                "title": "web"
+            }, {
+                "count": 77,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 67,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 63,
+                "name": "javacript",
+                "title": "javacript"
+            }],
+            "origin_title": "",
+            "price": "35.00",
+            "translator": ["赵泽欣", "鄢学鹍"],
+            "pages": "155",
+            "publisher": "电子工业出版社",
+            "isbn10": "7121084376",
+            "isbn13": "9787121084379",
+            "alt_title": "JavaScript: The Good Parts",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3590768",
+            "author": ["Douglas Crockford"],
+            "summary": "本书通过对JavaScript语言的分析，甄别出好的和坏的特性，从而提取出相对这门语言的整体而言具有更好的可靠性、可读性和可维护性的JavaScript的子集，以便你能用它创建真正可扩展的和高效的代码。\n雅虎资深JavaScript架构师Douglas Crockford倾力之作。\n向读者介绍如何运用JavaScript创建真正可扩展的和高效的代码。"
+        },
+        "author_user": {
+            "name": "小石",
+            "url": "http:\/\/api.douban.com\/v2\/user\/1042985",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u1042985-3.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/dhcn\/",
+            "id": "1042985",
+            "uid": "dhcn"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "老周的那本精髓和这本一比,真是高下立见啊。当然可能是中国人崇概念务玄虚的习惯导致的吧。有时间可以再搂一遍老周的那本精髓。",
+        "summary": "老周的那本精髓和这本一比,真是高下立见啊。当然可能是中国人崇概念务玄虚的习惯导致的吧。有时间可以再搂一遍老周的那本精髓。",
+        "content": "老周的那本精髓和这本一比,真是高下立见啊。当然可能是中国人崇概念务玄虚的习惯导致的吧。有时间可以再搂一遍老周的那本精髓。",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 0,
+        "hasmath": false,
+        "book_id": "3590768",
+        "time": "2012-10-30 22:09:57",
+        "author_id": "1042985",
+        "id": "22109518",
+        "page_no": 28
+    }, {
+        "chapter": "对象",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 703,
+                "average": "9.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2009-4-1",
+            "image": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s3651235.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s3651235.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3590768\/",
+            "id": "3590768",
+            "title": "JavaScript语言精粹",
+            "author_intro": "Douglas Crockford是一名来自Yahoo!的资深JavaScript架构师，以创造和维护JSON (JavaScriptObject Notation) 格式而为大家所熟知。他定期在各类会议上发表有关高级JavaScript的主题演讲。",
+            "tags": [{
+                "count": 889,
+                "name": "JavaScript",
+                "title": "JavaScript"
+            }, {
+                "count": 260,
+                "name": "Web前端开发",
+                "title": "Web前端开发"
+            }, {
+                "count": 126,
+                "name": "O'Reilly",
+                "title": "O'Reilly"
+            }, {
+                "count": 99,
+                "name": "web开发",
+                "title": "web开发"
+            }, {
+                "count": 89,
+                "name": "web",
+                "title": "web"
+            }, {
+                "count": 77,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 67,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 63,
+                "name": "javacript",
+                "title": "javacript"
+            }],
+            "origin_title": "",
+            "price": "35.00",
+            "translator": ["赵泽欣", "鄢学鹍"],
+            "pages": "155",
+            "publisher": "电子工业出版社",
+            "isbn10": "7121084376",
+            "isbn13": "9787121084379",
+            "alt_title": "JavaScript: The Good Parts",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3590768",
+            "author": ["Douglas Crockford"],
+            "summary": "本书通过对JavaScript语言的分析，甄别出好的和坏的特性，从而提取出相对这门语言的整体而言具有更好的可靠性、可读性和可维护性的JavaScript的子集，以便你能用它创建真正可扩展的和高效的代码。\n雅虎资深JavaScript架构师Douglas Crockford倾力之作。\n向读者介绍如何运用JavaScript创建真正可扩展的和高效的代码。"
+        },
+        "author_user": {
+            "name": "小石",
+            "url": "http:\/\/api.douban.com\/v2\/user\/1042985",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u1042985-3.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/dhcn\/",
+            "id": "1042985",
+            "uid": "dhcn"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "作者是个莎翁迷啊，每章的开始以一句莎翁的话作为引子，那个国人高手写技术书的时候每章开始来句红楼梦的段子那就有意思了。",
+        "summary": "作者是个莎翁迷啊，每章的开始以一句莎翁的话作为引子，那个国人高手写技术书的时候每章开始来句红楼梦的段子那就有意思了。",
+        "content": "作者是个莎翁迷啊，每章的开始以一句莎翁的话作为引子，那个国人高手写技术书的时候每章开始来句红楼梦的段子那就有意思了。",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 0,
+        "hasmath": false,
+        "book_id": "3590768",
+        "time": "2012-10-30 16:16:51",
+        "author_id": "1042985",
+        "id": "22101619",
+        "page_no": 20
+    }, {
+        "chapter": "分析JavaScript",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 703,
+                "average": "9.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2009-4-1",
+            "image": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s3651235.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s3651235.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3590768\/",
+            "id": "3590768",
+            "title": "JavaScript语言精粹",
+            "author_intro": "Douglas Crockford是一名来自Yahoo!的资深JavaScript架构师，以创造和维护JSON (JavaScriptObject Notation) 格式而为大家所熟知。他定期在各类会议上发表有关高级JavaScript的主题演讲。",
+            "tags": [{
+                "count": 889,
+                "name": "JavaScript",
+                "title": "JavaScript"
+            }, {
+                "count": 260,
+                "name": "Web前端开发",
+                "title": "Web前端开发"
+            }, {
+                "count": 126,
+                "name": "O'Reilly",
+                "title": "O'Reilly"
+            }, {
+                "count": 99,
+                "name": "web开发",
+                "title": "web开发"
+            }, {
+                "count": 89,
+                "name": "web",
+                "title": "web"
+            }, {
+                "count": 77,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 67,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 63,
+                "name": "javacript",
+                "title": "javacript"
+            }],
+            "origin_title": "",
+            "price": "35.00",
+            "translator": ["赵泽欣", "鄢学鹍"],
+            "pages": "155",
+            "publisher": "电子工业出版社",
+            "isbn10": "7121084376",
+            "isbn13": "9787121084379",
+            "alt_title": "JavaScript: The Good Parts",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3590768",
+            "author": ["Douglas Crockford"],
+            "summary": "本书通过对JavaScript语言的分析，甄别出好的和坏的特性，从而提取出相对这门语言的整体而言具有更好的可靠性、可读性和可维护性的JavaScript的子集，以便你能用它创建真正可扩展的和高效的代码。\n雅虎资深JavaScript架构师Douglas Crockford倾力之作。\n向读者介绍如何运用JavaScript创建真正可扩展的和高效的代码。"
+        },
+        "author_user": {
+            "name": "小石",
+            "url": "http:\/\/api.douban.com\/v2\/user\/1042985",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u1042985-3.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/dhcn\/",
+            "id": "1042985",
+            "uid": "dhcn"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "JS是第一个主流的Lambda语言。实际上上，相对于Java而言，JS与Lisp和Scheme有更多的共同点。它是披着C外衣的Lisp。这使得它成为一个非常强大的语言。",
+        "summary": "JS是第一个主流的Lambda语言。实际上上，相对于Java而言，JS与Lisp和Scheme有更多的共同点。它是披着C外衣的Lisp。这使得它成为一个非常强大的语言。",
+        "content": "<原文开始>JS是第一个主流的Lambda语言。实际上上，相对于Java而言，JS与Lisp和Scheme有更多的共同点。它是披着C外衣的Lisp。这使得它成为一个非常强大的语言。<\/原文结束>",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 0,
+        "hasmath": false,
+        "book_id": "3590768",
+        "time": "2012-10-30 14:06:57",
+        "author_id": "1042985",
+        "id": "22098431",
+        "page_no": 3
+    }, {
+        "chapter": "",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 703,
+                "average": "9.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2009-4-1",
+            "image": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s3651235.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s3651235.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3590768\/",
+            "id": "3590768",
+            "title": "JavaScript语言精粹",
+            "author_intro": "Douglas Crockford是一名来自Yahoo!的资深JavaScript架构师，以创造和维护JSON (JavaScriptObject Notation) 格式而为大家所熟知。他定期在各类会议上发表有关高级JavaScript的主题演讲。",
+            "tags": [{
+                "count": 889,
+                "name": "JavaScript",
+                "title": "JavaScript"
+            }, {
+                "count": 260,
+                "name": "Web前端开发",
+                "title": "Web前端开发"
+            }, {
+                "count": 126,
+                "name": "O'Reilly",
+                "title": "O'Reilly"
+            }, {
+                "count": 99,
+                "name": "web开发",
+                "title": "web开发"
+            }, {
+                "count": 89,
+                "name": "web",
+                "title": "web"
+            }, {
+                "count": 77,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 67,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 63,
+                "name": "javacript",
+                "title": "javacript"
+            }],
+            "origin_title": "",
+            "price": "35.00",
+            "translator": ["赵泽欣", "鄢学鹍"],
+            "pages": "155",
+            "publisher": "电子工业出版社",
+            "isbn10": "7121084376",
+            "isbn13": "9787121084379",
+            "alt_title": "JavaScript: The Good Parts",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3590768",
+            "author": ["Douglas Crockford"],
+            "summary": "本书通过对JavaScript语言的分析，甄别出好的和坏的特性，从而提取出相对这门语言的整体而言具有更好的可靠性、可读性和可维护性的JavaScript的子集，以便你能用它创建真正可扩展的和高效的代码。\n雅虎资深JavaScript架构师Douglas Crockford倾力之作。\n向读者介绍如何运用JavaScript创建真正可扩展的和高效的代码。"
+        },
+        "author_user": {
+            "name": "memorybox",
+            "url": "http:\/\/api.douban.com\/v2\/user\/1770817",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u1770817-2.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/memorybox\/",
+            "id": "1770817",
+            "uid": "memorybox"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "通过函数字面量创建的函数对象可包含一个连接到外部上下文的连接。这被称为闭包。",
+        "summary": "通过函数字面量创建的函数对象可包含一个连接到外部上下文的连接。这被称为闭包。",
+        "content": "<原文开始>通过函数字面量创建的函数对象可包含一个连接到外部上下文的连接。这被称为闭包。<\/原文结束>",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 0,
+        "hasmath": false,
+        "book_id": "3590768",
+        "time": "2012-07-23 14:03:27",
+        "author_id": "1770817",
+        "id": "19859007",
+        "page_no": 41
+    }]
+}

@@ -60,5 +60,14 @@ module Doufuru
 
       get_request("/book/#{id}/collection")
     end
+
+    def annotations(id, params = {})
+      set :id => id
+      assert_presence_of id
+      normalize! params
+
+      get_request("/book/#{id}/annotations").annotations
+    end
+
   end
 end
