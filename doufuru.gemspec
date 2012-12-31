@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "faraday"
   s.add_dependency "faraday_middleware"
+  s.add_dependency "oauth2"
   s.add_dependency "hashie"
   s.add_dependency "mime-types"
   s.add_dependency "multi_json"

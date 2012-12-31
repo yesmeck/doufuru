@@ -28,7 +28,6 @@ module Doufuru
 
       conn = connection(options)
       path = (conn.path_prefix + path).gsub(/\/\//,"/") if conn.path_prefix != "/"
-
       response = conn.send(method) do |request|
         case method.to_sym
         when *(METHODS - METHODS_WITH_BODIES)

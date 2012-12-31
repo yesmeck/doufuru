@@ -3,6 +3,11 @@
 require "spec_helper"
 
 describe Doufuru do
+
+  after do
+    subject.set_defaults
+  end
+
   it "should respond to 'new' message" do
     subject.should respond_to :new
   end

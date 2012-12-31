@@ -6,6 +6,6 @@ shared_examples_for "api interface" do
 
   it { should respond_to :user }
 
-  it { should respond_to  :adapter}
+  it { should respond_to :adapter}
 
 end

@@ -6,12 +6,13 @@ require "doufuru/utils/url"
 module Doufuru
   module Request
     class OAuth2 < Faraday::Middleware
+
       include Doufuru::Utils::Url
 
-      ACCESS_TOKEN = 'access_token'.freeze
-      AUTH_HEADER  = 'Authorization'.freeze
+      ACCESS_TOKEN = "access_token".freeze
+      AUTH_HEADER  = "Authorization".freeze
 
-      dependency 'oauth2'
+      dependency "oauth2"
 
       def call(env)
         # Extract parameters from the query
@@ -38,6 +39,7 @@ module Doufuru
           parse_query url.query
         end
       end
+
     end
   end
 end
