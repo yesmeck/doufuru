@@ -3,8 +3,16 @@
 module Doufuru
   class Books < API
 
+    def self.new(*args)
+      if !args.empty?
+        return super({}).get(args[0])
+      else
+        return super
+      end
+    end
+
     def initialize(options = {})
-      super(options)
+      super options
     end
 
     def tags(id, params = {})
