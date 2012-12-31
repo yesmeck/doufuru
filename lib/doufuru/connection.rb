@@ -35,7 +35,7 @@ module Doufuru
         builder.use Doufuru::Request::Jsonize
         builder.use Faraday::Request::Multipart
         builder.use Faraday::Request::UrlEncoded
-        #builder.use Doufuru::Request::OAuth2, oauth_token if oauth_token?
+        builder.use Doufuru::Request::OAuth2, oauth_token if oauth_token?
 
         builder.use Faraday::Response::Logger if ENV['DOUFURU_DEBUG']
         builder.use Doufuru::Response::Helpers

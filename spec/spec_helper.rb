@@ -46,3 +46,11 @@ def douban_url(path)
  end
   "https://api.douban.com/#{path}"
 end
+
+
+def reset_authentication_for(object)
+  %w{ oauth_token }.each do |item|
+    Doufuru.send("#{item}=", nil)
+    object.send("#{item}=", nil)
+  end
+end
