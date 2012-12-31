@@ -1,0 +1,90 @@
+{
+    "chapter": "",
+    "book": {
+        "rating": {
+            "max": 10,
+            "numRaters": 703,
+            "average": "9.1",
+            "min": 0
+        },
+        "subtitle": "",
+        "pubdate": "2009-4-1",
+        "image": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg",
+        "binding": "平装",
+        "images": {
+            "small": "http:\/\/img3.douban.com\/spic\/s3651235.jpg",
+            "large": "http:\/\/img3.douban.com\/lpic\/s3651235.jpg",
+            "medium": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg"
+        },
+        "alt": "http:\/\/book.douban.com\/subject\/3590768\/",
+        "id": "3590768",
+        "title": "JavaScript语言精粹",
+        "author_intro": "Douglas Crockford是一名来自Yahoo!的资深JavaScript架构师，以创造和维护JSON (JavaScriptObject Notation) 格式而为大家所熟知。他定期在各类会议上发表有关高级JavaScript的主题演讲。",
+        "tags": [{
+            "count": 889,
+            "name": "JavaScript",
+            "title": "JavaScript"
+        }, {
+            "count": 260,
+            "name": "Web前端开发",
+            "title": "Web前端开发"
+        }, {
+            "count": 126,
+            "name": "O'Reilly",
+            "title": "O'Reilly"
+        }, {
+            "count": 99,
+            "name": "web开发",
+            "title": "web开发"
+        }, {
+            "count": 89,
+            "name": "web",
+            "title": "web"
+        }, {
+            "count": 77,
+            "name": "编程",
+            "title": "编程"
+        }, {
+            "count": 67,
+            "name": "计算机",
+            "title": "计算机"
+        }, {
+            "count": 63,
+            "name": "javacript",
+            "title": "javacript"
+        }],
+        "origin_title": "",
+        "price": "35.00",
+        "translator": ["赵泽欣", "鄢学鹍"],
+        "pages": "155",
+        "publisher": "电子工业出版社",
+        "isbn10": "7121084376",
+        "isbn13": "9787121084379",
+        "alt_title": "JavaScript: The Good Parts",
+        "url": "http:\/\/api.douban.com\/v2\/book\/3590768",
+        "author": ["Douglas Crockford"],
+        "summary": "本书通过对JavaScript语言的分析，甄别出好的和坏的特性，从而提取出相对这门语言的整体而言具有更好的可靠性、可读性和可维护性的JavaScript的子集，以便你能用它创建真正可扩展的和高效的代码。\n雅虎资深JavaScript架构师Douglas Crockford倾力之作。\n向读者介绍如何运用JavaScript创建真正可扩展的和高效的代码。"
+    },
+    "author_user": {
+        "name": "老卡",
+        "url": "http:\/\/api.douban.com\/v2\/user\/1126793",
+        "avatar": "http:\/\/img3.douban.com\/icon\/u1126793-8.jpg",
+        "alt": "http:\/\/www.douban.com\/people\/greengnn\/",
+        "id": "1126793",
+        "uid": "greengnn"
+    },
+    "privacy": 2,
+    "abstract_photo": "",
+    "abstract": "函数化编程\r\n\r\n\r\n\/代码内容已省略\/\r\n\r\n用函数式编程技术编写优美的 JavaScript\r\nhttp:\/\/www.ibm.com\/developerworks\/cn\/web\/wa-javascript.html\r\n函数式JavaScript编程指南\r\nhttp:\/\/shiningray.cn\/functional_jav...",
+    "summary": "函数化编程\r\n\r\n\r\n\/代码内容已省略\/\r\n\r\n用函数式编程技术编写优美的 JavaScript\r\nhttp:\/\/www.ibm.com\/developerworks\/cn\/web\/wa-javascript.html\r\n函数式JavaScript编程指南\r\nhttp:\/\/shiningray.cn\/functional_jav...",
+    "content": "函数化编程\r\n\r\n\r\n<代码开始 lang=\"javascript\">\r\n\/\/ 函数方法化 将静态函数变换为方法\r\nfunction methodize(fun, attr){\r\n    return function(){\r\n        var args = [].slice.call(arguments), self = attr?this[attr]:this;\r\n        return fun.apply(null, [self].concat(args));\r\n    }\r\n}\r\n\r\n\/\/ 数组循环静态函数\r\nvar forEach = function(arr,callback,pThis){\r\n    for (var i =0,len=arr.length;i<len;i++){\r\n        if (i in arr) callback.call(pThis,arr[i],i,arr);\r\n    }\r\n} \r\n\r\n\/\/数组追加静态函数\r\nvar add = function(x,y){\r\n\tx.push(y);\r\n\treturn x;\r\n}\r\n\r\n\/\/方法化\r\nArray.prototype.forEach = methodize(forEach);\r\nArray.prototype.add = methodize(add);\r\n\r\n\/\/方法函数\r\nArray.prototype.forEach2 = function(fn,idx){\r\n    for (var i =0,len=this.length;i<len;i++){\r\n        if (i in this) fn.call(idx,this[i],i,this);\r\n    }\r\n};\r\n\r\n\/\/测试\r\nfunction print(el,index){ \r\n\tconsole.log(index+\" : \"+el);\r\n}\r\n\r\n\r\n[1,2,3].forEach(print);\r\n[1,2,3].forEach2(print);\r\n\r\nconsole.log([1,2,3].add(2));\r\n<\/代码结束>\r\n\r\n用函数式编程技术编写优美的 JavaScript\r\nhttp:\/\/www.ibm.com\/developerworks\/cn\/web\/wa-javascript.html\r\n函数式JavaScript编程指南\r\nhttp:\/\/shiningray.cn\/functional_javascript_programming.html\r\n\r\n",
+    "photos": {},
+    "last_photo": 0,
+    "comments_count": 0,
+    "hasmath": false,
+    "book_id": "3590768",
+    "time": "2011-05-19 04:58:26",
+    "author_id": "1126793",
+    "id": "12922455",
+    "page_no": 52
+}
