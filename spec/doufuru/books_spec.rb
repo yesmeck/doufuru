@@ -18,6 +18,11 @@ describe Doufuru::Books do
 
     let(:body) { fixture("books/book.json") }
 
+    it "should request the book" do
+      Doufuru::Books.new(id)
+      a_get(request_path).should have_been_made
+    end
+
     it "should get the book " do
       book = Doufuru::Books.new(id)
       book.title.should == "小王子"

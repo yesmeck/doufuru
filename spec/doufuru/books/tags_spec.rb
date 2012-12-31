@@ -12,6 +12,10 @@ describe Doufuru::Books, "#tag" do
     stub_get(request_path).to_return(:body => body)
   end
 
+  it "should request the tags" do
+    subject.tags id
+    a_get(request_path).should have_been_made
+  end
 
   it "should return tags of the book" do
     tags = subject.tags id

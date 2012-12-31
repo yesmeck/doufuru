@@ -11,6 +11,11 @@ describe Doufuru::Books::User, "#collections" do
     stub_get(request_path).to_return(:body => fixture("books/user/collections.json"))
   end
 
+  it "should request user collections of book" do
+    subject.collections user
+    a_get(request_path).should have_been_made
+  end
+
   it "should get user collections of book" do
     collections = subject.collections user
     collections.first.book.title.should == "SQL反模式"
