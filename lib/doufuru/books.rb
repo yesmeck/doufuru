@@ -4,10 +4,11 @@ module Doufuru
   class Books < API
 
     def self.new(*args)
-      if !args.empty?
+      args = [{}] if args.empty?
+      if !args.empty? && !args[0].is_a?(Hash)
         return super({}).get(args[0])
       else
-        return super
+        return super(args[0])
       end
     end
 

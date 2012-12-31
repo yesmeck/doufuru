@@ -29,4 +29,14 @@ describe Doufuru::Books do
     end
 
   end
+
+  context "initialize witout id" do
+
+    it "should return a instance of Doufuru::Books" do
+      book = Doufuru::Books.new({})
+      book.should be_a Doufuru::Books
+    end
+
+  end
+
 end
