@@ -15,6 +15,14 @@ module Doufuru
       get_request("/book/#{id}/tags").tags
     end
 
+    def user_tags(user, params = {})
+      set :user => user
+      assert_presence_of user
+      normalize! params
+
+      get_request("/book/user/#{user}/tags").tags
+    end
+
     def get(id, params = {})
       set :id => id
       assert_presence_of id
