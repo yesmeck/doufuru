@@ -3,12 +3,12 @@
 module Doufuru
   class Books::User < API
 
-    def tags(user, params = {})
-      set :user => user
-      assert_presence_of user
+    def tags(username, params = {})
+      set :username => username
+      assert_presence_of username
       normalize! params
 
-      get_request("/book/user/#{user}/tags").tags
+      get_request("/book/user/#{username}/tags").tags
     end
 
   end

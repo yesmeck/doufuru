@@ -5,6 +5,7 @@ require "doufuru/request"
 require "doufuru/normalizer"
 require "doufuru/parameter_filter"
 require "doufuru/validations"
+require "doufuru/api_factory"
 
 module Doufuru
   class API

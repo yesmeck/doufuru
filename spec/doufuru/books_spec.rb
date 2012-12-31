@@ -5,6 +5,8 @@ require "spec_helper"
 describe Doufuru::Books do
   it_should_behave_like "api interface"
 
+  its(:user) { should be_a Doufuru::Books::User }
+
   let(:id) { 1084336 }
   let(:request_path) { "/book/#{id}" }
 
