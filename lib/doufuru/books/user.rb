@@ -19,5 +19,12 @@ module Doufuru
       get_request("/book/user/#{username}/collections").collections
     end
 
+    def annotations(username, params = {})
+      set :username => username
+      assert_presence_of username
+
+      get_request("/book/user/#{username}/annotations").annotations
+    end
+
   end
 end

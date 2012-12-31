@@ -1,0 +1,779 @@
+{
+    "count": 20,
+    "start": 0,
+    "total": 8,
+    "annotations": [{
+        "chapter": "Function",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 703,
+                "average": "9.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2009-4-1",
+            "image": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s3651235.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s3651235.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3590768\/",
+            "id": "3590768",
+            "title": "JavaScript语言精粹",
+            "author_intro": "Douglas Crockford是一名来自Yahoo!的资深JavaScript架构师，以创造和维护JSON (JavaScriptObject Notation) 格式而为大家所熟知。他定期在各类会议上发表有关高级JavaScript的主题演讲。",
+            "tags": [{
+                "count": 889,
+                "name": "JavaScript",
+                "title": "JavaScript"
+            }, {
+                "count": 260,
+                "name": "Web前端开发",
+                "title": "Web前端开发"
+            }, {
+                "count": 126,
+                "name": "O'Reilly",
+                "title": "O'Reilly"
+            }, {
+                "count": 99,
+                "name": "web开发",
+                "title": "web开发"
+            }, {
+                "count": 89,
+                "name": "web",
+                "title": "web"
+            }, {
+                "count": 77,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 67,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 63,
+                "name": "javacript",
+                "title": "javacript"
+            }],
+            "origin_title": "",
+            "price": "35.00",
+            "translator": ["赵泽欣", "鄢学鹍"],
+            "pages": "155",
+            "publisher": "电子工业出版社",
+            "isbn10": "7121084376",
+            "isbn13": "9787121084379",
+            "alt_title": "JavaScript: The Good Parts",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3590768",
+            "author": ["Douglas Crockford"],
+            "summary": "本书通过对JavaScript语言的分析，甄别出好的和坏的特性，从而提取出相对这门语言的整体而言具有更好的可靠性、可读性和可维护性的JavaScript的子集，以便你能用它创建真正可扩展的和高效的代码。\n雅虎资深JavaScript架构师Douglas Crockford倾力之作。\n向读者介绍如何运用JavaScript创建真正可扩展的和高效的代码。"
+        },
+        "author_user": {
+            "name": "彼得潘",
+            "url": "http:\/\/api.douban.com\/v2\/user\/1407404",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u1407404-41.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/coolzi\/",
+            "id": "1407404",
+            "uid": "coolzi"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "\r\nIt is important to understand that the inner function has access to the actual variable of the outer functions and not copies in order to avoid the following problem:\r\n\r\n\r\n\/代码内容已省略\/\r\n\r\n\r\n\/...",
+        "summary": "\r\nIt is important to understand that the inner function has access to the actual variable of the outer functions and not copies in order to avoid the following problem:\r\n\r\n\r\n\/代码内容已省略\/\r\n\r\n\r\n\/...",
+        "content": "<原文开始>\r\nIt is important to understand that the inner function has access to the actual variable of the outer functions and not copies in order to avoid the following problem:\r\n<\/原文结束>\r\n\r\n<代码开始 lang=\"javascript\">\r\n\/\/ BAD EXAMPLE\r\n\r\n\/\/ Make a function that assigns event handler functions to an array of nodes the wrong way.\r\n\/\/ When you click on a node, an alert box is supposed to display the ordinal of the node.\r\n\/\/ But it always displays the number of nodes instead.\r\n\r\nvar add_the_handlers = function (nodes) {\r\n    var i;\r\n    for (i = 0; i < nodes.length; i += 1) {\r\n        nodes[i].onclick = function (e) {\r\n            alert(i);\r\n        };\r\n    }\r\n};\r\n<\/代码结束>\r\n\r\n\r\n<代码开始 lang=\"javascript\">\r\n\/\/ BETTER EXAMPLE\r\n\r\nvar add_the_handlers = function (nodes) {\r\n    var i;\r\n    for (i = 0; i < nodes.length; i += 1) {\r\n        nodes[i].onclick = function (i) {\r\n            return function (e) {\r\n                alert(i);\r\n            };\r\n        }(i);\r\n    }\r\n};\r\n<\/代码结束>\r\n\r\n虽然很好理解，但是常常会忘记。",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 1,
+        "hasmath": false,
+        "book_id": "3590768",
+        "time": "2012-05-10 00:00:24",
+        "author_id": "1407404",
+        "id": "18223706",
+        "page_no": 39
+    }, {
+        "chapter": "Functions",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 703,
+                "average": "9.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2009-4-1",
+            "image": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s3651235.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s3651235.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3590768\/",
+            "id": "3590768",
+            "title": "JavaScript语言精粹",
+            "author_intro": "Douglas Crockford是一名来自Yahoo!的资深JavaScript架构师，以创造和维护JSON (JavaScriptObject Notation) 格式而为大家所熟知。他定期在各类会议上发表有关高级JavaScript的主题演讲。",
+            "tags": [{
+                "count": 889,
+                "name": "JavaScript",
+                "title": "JavaScript"
+            }, {
+                "count": 260,
+                "name": "Web前端开发",
+                "title": "Web前端开发"
+            }, {
+                "count": 126,
+                "name": "O'Reilly",
+                "title": "O'Reilly"
+            }, {
+                "count": 99,
+                "name": "web开发",
+                "title": "web开发"
+            }, {
+                "count": 89,
+                "name": "web",
+                "title": "web"
+            }, {
+                "count": 77,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 67,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 63,
+                "name": "javacript",
+                "title": "javacript"
+            }],
+            "origin_title": "",
+            "price": "35.00",
+            "translator": ["赵泽欣", "鄢学鹍"],
+            "pages": "155",
+            "publisher": "电子工业出版社",
+            "isbn10": "7121084376",
+            "isbn13": "9787121084379",
+            "alt_title": "JavaScript: The Good Parts",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3590768",
+            "author": ["Douglas Crockford"],
+            "summary": "本书通过对JavaScript语言的分析，甄别出好的和坏的特性，从而提取出相对这门语言的整体而言具有更好的可靠性、可读性和可维护性的JavaScript的子集，以便你能用它创建真正可扩展的和高效的代码。\n雅虎资深JavaScript架构师Douglas Crockford倾力之作。\n向读者介绍如何运用JavaScript创建真正可扩展的和高效的代码。"
+        },
+        "author_user": {
+            "name": "彼得潘",
+            "url": "http:\/\/api.douban.com\/v2\/user\/1407404",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u1407404-41.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/coolzi\/",
+            "id": "1407404",
+            "uid": "coolzi"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "\r\nBecause of a design error, arguments is not really an array. It is an array-like object. arguments has length property, but it lacks all of the array methods.\r\n",
+        "summary": "\r\nBecause of a design error, arguments is not really an array. It is an array-like object. arguments has length property, but it lacks all of the array methods.\r\n",
+        "content": "<原文开始>\r\nBecause of a design error, arguments is not really an array. It is an array-like object. arguments has length property, but it lacks all of the array methods.\r\n<\/原文结束>",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 0,
+        "hasmath": false,
+        "book_id": "3590768",
+        "time": "2012-05-09 23:07:18",
+        "author_id": "1407404",
+        "id": "18222856",
+        "page_no": 31
+    }, {
+        "chapter": "Functions",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 703,
+                "average": "9.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2009-4-1",
+            "image": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s3651235.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s3651235.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s3651235.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/3590768\/",
+            "id": "3590768",
+            "title": "JavaScript语言精粹",
+            "author_intro": "Douglas Crockford是一名来自Yahoo!的资深JavaScript架构师，以创造和维护JSON (JavaScriptObject Notation) 格式而为大家所熟知。他定期在各类会议上发表有关高级JavaScript的主题演讲。",
+            "tags": [{
+                "count": 889,
+                "name": "JavaScript",
+                "title": "JavaScript"
+            }, {
+                "count": 260,
+                "name": "Web前端开发",
+                "title": "Web前端开发"
+            }, {
+                "count": 126,
+                "name": "O'Reilly",
+                "title": "O'Reilly"
+            }, {
+                "count": 99,
+                "name": "web开发",
+                "title": "web开发"
+            }, {
+                "count": 89,
+                "name": "web",
+                "title": "web"
+            }, {
+                "count": 77,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 67,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 63,
+                "name": "javacript",
+                "title": "javacript"
+            }],
+            "origin_title": "",
+            "price": "35.00",
+            "translator": ["赵泽欣", "鄢学鹍"],
+            "pages": "155",
+            "publisher": "电子工业出版社",
+            "isbn10": "7121084376",
+            "isbn13": "9787121084379",
+            "alt_title": "JavaScript: The Good Parts",
+            "url": "http:\/\/api.douban.com\/v2\/book\/3590768",
+            "author": ["Douglas Crockford"],
+            "summary": "本书通过对JavaScript语言的分析，甄别出好的和坏的特性，从而提取出相对这门语言的整体而言具有更好的可靠性、可读性和可维护性的JavaScript的子集，以便你能用它创建真正可扩展的和高效的代码。\n雅虎资深JavaScript架构师Douglas Crockford倾力之作。\n向读者介绍如何运用JavaScript创建真正可扩展的和高效的代码。"
+        },
+        "author_user": {
+            "name": "彼得潘",
+            "url": "http:\/\/api.douban.com\/v2\/user\/1407404",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u1407404-41.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/coolzi\/",
+            "id": "1407404",
+            "uid": "coolzi"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "\r\nFunctions can be defined inside of other functions. An inner function of course has access to its parameters and variables. An inner function also enjoys access the parameters and variables of th...",
+        "summary": "\r\nFunctions can be defined inside of other functions. An inner function of course has access to its parameters and variables. An inner function also enjoys access the parameters and variables of th...",
+        "content": "<原文开始>\r\nFunctions can be defined inside of other functions. An inner function of course has access to its parameters and variables. An inner function also enjoys access the parameters and variables of the function it is nested within. The function object created by a function literal contains a link to that outer context. This is called closure.\r\n<\/原文结束>\r\n\r\n看那么多文章讲闭包的，其实就一句话就能讲清楚。",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 0,
+        "hasmath": false,
+        "book_id": "3590768",
+        "time": "2012-05-09 22:31:21",
+        "author_id": "1407404",
+        "id": "18221873",
+        "page_no": 27
+    }, {
+        "chapter": "",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 141,
+                "average": "8.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2007年02",
+            "image": "http:\/\/img5.douban.com\/mpic\/s2338599.jpg",
+            "binding": "简裝本",
+            "images": {
+                "small": "http:\/\/img5.douban.com\/spic\/s2338599.jpg",
+                "large": "http:\/\/img5.douban.com\/lpic\/s2338599.jpg",
+                "medium": "http:\/\/img5.douban.com\/mpic\/s2338599.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/2029866\/",
+            "id": "2029866",
+            "title": "Linux命令、编辑器与Shell编程",
+            "author_intro": "Mark G.Sobell是Sobell Associates 公司的主席，该公司是一个专于UNLX\/Linux 培训、技术支持和用户软件开发的咨询公司。Sobell是多本UNIX和Linux畅销书的作者，著有Prentice Hall PTR出版社出版的A Prac-tical Guide to Red Hat Linux，Second Edition一书，以及Addison-Wesley出版社出版的A Practical Guide to UNIX System，Hands-on UNIX和A Practical Guide to Solaris。Sobell具有超过25年使用UNIX和Linux的经验。",
+            "tags": [{
+                "count": 141,
+                "name": "linux",
+                "title": "linux"
+            }, {
+                "count": 69,
+                "name": "shell",
+                "title": "shell"
+            }, {
+                "count": 33,
+                "name": "linux命令，编辑器与SHELL编程",
+                "title": "linux命令，编辑器与SHELL编程"
+            }, {
+                "count": 32,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 24,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 19,
+                "name": "Linux",
+                "title": "Linux"
+            }, {
+                "count": 16,
+                "name": "Linux\/Unix",
+                "title": "Linux\/Unix"
+            }, {
+                "count": 11,
+                "name": "系统管理",
+                "title": "系统管理"
+            }],
+            "origin_title": "",
+            "price": "98.00元",
+            "translator": ["杨明军", "王凤芹"],
+            "pages": "792",
+            "publisher": "清华大学出版社",
+            "isbn10": "730213944X",
+            "isbn13": "9787302139447",
+            "alt_title": "",
+            "url": "http:\/\/api.douban.com\/v2\/book\/2029866",
+            "author": ["Mark G. Sobell"],
+            "summary": "1. 它是Pearson、Amazon、Bames&Noble 计算机畅销书！\n2. 知名Linux专家Mark Sobell 编写的这本书，为系统管理员、开发人员和高级用户提供了最需要的全面的深入指导，同时还是一本卓越的日常参考手册。\n3. 一本值得每一位Linux管理人员、开发人员和高级用户拥有的指南！\n4. 本书并不针对特定的Linux版本或者某个发行版本，而是适用于所有近期发布的Linux版本;\n5. 最实用的Linux指南和参考手册，数百个高质量的实例覆盖了每种Linux发行版！\n6. 本书覆盖超过80个核心工具、shell编程、编辑器和编程工具，能使您成为真正的Linux高手，它是掌握强大的Linux命令行的捷径。"
+        },
+        "author_user": {
+            "name": "彼得潘",
+            "url": "http:\/\/api.douban.com\/v2\/user\/1407404",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u1407404-41.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/coolzi\/",
+            "id": "1407404",
+            "uid": "coolzi"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "\r\n设备\/dev\/null是一个数据接收器，通常被称为位桶(bit bucket)。\r\n\r\n原来bitbucket.org的名字是这么来的。。。",
+        "summary": "\r\n设备\/dev\/null是一个数据接收器，通常被称为位桶(bit bucket)。\r\n\r\n原来bitbucket.org的名字是这么来的。。。",
+        "content": "<原文开始>\r\n设备\/dev\/null是一个数据接收器，通常被称为位桶(bit bucket)。\r\n<\/原文结束>\r\n原来bitbucket.org的名字是这么来的。。。",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 0,
+        "hasmath": false,
+        "book_id": "2029866",
+        "time": "2011-10-18 22:48:32",
+        "author_id": "1407404",
+        "id": "14943913",
+        "page_no": 106
+    }, {
+        "chapter": "",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 141,
+                "average": "8.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2007年02",
+            "image": "http:\/\/img5.douban.com\/mpic\/s2338599.jpg",
+            "binding": "简裝本",
+            "images": {
+                "small": "http:\/\/img5.douban.com\/spic\/s2338599.jpg",
+                "large": "http:\/\/img5.douban.com\/lpic\/s2338599.jpg",
+                "medium": "http:\/\/img5.douban.com\/mpic\/s2338599.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/2029866\/",
+            "id": "2029866",
+            "title": "Linux命令、编辑器与Shell编程",
+            "author_intro": "Mark G.Sobell是Sobell Associates 公司的主席，该公司是一个专于UNLX\/Linux 培训、技术支持和用户软件开发的咨询公司。Sobell是多本UNIX和Linux畅销书的作者，著有Prentice Hall PTR出版社出版的A Prac-tical Guide to Red Hat Linux，Second Edition一书，以及Addison-Wesley出版社出版的A Practical Guide to UNIX System，Hands-on UNIX和A Practical Guide to Solaris。Sobell具有超过25年使用UNIX和Linux的经验。",
+            "tags": [{
+                "count": 141,
+                "name": "linux",
+                "title": "linux"
+            }, {
+                "count": 69,
+                "name": "shell",
+                "title": "shell"
+            }, {
+                "count": 33,
+                "name": "linux命令，编辑器与SHELL编程",
+                "title": "linux命令，编辑器与SHELL编程"
+            }, {
+                "count": 32,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 24,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 19,
+                "name": "Linux",
+                "title": "Linux"
+            }, {
+                "count": 16,
+                "name": "Linux\/Unix",
+                "title": "Linux\/Unix"
+            }, {
+                "count": 11,
+                "name": "系统管理",
+                "title": "系统管理"
+            }],
+            "origin_title": "",
+            "price": "98.00元",
+            "translator": ["杨明军", "王凤芹"],
+            "pages": "792",
+            "publisher": "清华大学出版社",
+            "isbn10": "730213944X",
+            "isbn13": "9787302139447",
+            "alt_title": "",
+            "url": "http:\/\/api.douban.com\/v2\/book\/2029866",
+            "author": ["Mark G. Sobell"],
+            "summary": "1. 它是Pearson、Amazon、Bames&Noble 计算机畅销书！\n2. 知名Linux专家Mark Sobell 编写的这本书，为系统管理员、开发人员和高级用户提供了最需要的全面的深入指导，同时还是一本卓越的日常参考手册。\n3. 一本值得每一位Linux管理人员、开发人员和高级用户拥有的指南！\n4. 本书并不针对特定的Linux版本或者某个发行版本，而是适用于所有近期发布的Linux版本;\n5. 最实用的Linux指南和参考手册，数百个高质量的实例覆盖了每种Linux发行版！\n6. 本书覆盖超过80个核心工具、shell编程、编辑器和编程工具，能使您成为真正的Linux高手，它是掌握强大的Linux命令行的捷径。"
+        },
+        "author_user": {
+            "name": "彼得潘",
+            "url": "http:\/\/api.douban.com\/v2\/user\/1407404",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u1407404-41.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/coolzi\/",
+            "id": "1407404",
+            "uid": "coolzi"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "看懂目录和文件的权限\r\n\r\n\/代码内容已省略\/\r\n\r\n第一部分表示文件或目录的权限，第一个字符是连字符（-）的话就表示文件，d表示目录，后面每3个字符分别代表owner,group,others所拥有的权限，而r表示读、w表示些、...",
+        "summary": "看懂目录和文件的权限\r\n\r\n\/代码内容已省略\/\r\n\r\n第一部分表示文件或目录的权限，第一个字符是连字符（-）的话就表示文件，d表示目录，后面每3个字符分别代表owner,group,others所拥有的权限，而r表示读、w表示些、...",
+        "content": "看懂目录和文件的权限\r\n\r\n<代码开始 lang=\"bash\">\r\nls -l\r\n-rwxr--r-- 1 meck users 6844 10月  8 22:07 index.php\r\n<\/代码结束>\r\n\r\n第一部分表示文件或目录的权限，第一个字符是连字符（-）的话就表示文件，d表示目录，后面每3个字符分别代表owner,group,others所拥有的权限，而r表示读、w表示些、x表示执行这个都懂。\r\n\r\n这下终于理解以前一直用的\r\n\r\n<代码开始 lang=\"bash\">\r\nchmod +x script.sh\r\n<\/代码结束>\r\n\r\n到底是什么意思了。\r\n\r\nPS.\r\n求shell高亮！",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 0,
+        "hasmath": false,
+        "book_id": "2029866",
+        "time": "2011-10-18 21:56:52",
+        "author_id": "1407404",
+        "id": "14942874",
+        "page_no": 80
+    }, {
+        "chapter": "",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 141,
+                "average": "8.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2007年02",
+            "image": "http:\/\/img5.douban.com\/mpic\/s2338599.jpg",
+            "binding": "简裝本",
+            "images": {
+                "small": "http:\/\/img5.douban.com\/spic\/s2338599.jpg",
+                "large": "http:\/\/img5.douban.com\/lpic\/s2338599.jpg",
+                "medium": "http:\/\/img5.douban.com\/mpic\/s2338599.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/2029866\/",
+            "id": "2029866",
+            "title": "Linux命令、编辑器与Shell编程",
+            "author_intro": "Mark G.Sobell是Sobell Associates 公司的主席，该公司是一个专于UNLX\/Linux 培训、技术支持和用户软件开发的咨询公司。Sobell是多本UNIX和Linux畅销书的作者，著有Prentice Hall PTR出版社出版的A Prac-tical Guide to Red Hat Linux，Second Edition一书，以及Addison-Wesley出版社出版的A Practical Guide to UNIX System，Hands-on UNIX和A Practical Guide to Solaris。Sobell具有超过25年使用UNIX和Linux的经验。",
+            "tags": [{
+                "count": 141,
+                "name": "linux",
+                "title": "linux"
+            }, {
+                "count": 69,
+                "name": "shell",
+                "title": "shell"
+            }, {
+                "count": 33,
+                "name": "linux命令，编辑器与SHELL编程",
+                "title": "linux命令，编辑器与SHELL编程"
+            }, {
+                "count": 32,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 24,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 19,
+                "name": "Linux",
+                "title": "Linux"
+            }, {
+                "count": 16,
+                "name": "Linux\/Unix",
+                "title": "Linux\/Unix"
+            }, {
+                "count": 11,
+                "name": "系统管理",
+                "title": "系统管理"
+            }],
+            "origin_title": "",
+            "price": "98.00元",
+            "translator": ["杨明军", "王凤芹"],
+            "pages": "792",
+            "publisher": "清华大学出版社",
+            "isbn10": "730213944X",
+            "isbn13": "9787302139447",
+            "alt_title": "",
+            "url": "http:\/\/api.douban.com\/v2\/book\/2029866",
+            "author": ["Mark G. Sobell"],
+            "summary": "1. 它是Pearson、Amazon、Bames&Noble 计算机畅销书！\n2. 知名Linux专家Mark Sobell 编写的这本书，为系统管理员、开发人员和高级用户提供了最需要的全面的深入指导，同时还是一本卓越的日常参考手册。\n3. 一本值得每一位Linux管理人员、开发人员和高级用户拥有的指南！\n4. 本书并不针对特定的Linux版本或者某个发行版本，而是适用于所有近期发布的Linux版本;\n5. 最实用的Linux指南和参考手册，数百个高质量的实例覆盖了每种Linux发行版！\n6. 本书覆盖超过80个核心工具、shell编程、编辑器和编程工具，能使您成为真正的Linux高手，它是掌握强大的Linux命令行的捷径。"
+        },
+        "author_user": {
+            "name": "彼得潘",
+            "url": "http:\/\/api.douban.com\/v2\/user\/1407404",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u1407404-41.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/coolzi\/",
+            "id": "1407404",
+            "uid": "coolzi"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "原来以为ctrl+z是结束一个程序，原来只是把当前程序挂起，挂起后可以输入fg再把程序调到前台。\r\n然后还可以同时挂起多个程序再用jobs来查看当前挂起的队列，然后可以用\r\n\/代码内容已省略\/\r\n来恢复程序。\r\n\r\n这个...",
+        "summary": "原来以为ctrl+z是结束一个程序，原来只是把当前程序挂起，挂起后可以输入fg再把程序调到前台。\r\n然后还可以同时挂起多个程序再用jobs来查看当前挂起的队列，然后可以用\r\n\/代码内容已省略\/\r\n来恢复程序。\r\n\r\n这个...",
+        "content": "原来以为ctrl+z是结束一个程序，原来只是把当前程序挂起，挂起后可以输入fg再把程序调到前台。\r\n然后还可以同时挂起多个程序再用jobs来查看当前挂起的队列，然后可以用\r\n<代码开始 lang=\"bash\">\r\nfg 队列编号\r\n<\/代码结束>\r\n来恢复程序。\r\n\r\n这个跟git stash，然后git list,再git apply的过程很像啊。",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 1,
+        "hasmath": false,
+        "book_id": "2029866",
+        "time": "2011-10-17 21:01:52",
+        "author_id": "1407404",
+        "id": "14927620",
+        "page_no": 22
+    }, {
+        "chapter": "",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 29,
+                "average": "8.1",
+                "min": 0
+            },
+            "subtitle": "The TrackStar Application",
+            "pubdate": "2010-08-27",
+            "image": "http:\/\/img3.douban.com\/mpic\/s4433864.jpg",
+            "binding": "Paperback",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s4433864.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s4433864.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s4433864.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/4937201\/",
+            "id": "4937201",
+            "title": "Agile Web Application Development with Yii 1.1 and PHP5",
+            "author_intro": "",
+            "tags": [{
+                "count": 12,
+                "name": "web开发",
+                "title": "web开发"
+            }, {
+                "count": 10,
+                "name": "PHP",
+                "title": "PHP"
+            }, {
+                "count": 9,
+                "name": "Yii",
+                "title": "Yii"
+            }, {
+                "count": 6,
+                "name": "PHP5",
+                "title": "PHP5"
+            }, {
+                "count": 3,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 2,
+                "name": "程序设计",
+                "title": "程序设计"
+            }, {
+                "count": 2,
+                "name": "手册",
+                "title": "手册"
+            }, {
+                "count": 2,
+                "name": "php",
+                "title": "php"
+            }],
+            "origin_title": "",
+            "price": "",
+            "translator": [],
+            "pages": "368",
+            "publisher": "Packt Publishing",
+            "isbn10": "1847199585",
+            "isbn13": "9781847199584",
+            "alt_title": "",
+            "url": "http:\/\/api.douban.com\/v2\/book\/4937201",
+            "author": ["Jeffrey Winesett"],
+            "summary": "In order to understand the framework in the context of a real-world application, we need to build something that will more closely resemble the types of applications web developers actually have to build. That is exactly what we are going to be doing.\nIn this article by Jeffery Winesett, author of Agile Web Application Development with Yii1.1 and PHP5, we introduce the project task tracking application called TrackStar. There are many other project management and issue tracking applications out there in the world, and the basic functionality of ours will not be any different from many of these. So why build it, you ask? It turns out that this type of user-based application has many features that are common to a great many web applications out there. This will allow us to achieve two primary goals:\n* Showcase Yii's incredible utility and feature set as we build useful functionality and conquer real-world web application challenges\n* Provide real-world examples and approaches that will be immediately applicable to your next web application project"
+        },
+        "author_user": {
+            "name": "彼得潘",
+            "url": "http:\/\/api.douban.com\/v2\/user\/1407404",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u1407404-41.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/coolzi\/",
+            "id": "1407404",
+            "uid": "coolzi"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "示例错误\r\n原文：\r\n\r\n\/代码内容已省略\/\r\n\r\n应为：\r\n\r\n\/代码内容已省略\/\r\n",
+        "summary": "示例错误\r\n原文：\r\n\r\n\/代码内容已省略\/\r\n\r\n应为：\r\n\r\n\/代码内容已省略\/\r\n",
+        "content": "示例错误\r\n原文：\r\n\r\n<代码开始 lang=\"php\">\r\n'<pid:\\d+>\/commentfeed'=>array('site\/commentFeed', 'urlSuffix'=>'.xml', 'caseSensitive'=>false),\r\n<\/代码结束>\r\n\r\n应为：\r\n\r\n<代码开始 lang=\"php\">\r\n'<pid:\\d+>\/commentfeed' => array('comment\/feed', 'urlSuffix'=>'.xml', 'caseSensitive'=>false),\r\n<\/代码结束>\r\n",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 2,
+        "hasmath": false,
+        "book_id": "4937201",
+        "time": "2011-07-04 15:17:56",
+        "author_id": "1407404",
+        "id": "12870945",
+        "page_no": 249
+    }, {
+        "chapter": "",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 22,
+                "average": "8.2",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2009-12",
+            "image": "http:\/\/img3.douban.com\/mpic\/s11125892.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s11125892.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s11125892.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s11125892.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/4151142\/",
+            "id": "4151142",
+            "title": "SQL基础教程",
+            "author_intro": "Chris Fehily 知名技术作家，顾问，具有十几年的设计和开发经验，主要兴趣在编程语言和生物信息学等。",
+            "tags": [{
+                "count": 24,
+                "name": "数据库",
+                "title": "数据库"
+            }, {
+                "count": 15,
+                "name": "SQL",
+                "title": "SQL"
+            }, {
+                "count": 6,
+                "name": "计算机",
+                "title": "计算机"
+            }, {
+                "count": 4,
+                "name": "编程",
+                "title": "编程"
+            }, {
+                "count": 3,
+                "name": "计算机科学",
+                "title": "计算机科学"
+            }, {
+                "count": 2,
+                "name": "基础教程",
+                "title": "基础教程"
+            }, {
+                "count": 2,
+                "name": "DataBase",
+                "title": "DataBase"
+            }, {
+                "count": 1,
+                "name": "程序设计",
+                "title": "程序设计"
+            }],
+            "origin_title": "",
+            "price": "49.00元",
+            "translator": ["冯宇晖", "贾文峰"],
+            "pages": "343",
+            "publisher": "人民邮电出版社",
+            "isbn10": "711521350X",
+            "isbn13": "9787115213501",
+            "alt_title": "",
+            "url": "http:\/\/api.douban.com\/v2\/book\/4151142",
+            "author": ["（美）费希利（Fehily, C.）"],
+            "summary": "《SQL基础教程(第3版)》是一本SQL的入门书，介绍如何使用最常用的SQL语言维护和查询数据库信息。书中介绍了各种DBMS，关系模型理论，SQL语法，从表中检索数据，操作符和函数，汇总和分组数据，联结，子查询，集合操作，创建、更改和删除表，索引，视图，事务和SQL技巧等。《SQL基础教程(第3版)》比较了各种DBMS中的SQL实现，并给出大量实例代码及经验技巧。\n《SQL基础教程(第3版)》适合SQL初学者，同时也可作为数据库应用开发人员和最终用户的参考书。"
+        },
+        "author_user": {
+            "name": "彼得潘",
+            "url": "http:\/\/api.douban.com\/v2\/user\/1407404",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u1407404-41.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/coolzi\/",
+            "id": "1407404",
+            "uid": "coolzi"
+        },
+        "privacy": 2,
+        "abstract_photo": "",
+        "abstract": "查询1：\r\n\/代码内容已省略\/\r\n查询2：\r\n\/代码内容已省略\/\r\n\r\n查询2要比查询1快，因为\r\n条件col1 = col2比将col和col2与字面两比较需要的计算开销大",
+        "summary": "查询1：\r\n\/代码内容已省略\/\r\n查询2：\r\n\/代码内容已省略\/\r\n\r\n查询2要比查询1快，因为\r\n条件col1 = col2比将col和col2与字面两比较需要的计算开销大",
+        "content": "查询1：\r\n<代码开始 lang=\"sql\">\r\nSELECT * FROM mytable\r\n        WHERE col1 = 1\r\n                AND NOT (col1 = col2 OR col3 = 3);\r\n<\/代码结束>\r\n查询2：\r\n<代码开始 lang=\"sql\">\r\nSELECT * FROM mytable\r\n        WHERE col1 = 1\r\n                AND col2 <> 1\r\n                AND col3 <> 3;\r\n<\/代码结束>\r\n\r\n查询2要比查询1快，因为\r\n<原文开始>条件col1 = col2比将col和col2与字面两比较需要的计算开销大<\/原文结束>",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 0,
+        "hasmath": false,
+        "book_id": "4151142",
+        "time": "2011-06-11 19:54:59",
+        "author_id": "1407404",
+        "id": "13285241",
+        "page_no": 77
+    }, {
+        "chapter": "",
+        "book": {
+            "rating": {
+                "max": 10,
+                "numRaters": 1,
+                "average": "0.0",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "2005-10",
+            "image": "http:\/\/img3.douban.com\/mpic\/s4590176.jpg",
+            "binding": "Pap",
+            "images": {
+                "small": "http:\/\/img3.douban.com\/spic\/s4590176.jpg",
+                "large": "http:\/\/img3.douban.com\/lpic\/s4590176.jpg",
+                "medium": "http:\/\/img3.douban.com\/mpic\/s4590176.jpg"
+            },
+            "alt": "http:\/\/book.douban.com\/subject\/2587828\/",
+            "id": "2587828",
+            "title": "PHPUnit Pocket Guide",
+            "author_intro": "",
+            "tags": [{
+                "count": 1,
+                "name": "计算机及软件",
+                "title": "计算机及软件"
+            }],
+            "origin_title": "",
+            "price": "$ 11.24",
+            "translator": [],
+            "pages": "96",
+            "publisher": "O'REILLY & ASSOC INC (2005年10月1日)",
+            "isbn10": "0596101031",
+            "isbn13": "9780596101039",
+            "alt_title": "",
+            "url": "http:\/\/api.douban.com\/v2\/book\/2587828",
+            "author": ["Bergmann, Sebastian"],
+            "summary": "This handy guide answers all your PHPUnit questions, and then some. Written by the tool's creator, PHPUnit Pocket Guide delivers insight and sage advice not found anywhere else. It brings together hard-to-remember information, syntax, and rules for working with this popular code-testing tool. Perfect for developers of any level."
+        },
+        "author_user": {
+            "name": "彼得潘",
+            "url": "http:\/\/api.douban.com\/v2\/user\/1407404",
+            "avatar": "http:\/\/img3.douban.com\/icon\/u1407404-41.jpg",
+            "alt": "http:\/\/www.douban.com\/people\/coolzi\/",
+            "id": "1407404",
+            "uid": "coolzi"
+        },
+        "privacy": 1,
+        "abstract_photo": "",
+        "abstract": "测试\r\n\r\n\/代码内容已省略\/\r\n",
+        "summary": "测试\r\n\r\n\/代码内容已省略\/\r\n",
+        "content": "测试\r\n\r\n<代码开始 lang=\"php\">\r\n<?php\r\n    echo 1;\r\n<\/代码结束>\r\n",
+        "photos": {},
+        "last_photo": 0,
+        "comments_count": 2,
+        "hasmath": false,
+        "book_id": "2587828",
+        "time": "2011-01-26 19:58:13",
+        "author_id": "1407404",
+        "id": "10896076",
+        "page_no": 10
+    }]
+}

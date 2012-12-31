@@ -4,11 +4,10 @@ require "spec_helper"
 
 describe Doufuru::Books, "#collection" do
 
-  include_context "set oauth header"
+  include_context "set oauth info"
 
   let(:id) { 1084336 }
   let(:request_path) { "/book/#{id}/collection" }
-  let(:oauth_token) { "faketoken" }
 
   before do
     Doufuru.configure do |config|
