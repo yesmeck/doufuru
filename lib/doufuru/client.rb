@@ -1,22 +1,19 @@
 # encoding: utf-8
 
-require "doufuru/oauth"
-require "doufuru/connection"
-require "doufuru/request"
+require "doufuru/api"
+require "doufuru/api_factory"
 
 module Doufuru
-  class Client
-    attr_accessor(*Configuration::VALID_OPTIONS_KEYS)
+  class Client < API
 
-    def initialize(options = {})
-      options = Doufuru.options.merge(options)
-      Configuration::VALID_OPTIONS_KEYS.each do |key|
-        send("#{key}=", options[key])
+    def book(*args)
+      args = [{}] if args.empty?
+      if !args.empty? && !args[0].is_a?(Hash)
+        return Doufuru::Books.new(args[0])
+      else
+        return @book ||= ApiFactory.new("Books", args[0])
       end
     end
 
-    include Doufuru::Oauth
-    include Doufuru::Connection
-    include Doufuru::Request
   end
 end

@@ -6,7 +6,7 @@ module Doufuru
   class ApiFactory
 
     # Instantiates a new github api object
-    def self.new(klass, options={})
+    def self.new(klass, options = {})
       return create_instance(klass, options) if klass
       raise ArgumentError, 'must provied klass to be instantiated'
     end
