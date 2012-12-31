@@ -3,6 +3,18 @@
 module Doufuru
   class Books < API
 
+    def initialize(options = {})
+      super(options)
+    end
+
+    def tags(id, params = {})
+      set :id => id
+      assert_presence_of id
+      normalize! params
+
+      get_request("/book/#{id}/tags").tags
+    end
+
     def get(id, params = {})
       set :id => id
       assert_presence_of id
