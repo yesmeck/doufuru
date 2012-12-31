@@ -10,6 +10,7 @@ require "doufuru/configuration"
 require "doufuru/client"
 require "doufuru/api"
 require "doufuru/books"
+require "doufuru/books/user"
 
 module Doufuru
   extend Configuration
