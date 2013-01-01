@@ -18,8 +18,8 @@ module Doufuru
       request(:put, path, params, options)
     end
 
-    def delete(path, params = {}, raw = false)
-      request(:delete, path, params, raw)
+    def delete_request(path, params = {}, options = {})
+      request(:delete, path, params, options)
     end
 
     def request(method, path, params, options)

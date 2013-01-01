@@ -37,6 +37,10 @@ def a_put(path)
   a_request(:put, douban_url(path))
 end
 
+def a_delete(path)
+  a_request(:delete, douban_url(path))
+end
+
 def fixture_path
   File.expand_path("../fixtures", __FILE__)
 end
