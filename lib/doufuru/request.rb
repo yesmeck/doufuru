@@ -14,8 +14,8 @@ module Doufuru
       request(:post, path, params, options)
     end
 
-    def put(path, params = {}, raw = false)
-      request(:put, path, params, raw)
+    def put_request(path, params = {}, options = {})
+      request(:put, path, params, options)
     end
 
     def delete(path, params = {}, raw = false)
