@@ -65,19 +65,19 @@ module Doufuru
     end
 
     def annotations(id, params = {})
-      set :id => id
-      assert_presence_of id
-      normalize! params
-
-      get_request("/book/#{id}/annotations").annotations
+      @annotation ||= ApiFactory.new "Books::Annotation"
+      @annotation.list(id, params)
     end
 
-    def annotation(annotation_id, params = {})
-      set :annotation_id => annotation_id
-      assert_presence_of annotation_id
-      normalize! params
+    def annotation(*args)
+      args = [{}] if args.empty?
+      if !args.empty? && !args[0].is_a?(Hash)
+        return Books::Annotation.new({}).get(args[0])
+      else
+        @annotation ||= ApiFactory.new "Books::Annotation"
+        return @annotation
+      end
 
-      get_request("/book/annotation/#{annotation_id}")
     end
 
   end
