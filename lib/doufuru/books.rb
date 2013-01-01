@@ -54,12 +54,14 @@ module Doufuru
       get_request("/book/search", params).books
     end
 
-    def collection(id, params = {})
-      set :id => id
-      assert_presence_of id
-      normalize! params
-
-      get_request("/book/#{id}/collection")
+    def collection(*args)
+      args = [{}] if args.empty?
+      if !args.empty? && !args[0].is_a?(Hash)
+        return Books::Collection.new({}).get(args[0])
+      else
+        @collection ||= ApiFactory.new "Books::Collection"
+        return @collection
+      end
     end
 
     def annotations(id, params = {})

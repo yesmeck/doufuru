@@ -9,24 +9,25 @@ describe Doufuru::Books, "#collection" do
   let(:id) { 1084336 }
   let(:request_path) { "/book/#{id}/collection" }
 
-  before do
-    Doufuru.configure do |config|
-      config.oauth_token = oauth_token
+  context "with id passed" do
+
+    before do
+      stub_get(request_path).to_return(:body => fixture("books/collection.json"))
     end
-    stub_get(request_path).to_return(:body => fixture("books/collection.json"))
+
+    it "should request the collection status" do
+      subject.collection id
+      a_get(request_path).with(:headers => oauth_header)
+    end
+
   end
 
-  after do
-    reset_authentication_for subject
-  end
+  context "without id passed" do
 
-  it "should request user collection status" do
-    a_get(request_path).with(:headers => oauth_header)
-  end
+    it "should return a instance of Doufuru::Books::Collection" do
+      subject.collection.should be_a Doufuru::Books::Collection
+    end
 
-  it "should return current oauthed user's collection status of book" do
-    collection = subject.collection id
-    collection.status.should == "read"
   end
 
 end
