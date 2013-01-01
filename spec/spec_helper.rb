@@ -29,6 +29,10 @@ def a_get(path)
   a_request(:get, douban_url(path))
 end
 
+def a_post(path)
+  a_request(:post, douban_url(path))
+end
+
 def fixture_path
   File.expand_path("../fixtures", __FILE__)
 end

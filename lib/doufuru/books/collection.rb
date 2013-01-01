@@ -11,5 +11,13 @@ module Doufuru
       get_request("/book/#{id}/collection")
     end
 
+    def create(id, params = {})
+      set :id => id
+      assert_presence_of id
+      normalize! params
+
+      post_request("/book/#{id}/collection")
+    end
+
   end
 end

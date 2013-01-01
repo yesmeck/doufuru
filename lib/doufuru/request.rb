@@ -10,8 +10,8 @@ module Doufuru
       request(:get, path, params, options)
     end
 
-    def post(path, params = {}, raw = false)
-      request(:post, path, params, raw)
+    def post_request(path, params = {}, options = {})
+      request(:post, path, params, options)
     end
 
     def put(path, params = {}, raw = false)
