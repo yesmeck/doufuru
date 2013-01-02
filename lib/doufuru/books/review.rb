@@ -20,5 +20,15 @@ module Doufuru
       post_request("/book/reviews", params)
     end
 
+    def update(id, params)
+      set :id => id
+      assert_presence_of id
+      normalize! params
+      assert_presence_of params["title"]
+      assert_presence_of params["content"]
+
+      put_request("/book/review/#{id}", params)
+    end
+
   end
 end
