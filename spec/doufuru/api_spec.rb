@@ -4,29 +4,29 @@ require "spec_helper"
 
 describe Doufuru::API do
   let(:api) { Doufuru::API.new }
-  let(:books) { Doufuru::Books }
+  let(:book) { Doufuru::Book }
 
   describe "actions" do
     it { described_class.new.should respond_to :api_methods_in }
   end
 
   it "dynamically adds actions inspection to classed inheriting from api" do
-    books.should respond_to :actions
-    books.new.should respond_to :actions
+    book.should respond_to :actions
+    book.new.should respond_to :actions
   end
 
   it "ensures output contains api methods" do
     methods = [ "method_a", "method_b" ]
-    books.stub(:instance_methods).and_return methods
-    output = capture(:stdout) { api.api_methods_in(books) }
+    book.stub(:instance_methods).and_return methods
+    output = capture(:stdout) { api.api_methods_in(book) }
     output.should =~ /.*method_a.*/
     output.should =~ /.*method_b.*/
   end
 
   describe "_set_api_client" do
     it "should set instaniated api class as main api client" do
-      books_instance = books.new
-      Doufuru::api_client.should == books_instance
+      book_instance = book.new
+      Doufuru::api_client.should == book_instance
     end
   end
 

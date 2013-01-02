@@ -9,11 +9,11 @@ require "doufuru/version"
 require "doufuru/configuration"
 require "doufuru/api"
 require "doufuru/client"
-require "doufuru/books"
-require "doufuru/books/user"
-require "doufuru/books/collection"
-require "doufuru/books/annotation"
-require "doufuru/books/review"
+require "doufuru/book"
+require "doufuru/book/user"
+require "doufuru/book/collection"
+require "doufuru/book/annotation"
+require "doufuru/book/review"
 
 module Doufuru
   extend Configuration

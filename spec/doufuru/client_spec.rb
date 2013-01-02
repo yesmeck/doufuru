@@ -14,7 +14,7 @@ describe Doufuru::Client do
       let(:request_path) { "/book/#{id}" }
 
       before do
-        stub_get(request_path).to_return(:body => fixture("books/book.json"))
+        stub_get(request_path).to_return(:body => fixture("book/book.json"))
       end
 
       it "should get the book " do
@@ -23,8 +23,8 @@ describe Doufuru::Client do
       end
     end
 
-    it "should return Doufuru::Books instance" do
-      doufuru.book.should be_a Doufuru::Books
+    it "should return Doufuru::Book instance" do
+      doufuru.book.should be_a Doufuru::Book
     end
 
   end
