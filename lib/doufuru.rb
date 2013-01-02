@@ -13,6 +13,7 @@ require "doufuru/books"
 require "doufuru/books/user"
 require "doufuru/books/collection"
 require "doufuru/books/annotation"
+require "doufuru/books/review"
 
 module Doufuru
   extend Configuration

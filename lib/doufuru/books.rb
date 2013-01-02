@@ -77,7 +77,16 @@ module Doufuru
         @annotation ||= ApiFactory.new "Books::Annotation"
         return @annotation
       end
+    end
 
+    def review(*args)
+      args = [{}] if args.empty?
+      if !args.empty? && !args[0].is_a?(Hash)
+        return Books::Review.new({}).get(args[0])
+      else
+        @review ||= ApiFactory.new "Books::Review"
+        return @review
+      end
     end
 
   end
