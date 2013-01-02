@@ -11,5 +11,14 @@ module Doufuru
       get_request("/book/review/#{id}", params)
     end
 
+    def create(params)
+      normalize! params
+      assert_presence_of params["book"]
+      assert_presence_of params["title"]
+      assert_presence_of params["content"]
+
+      post_request("/book/reviews", params)
+    end
+
   end
 end
