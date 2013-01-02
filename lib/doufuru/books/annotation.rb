@@ -35,5 +35,14 @@ module Doufuru
       put_request("/book/annotation/#{id}")
     end
 
+    def delete(id, params = {})
+      set :id => id
+      assert_presence_of id
+      normalize! params
+
+      delete_request("/book/annotation/#{id}")
+      true
+    end
+
   end
 end
