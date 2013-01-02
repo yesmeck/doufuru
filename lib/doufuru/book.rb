@@ -3,6 +3,14 @@
 module Doufuru
   class Book < API
 
+    extend Autoloader
+
+    autoload_all "doufuru/book",
+      :Annotation   => "annotation",
+      :Collection   => "collection",
+      :Review       => "review",
+      :User         => "user"
+
     def self.new(*args)
       args = [{}] if args.empty?
       if !args.empty? && !args[0].is_a?(Hash)

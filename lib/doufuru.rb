@@ -5,18 +5,12 @@ require "pry-nav" if ENV["DOUFURU_DEV"]
 require "parts"
 require "doufuru/core_ext/object"
 require "doufuru/parts/file_part"
-require "doufuru/version"
 require "doufuru/configuration"
-require "doufuru/api"
-require "doufuru/client"
-require "doufuru/book"
-require "doufuru/book/user"
-require "doufuru/book/collection"
-require "doufuru/book/annotation"
-require "doufuru/book/review"
+require "doufuru/autoloader"
 
 module Doufuru
   extend Configuration
+  extend Autoloader
 
   class << self
 
@@ -35,4 +29,10 @@ module Doufuru
       new.respond_to?(method, include_private) || super(method, include_private)
     end
   end
+
+  autoload_all "doufuru",
+    :API        => "api",
+    :Client     => "client",
+    :Book       => "book"
+
 end
