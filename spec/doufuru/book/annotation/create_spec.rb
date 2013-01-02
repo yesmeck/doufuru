@@ -14,8 +14,8 @@ describe Doufuru::Book::Annotation, "#create" do
     Doufuru.configure do |config|
       config.oauth_token = oauth_token
     end
-    stub_post(request_path).with(:content => params, :headers => oauth_header)
-                           .to_return(:body => fixture("book/annotation/create.json"))
+    stub_post(request_path).with(:content => params, :headers => oauth_header).
+      to_return(:body => fixture("book/annotation/create.json"))
   end
 
   after { reset_authentication_for subject }

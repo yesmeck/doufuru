@@ -13,8 +13,8 @@ describe Doufuru::Book::Annotation, "#delete" do
     Doufuru.configure do |config|
       config.oauth_token = oauth_token
     end
-    stub_delete(request_path).with(:headers => oauth_header)
-                          .to_return(:status => 204, :body => "")
+    stub_delete(request_path).with(:headers => oauth_header).
+      to_return(:status => 204, :body => "")
   end
 
   after { reset_authentication_for subject }

@@ -14,8 +14,8 @@ describe Doufuru::Book::Review, "update" do
     Doufuru.configure do |config|
       config.oauth_token = oauth_token
     end
-    stub_put(request_path).with(:content => params, :headers => oauth_header)
-                           .to_return(:body => fixture("book/review/get.json"))
+    stub_put(request_path).with(:content => params, :headers => oauth_header).
+      to_return(:body => fixture("book/review/get.json"))
   end
 
   after { reset_authentication_for subject }
