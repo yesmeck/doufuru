@@ -27,5 +27,13 @@ module Doufuru
       post_request("/book/#{book_id}/annotations", params)
     end
 
+    def update(id, params = {})
+      set :id => id
+      assert_presence_of id
+      normalize! params
+
+      put_request("/book/annotation/#{id}")
+    end
+
   end
 end
