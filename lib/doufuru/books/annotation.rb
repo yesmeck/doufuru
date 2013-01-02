@@ -19,5 +19,13 @@ module Doufuru
       get_request("/book/annotation/#{id}")
     end
 
+    def create(book_id, params = {})
+      set :book_id => book_id
+      assert_presence_of book_id
+      normalize! params
+
+      post_request("/book/#{book_id}/annotations", params)
+    end
+
   end
 end

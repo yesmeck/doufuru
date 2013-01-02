@@ -1,0 +1,58 @@
+{
+    "chapter": "",
+    "book": {
+        "rating": {
+            "max": 10,
+            "numRaters": 0,
+            "average": "0.0",
+            "min": 0
+        },
+        "subtitle": "",
+        "pubdate": "",
+        "image": "http:\/\/img3.douban.com\/pics\/book-default-medium.gif",
+        "binding": "",
+        "images": {
+            "small": "http:\/\/img3.douban.com\/pics\/book-default-small.gif",
+            "large": "http:\/\/img3.douban.com\/pics\/book-default-large.gif",
+            "medium": "http:\/\/img3.douban.com\/pics\/book-default-medium.gif"
+        },
+        "alt": "http:\/\/book.douban.com\/subject\/12922455\/",
+        "id": "12922455",
+        "title": "The Publishers Weekly Volume 39",
+        "author_intro": "",
+        "tags": [],
+        "origin_title": "",
+        "price": "",
+        "translator": [],
+        "pages": "644",
+        "publisher": "",
+        "isbn10": "1130296253",
+        "isbn13": "9781130296259",
+        "alt_title": "",
+        "url": "http:\/\/api.douban.com\/v2\/book\/12922455",
+        "author": ["Company, R. R. Bowker"],
+        "summary": ""
+    },
+    "author_user": {
+        "name": "彼得潘",
+        "url": "http:\/\/api.douban.com\/v2\/user\/1407404",
+        "avatar": "http:\/\/img3.douban.com\/icon\/u1407404-41.jpg",
+        "alt": "http:\/\/www.douban.com\/people\/coolzi\/",
+        "id": "1407404",
+        "uid": "coolzi"
+    },
+    "privacy": 1,
+    "abstract_photo": "",
+    "abstract": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+    "summary": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+    "content": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+    "photos": {},
+    "last_photo": 0,
+    "comments_count": 0,
+    "hasmath": false,
+    "book_id": "12922455",
+    "time": "2013-01-01 20:01:22",
+    "author_id": "1407404",
+    "id": "23571856",
+    "page_no": 1
+}
