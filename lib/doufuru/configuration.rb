@@ -19,6 +19,8 @@ module Doufuru
 
     DEFAULT_USER = nil
 
+    DEFAULT_OAUTH_TOKEN = nil
+
     attr_accessor(*VALID_OPTIONS_KEYS)
 
     def self.extended(base)
@@ -39,6 +41,7 @@ module Doufuru
       self.adapter = DEFAULT_ADAPTER
       self.endpoint = DEFAULT_ENDPOINT
       self.user_agent = DEFAULT_USER_AGENT
+      self.oauth_token = DEFAULT_OAUTH_TOKEN
       self.user = DEFAULT_USER
     end
   end
