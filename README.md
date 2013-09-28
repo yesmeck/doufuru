@@ -1,6 +1,6 @@
 # Doufuru
 
-TODO: Write a gem description
+Simple wrapper for Douban API v2.
 
 ## Installation
 
